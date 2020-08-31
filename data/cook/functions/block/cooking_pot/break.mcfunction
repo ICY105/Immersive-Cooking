@@ -1,5 +1,5 @@
 
-loot spawn ~ ~ ~ loot cook:block/smoking_rack
+loot spawn ~ ~ ~ loot cook:block/cooking_pot
 kill @e[tag=cook_pot_liquid,distance=..0.1]
 
 data remove block -29999999 0 1601 Items
