@@ -42,4 +42,4 @@ execute store success score $temp_0 cook_data run clear @s minecraft:rabbit_stew
 execute if score $temp_0 cook_data matches 1 run loot give @s loot cook:food/premade/rabbit_stew
 
 execute store success score $temp_0 cook_data run clear @s minecraft:cookie 1
-execute if score $temp_0 cook_data matches 1 run loot give @s loot cook:food/premade/chocolate_cookie
+execute if score $temp_0 cook_data matches 1 run loot give @s loot cook:food/premade/cookie
