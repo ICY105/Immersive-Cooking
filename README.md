@@ -7,4 +7,4 @@ Want to stay up-to-date with everything Immersive Cooking? Join the discord serv
 
 Head over to the [Releases Page](https://github.com/ImCoolYeah105/Immersive-Cooking/releases).
 
-![Image](https://imgur.com/klgkUzM)
+![Image](https://i.imgur.com/klgkUzM.png)
