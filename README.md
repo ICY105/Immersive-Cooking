@@ -5,6 +5,8 @@ Want to stay up-to-date with everything Immersive Cooking? Join the discord serv
 
 ## Downloads
 
+Immersive Cooking requires the library [Datapack Utils](https://github.com/ImCoolYeah105/Datapack-Utilities/releases)
+
 Head over to the [Releases Page](https://github.com/ImCoolYeah105/Immersive-Cooking/releases).
 
 ![Image](https://i.imgur.com/klgkUzM.png)
