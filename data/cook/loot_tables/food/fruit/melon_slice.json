@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:tropical_fish",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"item.cook.melon_slice","italic":false}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData:6429506, cook:{type:2b,food:1, mashing:3b,mixing:1b,washing:1b, boiling:1b,frying:1b, color:{red:175,green:20,blue:10},base_name:'{\"translate\":\"item.cook.melon_slice\",\"italic\":false}'}, cooked:{ tag:{cook:{food:2}} } }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

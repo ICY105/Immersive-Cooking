@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:potion",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"item.cook.lava","italic":false}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{HideFlags:32,CustomPotionColor:14114835, cook:{type:7b,food:2,quality:-1,lava:1b, mixing:1b, color:{red:215,green:96,blue:19},base_name:'{\"translate\":\"item.cook.milk\",\"italic\":false}'}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

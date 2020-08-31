@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:tropical_fish",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"item.cook.honeycomb","italic":false}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData:6429566, cook:{type:6b,food:1,quality:1, mixing:1b, baking:1b,frying:1b, color:{red:234,green:142,blue:22},base_name:'{\"translate\":\"item.cook.honeycomb\",\"italic\":false}'} }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:tropical_fish",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"item.cook.tropical_fish","italic":false}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData:6429552, cook:{type:4b,raw:1b,food:1, mashing:2b,mixing:1b,cutting:1b, roasting:1b,smoking:1b,boiling:1b,frying:1b, color:{red:244,green:111,blue:32},base_name:'{\"translate\":\"item.cook.tropical_fish\",\"italic\":false}'},   cooked:{tag:{cook:{raw:0b,food:2}}}   }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

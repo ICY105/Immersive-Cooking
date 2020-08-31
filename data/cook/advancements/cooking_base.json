@@ -1,0 +1,16 @@
+{
+	"display": {
+		"title": "Cooking",
+		"description": "Running Cooking by ImCoolYeah105",
+		"icon": {"item": "minecraft:campfire"},
+		"hidden":false,
+		"show_toast": false,
+		"announce_to_chat": false
+    },
+	"criteria": {
+		"always":{
+			"trigger":"minecraft:tick"
+		}
+	},
+	"parent":"du:base"
+}

@@ -1,0 +1,23 @@
+{
+	"display": {
+		"title": "interact_smoking_rack","description": "","icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false
+    },
+	"criteria": {
+		"example": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:item_frame",
+					"nbt": "{Tags:[\"cook_smoking_rack\"]}"
+				}
+			}
+		}
+	},
+	"rewards":{ 
+		"function":"cook:player/interact/smoking_rack"
+	},
+	"parent":"cook:cooking_base"
+}

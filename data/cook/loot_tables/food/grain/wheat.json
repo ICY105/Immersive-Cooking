@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:tropical_fish",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"item.cook.wheat","italic":false}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData:6429560, cook:{type:3b,raw:1b,food:1, mashing:4b,mixing:1b, color:{red:220,green:187,blue:101},base_name:'{\"translate\":\"item.cook.wheat\",\"italic\":false}'},   cooked:{ tag:{cook:{food:1}} }   }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

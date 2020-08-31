@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:potion",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"item.cook.honey","italic":false}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{HideFlags:32,CustomPotionColor:16748822, cook:{type:7b,food:2,quality:2,honey:1b, mixing:1b, color:{red:255,green:145,blue:22},base_name:'{\"translate\":\"item.cook.honey\",\"italic\":false}'}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

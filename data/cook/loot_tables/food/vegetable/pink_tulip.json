@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:tropical_fish",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"item.cook.pink_tulip","italic":false}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData:6429533, cook:{type:1b,food:1,quality:1, mixing:1b,washing:1b, boiling:1b,frying:1b, color:{red:235,green:197,blue:253},base_name:'{\"translate\":\"item.cook.pink_tulip\",\"italic\":false}'}, cooked:{ tag:{cook:{food:2}} } }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

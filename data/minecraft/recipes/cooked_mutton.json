@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "group": "removed",
+  "ingredient": {
+    "item": "minecraft:barrier"
+  },
+  "result": "minecraft:barrier",
+  "experience": 0.35,
+  "cookingtime": 200
+}

@@ -1,0 +1,6 @@
+{
+	"required":false,
+	"values":[
+		"cook:block/break/check_item"
+	]
+}

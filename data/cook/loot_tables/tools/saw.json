@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"item.cook.saw","italic":false}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{du_click_detect:1b,Unbreakable:1b,HideFlags:4,CustomModelData:6429404,saw:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

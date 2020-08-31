@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:firework_star",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": [ {"translate":"item.cook.baked","italic":false,"with":[{"translate":"item.minecraft.bread"}]} ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData:6429412,HideFlags:63, Explosion: {Colors: [I; 12355879]}, cook:{type:3b,food:4,quality:-1, frying:1b,boiling:1b, color:{red: 220, green: 187, blue: 101}} }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

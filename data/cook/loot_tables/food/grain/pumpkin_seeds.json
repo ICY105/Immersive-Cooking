@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:tropical_fish",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"item.cook.pumpkin_seeds","italic":false}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData:6429564, cook:{type:3b,raw:1b,food:0, mashing:1b,mixing:1b, roasting:1b,boiling:1b,frying:1b, color:{red:203,green:198,blue:141},base_name:'{\"translate\":\"item.cook.pumpkin_seeds\",\"italic\":false}'}, cooked:{ tag:{cook:{food:1,raw:0b}} } }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

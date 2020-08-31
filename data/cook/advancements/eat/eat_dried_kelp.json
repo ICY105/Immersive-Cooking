@@ -1,0 +1,24 @@
+{
+	"display": {
+		"title": "eat_dried_kelp",
+		"description": "",
+		"icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false
+    },
+	"criteria": {
+		"example": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:dried_kelp"
+				}
+			}
+		}
+	},
+	"rewards":{ 
+		"function":"cook:player/eat/dried_kelp"
+	},
+	"parent":"cook:cooking_base"
+}

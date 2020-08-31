@@ -1,0 +1,23 @@
+{
+	"display": {
+		"title": "interact_shelf","description": "","icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false
+    },
+	"criteria": {
+		"example": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:item_frame",
+					"nbt": "{Tags:[\"cook_shelf\"]}"
+				}
+			}
+		}
+	},
+	"rewards":{ 
+		"function":"cook:trigger/shelf"
+	},
+	"parent":"cook:cooking_base"
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "group": "removed",
+  "ingredient": {
+    "item": "minecraft:barrier"
+  },
+  "result": "minecraft:barrier",
+  "experience": 0.35,
+  "cookingtime": 100
+}

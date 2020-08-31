@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:firework_star",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": [ {"translate":"item.minecraft.beetroot_soup","italic":false} ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData:6429408,du_click_detect:1b,HideFlags:63,bowl:2b, Explosion: {Colors: [I; 32767]}, cook:{type:7b,food:8,color:{red: 0, green: 127, blue: 255}}, items: [ {id:\"minecraft:beetroot\",Count:1b},{id:\"minecraft:beetroot\",Count:1b},{id:\"minecraft:beetroot\",Count:1b},{id:\"minecraft:beetroot\",Count:1b},{id:\"minecraft:beetroot\",Count:1b},{id:\"minecraft:beetroot\",Count:1b} ] }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

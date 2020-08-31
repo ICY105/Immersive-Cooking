@@ -1,0 +1,37 @@
+
+Food Types:
+1 - Vegetables
+2 - Fruit
+3 - Grain
+4 - Protein
+5 - Dairy
+6 - Seasoning
+7 - Liquid
+8 - Mixed
+
+Mashing:
+1 - Mashed
+2 - Ground
+3 - Juice
+4 - Flour
+
+Manual:
+Ingredients
+Campfire
+Crafter
+Plates
+Saw
+Counter
+Cabinet
+Sink
+Cutting Board
+Mortar
+Mixing Bowl
+Tray
+Oven
+Frying Pan
+Cooking Pot
+Smoking Rack
+
+
+

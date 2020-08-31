@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:tropical_fish",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"item.cook.kelp","italic":false}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData:6429521, cook:{type:1b,food:1, mixing:1b,cutting:1b,washing:1b, roasting:1b,boiling:1b,baking:1b,frying:1b, color:{red:89,green:171,blue:48},base_name:'{\"translate\":\"item.cook.kelp\",\"italic\":false}'}, cooked:{ id:\"minecraft:dried_kelp\",tag:{CustomModelData:6429522, cook:{type:1b,food:2, mixing:1b,cutting:1b, boiling:1b,frying:1b,baking:0b,roasting:0b, color:{red:60,green:51,blue:36}} }} }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

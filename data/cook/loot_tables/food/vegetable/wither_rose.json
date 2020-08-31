@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:tropical_fish",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"item.cook.wither_rose","italic":false}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData:6429537, cook:{type:1b,food:-2,quality:-5, mixing:1b,washing:1b, boiling:1b,frying:1b, color:{red:42,green:31,blue:25},base_name:'{\"translate\":\"item.cook.wither_rose\",\"italic\":false}'}, cooked:{ tag:{cook:{food:-4}} } }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
