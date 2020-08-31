@@ -4,6 +4,7 @@
 
 scoreboard players add $in_1 cook_data 10
 scoreboard players operation $in_0 cook_data *= $in_1 cook_data
+scoreboard players add $in_0 cook_data 5
 scoreboard players operation $in_0 cook_data /= $cons.10 du_data
 
 execute if score $in_0 cook_data matches 40.. run scoreboard players operation @s cook_food += $in_0 cook_data

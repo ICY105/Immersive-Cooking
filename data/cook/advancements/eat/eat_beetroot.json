@@ -1,0 +1,24 @@
+{
+	"display": {
+		"title": "interact",
+		"description": "",
+		"icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false
+    },
+	"criteria": {
+		"example": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"item": "minecraft:beetroot"
+				}
+			}
+		}
+	},
+	"rewards":{ 
+		"function":"cook:player/eat/beetroot"
+	},
+	"parent":"cook:cooking_base"
+}
