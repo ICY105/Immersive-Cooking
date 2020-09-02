@@ -12,9 +12,15 @@ execute if score $in_0 cook_data matches 40.. run scoreboard players remove @s c
 execute if score $in_0 cook_data matches 40.. run scoreboard players set $in_0 cook_data 40
 
 #food quality
-execute if score $in_1 cook_data matches 15.. run effect give @s minecraft:regeneration 10 1
-execute if score $in_1 cook_data matches 5..7 run effect give @s minecraft:poison 10 1
-execute if score $in_1 cook_data matches ..4 run effect give @s minecraft:wither 10 1
+execute if score $in_0 cook_data matches 3.. run effect give @s minecraft:regeneration 4 0 true
+execute if score $in_0 cook_data matches 5.. run effect give @s minecraft:regeneration 7 0 true
+execute if score $in_0 cook_data matches 8.. run effect give @s minecraft:regeneration 9 0 true
+execute if score $in_0 cook_data matches 12.. run effect give @s minecraft:regeneration 12 0 true
+execute if score $in_0 cook_data matches 17.. run effect give @s minecraft:regeneration 14 0 true
+execute if score $in_0 cook_data matches 23.. run effect give @s minecraft:regeneration 17 0 true
+
+execute if score $in_1 cook_data matches 6..8 run effect give @s minecraft:poison 10 1
+execute if score $in_1 cook_data matches ..5 run effect give @s minecraft:wither 10 1
 
 #current hunger
 execute store result score $temp_1 cook_data run data get entity @p foodLevel

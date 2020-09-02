@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "group": "boat",
   "pattern": [
-	"QQQ",
+	"SSS",
     "TCT",
     "TTT"
   ],
   "key": {
-    "Q": {
-      "item": "minecraft:quartz_slab"
+    "S": {
+      "item": "minecraft:smooth_stone_slab"
     },
 	"C": {
       "item": "minecraft:crafting_table"
