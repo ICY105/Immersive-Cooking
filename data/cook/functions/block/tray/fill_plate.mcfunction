@@ -67,5 +67,6 @@ scoreboard players add $incr_id cook_data 1
 #cleanup
 data remove block -29999999 0 1601 Items
 data modify block -29999999 0 1601 Items append from storage cook:temp obj
+execute as @p[tag=cook_interact] at @s run function cook:utils/take_one_selected_item
 loot give @p[tag=cook_interact] mine -29999999 0 1601 minecraft:air{drop_contents:true}
 

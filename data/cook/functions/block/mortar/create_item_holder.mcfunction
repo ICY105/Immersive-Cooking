@@ -19,3 +19,5 @@ execute if score $temp_0 cook_data matches 0 run summon armor_stand ~ ~-0.75 ~-0
 execute if score $temp_0 cook_data matches 0 run data modify entity @e[tag=cook_new,limit=1] HandItems[0] set from block -29999999 0 1601 Items[0]
 execute if score $temp_0 cook_data matches 0 run tag @e[tag=cook_new] remove cook_new
 execute if score $temp_0 cook_data matches 0 as @p[tag=cook_interact] run function cook:utils/take_one_selected_item
+
+scoreboard players set $in_0 cook_data 1

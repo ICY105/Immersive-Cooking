@@ -14,7 +14,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429519, cook:{type:1b,food:2,quality:-1, mashing:1b,mixing:1b,cutting:1b, roasting:1b,boiling:1b,frying:1b, color:{red:22,green:126,blue:136},base_name:'{\"translate\":\"item.cook.warped_fungus\",\"italic\":false}'}, cooked:{ tag:{cook:{food:3}} } }"
+              "tag":"{CustomModelData:6429519, cook:{type:1b,food:2,quality:-1, mashing:1b,mixing:1b,cutting:1b, roasting:1b,boiling:1b,frying:1b, color:{red:22,green:126,blue:136},base_name:'{\"translate\":\"item.cook.warped_fungus\",\"italic\":false}'}, cooked:{ tag:{cook:{food:6}} } }"
             }
           ]
         }

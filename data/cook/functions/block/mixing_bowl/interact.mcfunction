@@ -3,8 +3,9 @@
 data merge entity @s {ItemRotation:4b}
 
 #add/remove food
-execute if entity @p[tag=cook_interact,predicate=du:entity/is_sneaking,predicate=!cook:holding_ingrediant,distance=..8] run function cook:block/mixing_bowl/interact_destroy_holder
-execute if entity @s[tag=!cook_done] if entity @p[tag=cook_interact,predicate=cook:holding_ingrediant] run function cook:block/mixing_bowl/interact_create_holder
+scoreboard players set $in_0 cook_data 0
+execute if score $in_0 cook_data matches 0 if entity @p[tag=cook_interact,predicate=du:entity/is_sneaking,predicate=!cook:holding_ingrediant,distance=..8] run function cook:block/mixing_bowl/interact_destroy_holder
+execute if score $in_0 cook_data matches 0 if entity @s[tag=!cook_done] if entity @p[tag=cook_interact,predicate=cook:holding_ingrediant] run function cook:block/mixing_bowl/interact_create_holder
 
 #recipes
 execute if entity @s[tag=!cook_has_item] run scoreboard players set @s cook_data 0

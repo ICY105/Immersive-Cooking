@@ -20,8 +20,8 @@ execute if score $temp_0 cook_data matches 0 store result block -29999999 0 1601
 
 #rename item and return
 tag @s add cook_temp
-execute if score $temp_0 cook_data matches 0 run data modify entity @s CustomName set from block -29999999 0 1601 Items[0].tag.cook.base_name
-execute if score $temp_0 cook_data matches 0 run data modify block -29999999 0 1602 Text1 set value '{"translate":"item.cook.washed","italic":false,"with":[{"selector":"@e[tag=cook_sink,tag=cook_temp]"}]}'
+execute if score $temp_0 cook_data matches 0 run data modify storage cook:temp var set from block -29999999 0 1601 Items[0].tag.cook.base_name
+execute if score $temp_0 cook_data matches 0 run data modify block -29999999 0 1602 Text1 set value '{"translate":"item.cook.washed","italic":false,"with":[{"nbt":"var","storage":"cook:temp","interpret":true}]}'
 execute if score $temp_0 cook_data matches 0 run data modify block -29999999 0 1601 Items[0].tag.display.Name set from block -29999999 0 1602 Text1
 execute if score $temp_0 cook_data matches 0 as @p[tag=cook_interact,distance=..8] run loot give @s mine -29999999 0 1601 air{drop_contents:true}
 execute if score $temp_0 cook_data matches 0 as @p[tag=cook_interact,distance=..8] run function cook:utils/take_one_selected_item

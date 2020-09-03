@@ -27,4 +27,4 @@ execute if score $temp_0 cook_data matches 0..7 run data modify entity @e[tag=co
 execute if score $temp_0 cook_data matches 0..7 run tag @e[tag=cook_new] remove cook_new
 execute if score $temp_0 cook_data matches 0..7 as @p[tag=cook_interact] run function cook:utils/take_one_selected_item
 
-
+scoreboard players set $in_0 cook_data 1

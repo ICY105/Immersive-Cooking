@@ -25,3 +25,5 @@ execute if score $temp_0 cook_data matches 0..7 run tag @s add cook_has_item
 execute if score $temp_0 cook_data matches 0..7 run data modify entity @e[tag=cook_new,limit=1] ArmorItems[3] set from block -29999999 0 1601 Items[0]
 execute if score $temp_0 cook_data matches 0..7 run tag @e[tag=cook_new] remove cook_new
 execute if score $temp_0 cook_data matches 0..7 as @p[tag=cook_interact] run function cook:utils/take_one_selected_item
+
+scoreboard players set $in_0 cook_data 1

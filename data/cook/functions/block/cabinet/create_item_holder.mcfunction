@@ -20,3 +20,5 @@ execute if score $temp_0 cook_data matches 0 as @p[tag=cook_interact] run replac
 
 #tag
 tag @s add cook_has_item
+
+scoreboard players set $in_0 cook_data 1

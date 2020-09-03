@@ -5,7 +5,7 @@ execute positioned ~0.5 ~0.5 ~0.5 if entity @e[distance=..0.75] run scoreboard p
 execute positioned ~0.5 ~0.5 ~0.5 unless block ~ ~ ~ #du:air run scoreboard players set $temp_0 cook_data 0
 
 #summon models
-execute if score $temp_0 cook_data matches 1 run summon item_frame ~ ~ ~ {Tags:["cook_bowl","cook_new"],Invulnerable:1b,Invisible:1b,Facing:1b,Item:{id:"minecraft:tropical_fish",Count:1b,tag:{Facing:-1b,cook_id:9100,CustomModelData:6429100}}} 
+execute if score $temp_0 cook_data matches 1 run summon item_frame ~ ~ ~ {Tags:["cook_bowl","cook_new","cook_interactable"],Invulnerable:1b,Invisible:1b,Facing:1b,Item:{id:"minecraft:tropical_fish",Count:1b,tag:{Facing:-1b,cook_id:9100,CustomModelData:6429100}}} 
 execute if score $temp_0 cook_data matches 1 run data modify entity @e[tag=cook_new,limit=1] Item.tag.item set from entity @s SelectedItem
 execute if score $temp_0 cook_data matches 1 run tag @e[tag=cook_new] remove cook_new
 

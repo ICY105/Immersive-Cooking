@@ -14,7 +14,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429561, cook:{type:6b,raw:1b,food:1,quality:1, mashing:2b,mixing:1b, roasting:1b,boiling:1b,frying:1b, color:{red:112,green:68,blue:37},base_name:'{\"translate\":\"item.cook.cocoa_beans\",\"italic\":false}'}}"
+              "tag":"{CustomModelData:6429561, cook:{type:6b,raw:1b,food:3,quality:1, mashing:2b,mixing:1b, roasting:1b,boiling:1b,frying:1b, color:{red:112,green:68,blue:37},base_name:'{\"translate\":\"item.cook.cocoa_beans\",\"italic\":false}'}}"
             }
           ]
         }

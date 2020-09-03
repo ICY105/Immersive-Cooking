@@ -14,3 +14,5 @@ execute if score $temp_0 cook_data matches 0 if entity @s[tag=cook_has_liquid] r
 
 #tag
 execute if score $temp_0 cook_data matches 1 run tag @s remove cook_has_item
+
+scoreboard players set $in_0 cook_data 1

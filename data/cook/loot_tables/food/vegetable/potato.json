@@ -14,7 +14,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429511, cook:{type:1b,food:2, mashing:1b,mixing:1b,cutting:1b,washing:1b, roasting:1b,boiling:1b,baking:1b,frying:1b, color:{red:220,green:170,blue:80},base_name:'{\"translate\":\"item.cook.potato\",\"italic\":false}'}, cooked:{ tag:{CustomModelData:6429512,cook:{food:4}} } }"
+              "tag":"{CustomModelData:6429511, cook:{type:1b,food:2, mashing:1b,mixing:1b,cutting:1b,washing:1b, roasting:1b,boiling:1b,baking:1b,frying:1b, color:{red:220,green:170,blue:80},base_name:'{\"translate\":\"item.cook.potato\",\"italic\":false}'}, cooked:{ tag:{CustomModelData:6429512,cook:{food:6}} } }"
             }
           ]
         }

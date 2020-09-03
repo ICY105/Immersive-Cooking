@@ -16,8 +16,9 @@ execute if score $temp_0 cook_data matches 1 if entity @s[tag=!cook_open] run da
 execute if score $temp_0 cook_data matches 1 if entity @s[tag=cook_open] run data modify entity @s Item.tag.CustomModelData set value 6429086
 
 #item add/remove
-execute if entity @s[tag=cook_open,tag=!cook_has_item] if entity @p[tag=cook_interact,predicate=du:entity/is_sneaking,predicate=cook:holding_ingrediant,distance=..8] at @s run function cook:block/oven/interact_create_holder
-execute if entity @s[tag=cook_open,tag=cook_has_item] if entity @p[tag=cook_interact,predicate=du:entity/is_sneaking,predicate=!cook:holding_ingrediant,distance=..8] at @s run function cook:block/oven/interact_destroy_holder
+scoreboard players set $in_0 cook_data 0
+execute if score $in_0 cook_data matches 0 if entity @s[tag=cook_open,tag=!cook_has_item] if entity @p[tag=cook_interact,predicate=du:entity/is_sneaking,predicate=cook:holding_ingrediant,distance=..8] at @s run function cook:block/oven/interact_create_holder
+execute if score $in_0 cook_data matches 0 if entity @s[tag=cook_open,tag=cook_has_item] if entity @p[tag=cook_interact,predicate=du:entity/is_sneaking,predicate=!cook:holding_ingrediant,distance=..8] at @s run function cook:block/oven/interact_destroy_holder
 
 #interaction
 execute if entity @s[tag=!cook_has_item] run scoreboard players set @s cook_data 0

@@ -27,7 +27,7 @@ execute if data entity @s ArmorItems[3].tag.cook.color if data entity @s HandIte
 tag @s add cook_temp
 data remove entity @s ArmorItems[3].tag.cook.baking
 data remove entity @s ArmorItems[3].tag.cook.smoking
-data modify entity @s CustomName set from entity @s ArmorItems[3].tag.cook.base_name
-data modify block -29999999 0 1602 Text1 set value '[{"translate":"item.cook.smoked","italic":false,"with":[{"selector":"@e[tag=cook_smoking_item,tag=cook_temp]"}]}]'
+data modify storage cook:temp var set from entity @s ArmorItems[3].tag.cook.base_name
+data modify block -29999999 0 1602 Text1 set value '[{"translate":"item.cook.smoked","italic":false,"with":[{"nbt":"var","storage":"cook:temp","interpret":true}]}]'
 data modify entity @s ArmorItems[3].tag.display.Name set from block -29999999 0 1602 Text1
 tag @s remove cook_temp

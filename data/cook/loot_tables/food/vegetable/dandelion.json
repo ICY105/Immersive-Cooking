@@ -14,7 +14,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429525, cook:{type:1b,food:1,quality:1, mixing:1b,washing:1b, boiling:1b,frying:1b, color:{red:255,green:236,blue:79},base_name:'{\"translate\":\"item.cook.dandelion\",\"italic\":false}'}, cooked:{ tag:{cook:{food:2}} } }"
+              "tag":"{CustomModelData:6429525, cook:{type:1b,food:1,quality:1, mixing:1b,washing:1b, boiling:1b,frying:1b, color:{red:255,green:236,blue:79},base_name:'{\"translate\":\"item.cook.dandelion\",\"italic\":false}'}, cooked:{ tag:{cook:{food:3}} } }"
             }
           ]
         }
