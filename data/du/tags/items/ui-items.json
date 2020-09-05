@@ -1,0 +1,15 @@
+{
+	"required":false,
+	"values":[
+		"minecraft:cobblestone",
+		"minecraft:gray_stained_glass_pane",
+		"minecraft:command_block",
+		"minecraft:chain_command_block",
+		"minecraft:repeating_command_block",
+		"minecraft:barrier",
+		"minecraft:jigsaw",
+		"minecraft:structure_block",
+		"minecraft:structure_void",
+		"minecraft:carrot_on_a_stick"
+	]
+}
