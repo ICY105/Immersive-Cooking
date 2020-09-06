@@ -14,11 +14,11 @@
 			},
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [[{"text":"8","italic":false,"color":"gray"},{"text":"\uc009","italic":false,"font":"cook:default","color":"white"},{"text":"+10%","italic":false,"color":"gray"},{"text":"\uc00a","italic":false,"font":"cook:default","color":"white"}]]
+			  "lore": [[{"text":"4","italic":false,"color":"gray"},{"text":"\uc009","italic":false,"font":"cook:default","color":"white"},{"text":"+10%","italic":false,"color":"gray"},{"text":"\uc00a","italic":false,"font":"cook:default","color":"white"}]]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429503, cook:{type:2b,food:8,quality:1, mashing:3b,mixing:1b,cutting:1b,washing:1b, roasting:1b,boiling:1b,frying:1b, color:{red:235,green:200,blue:70},base_name:'{\"translate\":\"item.cook.golden_apple\",\"italic\":false, \"color\":\"aqua\"}'}, cooked:{ tag:{cook:{food:12}} } }"
+              "tag":"{CustomModelData:6429503, cook:{type:2b,food:4,quality:1, mashing:3b,mixing:1b,cutting:1b,washing:1b, roasting:1b,boiling:1b,frying:1b, color:{red:235,green:200,blue:70},base_name:'{\"translate\":\"item.cook.golden_apple\",\"italic\":false, \"color\":\"aqua\"}'}, cooked:{ tag:{cook:{food:8}} } }"
             }
           ]
         }
