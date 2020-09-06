@@ -1,5 +1,5 @@
 
-execute if entity @s[tag=cook_has_item] if score @s cook_data matches ..120 run scoreboard players add @s cook_data 1
+execute if entity @s[tag=cook_has_item] if score @s cook_data matches ..160 run scoreboard players add @s cook_data 1
 scoreboard players operation $in_0 cook_data = @s cook_data
 
 #change item
@@ -16,6 +16,6 @@ execute if score @s cook_data matches 25 run data modify entity @s Item.tag.disp
 execute if score @s cook_data matches 30 run data modify entity @s Item.tag.display.Name set value '[{"text":"\\uc006","color":"white","font":"cook:default"}]'
 execute if score @s cook_data matches 35 run data modify entity @s Item.tag.display.Name set value '[{"text":"\\uc007","color":"white","font":"cook:default"}]'
 execute if score @s cook_data matches 40 run data modify entity @s Item.tag.display.Name set value '[{"text":"\\uc008","color":"white","font":"cook:default"}]'
-execute if score @s cook_data matches 60 run data modify entity @s Item.tag.display.Name set value '[{"text":"\\uc008","color":"gray","font":"cook:default"}]'
-execute if score @s cook_data matches 65 run data modify entity @s Item.tag.display.Name set value '[{"text":"\\uc008","color":"dark_gray","font":"cook:default"}]'
-execute if score @s cook_data matches 70 run data modify entity @s Item.tag.display.Name set value '[{"text":"\\uc008","color":"black","font":"cook:default"}]'
+execute if score @s cook_data matches 80 run data modify entity @s Item.tag.display.Name set value '[{"text":"\\uc008","color":"gray","font":"cook:default"}]'
+execute if score @s cook_data matches 120 run data modify entity @s Item.tag.display.Name set value '[{"text":"\\uc008","color":"dark_gray","font":"cook:default"}]'
+execute if score @s cook_data matches 160 run data modify entity @s Item.tag.display.Name set value '[{"text":"\\uc008","color":"black","font":"cook:default"}]'
