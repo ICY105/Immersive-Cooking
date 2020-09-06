@@ -13,6 +13,10 @@
 			  "name": {"translate":"item.cook.beetroot","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [[{"text":"2","italic":false,"color":"gray"},{"text":"\uc009","italic":false,"font":"cook:default","color":"white"}]]
+			},
+			{
               "function": "minecraft:set_nbt",
               "tag":"{CustomModelData:6429520, cook:{type:1b,food:2, mashing:1b,mixing:1b,cutting:1b,washing:1b, roasting:1b,boiling:1b,frying:1b, color:{red:182,green:72,blue:76},base_name:'{\"translate\":\"item.cook.beetroot\",\"italic\":false}'}, cooked:{ tag:{cook:{food:4}} } }"
             }

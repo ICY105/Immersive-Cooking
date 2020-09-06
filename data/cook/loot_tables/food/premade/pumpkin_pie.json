@@ -13,8 +13,12 @@
 			  "name": [{"translate":"item.cook.baked","italic":false,"with":[ {"translate":"item.cook.pie","with":[{"translate":"item.cook.pumpkin"}]} ]} ]
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [[{"text":"5","italic":false,"color":"gray"},{"text":"\uc009","italic":false,"font":"cook:default","color":"white"}]]
+			},
+			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429411,du_click_detect:1b,HideFlags:63, Explosion: {Colors: [I; 14912029]}, cook:{type:7b,food:5,quality:-1,color:{red:186,green:79,blue:35}} }"
+              "tag":"{CustomModelData:6429411,du_click_detect:1b,HideFlags:63, Explosion: {Colors: [I; 14912029]}, cook:{type:7b,food:5,color:{red:186,green:79,blue:35}} }"
             }
           ]
         }

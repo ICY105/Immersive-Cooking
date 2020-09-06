@@ -7,5 +7,3 @@ loot spawn ~ ~ ~ mine -29999999 0 1601 minecraft:air{drop_contents:true}
 
 execute positioned ~ ~-0.56 ~ run kill @e[tag=cook_tray_item,distance=..0.5]
 kill @s
-
-say here

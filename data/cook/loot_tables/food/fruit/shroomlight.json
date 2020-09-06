@@ -13,6 +13,10 @@
 			  "name": {"translate":"item.cook.shroomlight","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [[{"text":"2","italic":false,"color":"gray"},{"text":"\uc009","italic":false,"font":"cook:default","color":"white"}]]
+			},
+			{
               "function": "minecraft:set_nbt",
               "tag":"{CustomModelData:6429509, cook:{type:2b,food:2, mashing:3b, boiling:1b,frying:1b, color:{red:230,green:115,blue:5},base_name:'{\"translate\":\"item.cook.shroomlight\",\"italic\":false}'}, cooked:{ tag:{cook:{food:6}} } }"
             }

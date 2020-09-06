@@ -13,6 +13,10 @@
 			  "name": {"translate":"item.cook.salmon","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [[{"text":"2","italic":false,"color":"gray"},{"text":"\uc009","italic":false,"font":"cook:default","color":"white"}]]
+			},
+			{
               "function": "minecraft:set_nbt",
               "tag":"{CustomModelData:6429550, cook:{type:4b,raw:1b,food:2, mashing:2b,mixing:1b,cutting:1b, roasting:1b,smoking:1b,baking:1b,boiling:1b,frying:1b, color:{red:171,green:53,blue:51},base_name:'{\"translate\":\"item.cook.salmon\",\"italic\":false}'},   cooked:{tag:{CustomModelData:6429551,cook:{raw:0b,food:8,color:{red:186,green:79,blue:35}}}}   }"
             }

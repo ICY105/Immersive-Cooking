@@ -13,6 +13,10 @@
 			  "name": {"translate":"item.cook.milk","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [[{"text":"1","italic":false,"color":"gray"},{"text":"\uc009","italic":false,"font":"cook:default","color":"white"},{"text":"+10%","italic":false,"color":"gray"},{"text":"\uc00a","italic":false,"font":"cook:default","color":"white"}]]
+			},
+			{
               "function": "minecraft:set_nbt",
               "tag":"{HideFlags:32,CustomPotionColor:16777215, cook:{type:7b,food:1,quality:1,milk:1b, mixing:1b, color:{red:255,green:255,blue:255},base_name:'{\"translate\":\"item.cook.milk\",\"italic\":false}'}}"
             }

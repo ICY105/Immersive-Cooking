@@ -49,6 +49,10 @@ scoreboard players remove $temp_8 cook_data 1
 execute store result storage cook:temp obj.tag.cook.food int 1 run scoreboard players get $temp_7 cook_data
 execute store result storage cook:temp obj.tag.cook.quality int 1 run scoreboard players get $temp_8 cook_data
 
+execute if score $temp_8 cook_data matches 0 run data modify block -29999999 0 1602 Text2 set value '[{"score":{"name":"$temp_7","objective":"cook_data"},"italic":false,"color":"gray"},{"text":"\\uc009","italic":false,"font":"cook:default","color":"white"}]'
+execute unless score $temp_8 cook_data matches 0 run data modify block -29999999 0 1602 Text2 set value '[{"score":{"name":"$temp_7","objective":"cook_data"},"italic":false,"color":"gray"},{"text":"\\uc009","italic":false,"font":"cook:default","color":"white"},{"score":{"name":"$temp_8","objective":"cook_data"},"italic":false,"color":"gray"},{"text":"0%"},{"text":"\\uc00a","italic":false,"font":"cook:default","color":"white"}]'
+data modify storage cook:temp obj.tag.display.Lore prepend from block -29999999 0 1602 Text2
+
 #get type counts
 execute store result score $temp_0 cook_data run data get storage cook:temp list
 function cook:block/tray/complete_recipe_dynamic

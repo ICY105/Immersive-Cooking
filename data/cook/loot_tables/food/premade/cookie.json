@@ -13,8 +13,12 @@
 			  "name": [ {"translate":"item.cook.cookie","italic":false,"with":[{"translate":"item.minecraft.wheat"}]} ]
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [[{"text":"2","italic":false,"color":"gray"},{"text":"\uc009","italic":false,"font":"cook:default","color":"white"}]]
+			},
+			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429413,HideFlags:32,du_click_detect:1b, Explosion: {Colors: [I; 15241301]}, cook:{type:1b,food:4,quality:-1, frying:1b,boiling:1b, color:{red: 232, green: 144, blue: 85}} }"
+              "tag":"{CustomModelData:6429413,HideFlags:32,du_click_detect:1b, Explosion: {Colors: [I; 15241301]}, cook:{type:1b,food:5, frying:1b,boiling:1b, color:{red: 232, green: 144, blue: 85}} }"
             }
           ]
         }

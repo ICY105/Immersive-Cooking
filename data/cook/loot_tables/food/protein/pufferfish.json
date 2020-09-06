@@ -13,6 +13,10 @@
 			  "name": {"translate":"item.cook.pufferfish","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [[{"text":"2","italic":false,"color":"gray"},{"text":"\uc009","italic":false,"font":"cook:default","color":"white"},{"text":"-10%","italic":false,"color":"gray"},{"text":"\uc00a","italic":false,"font":"cook:default","color":"white"}]]
+			},
+			{
               "function": "minecraft:set_nbt",
               "tag":"{CustomModelData:6429553, cook:{type:4b,raw:1b,food:2,quality:-1, mashing:2b,mixing:1b,cutting:1b, roasting:1b,smoking:1b,boiling:1b,frying:1b, color:{red:191,green:132,blue:27},base_name:'{\"translate\":\"item.cook.pufferfish\",\"italic\":false}'},   cooked:{tag:{cook:{raw:0b,food:5}}}}"
             }

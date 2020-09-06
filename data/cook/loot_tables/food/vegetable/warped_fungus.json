@@ -13,6 +13,10 @@
 			  "name": {"translate":"item.cook.warped_fungus","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [[{"text":"2","italic":false,"color":"gray"},{"text":"\uc009","italic":false,"font":"cook:default","color":"white"},{"text":"-10%","italic":false,"color":"gray"},{"text":"\uc00a","italic":false,"font":"cook:default","color":"white"}]]
+			},
+			{
               "function": "minecraft:set_nbt",
               "tag":"{CustomModelData:6429519, cook:{type:1b,food:2,quality:-1, mashing:1b,mixing:1b,cutting:1b, roasting:1b,boiling:1b,frying:1b, color:{red:22,green:126,blue:136},base_name:'{\"translate\":\"item.cook.warped_fungus\",\"italic\":false}'}, cooked:{ tag:{cook:{food:6}} } }"
             }

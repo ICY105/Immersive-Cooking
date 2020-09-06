@@ -13,6 +13,10 @@
 			  "name": {"translate":"item.cook.white_tulip","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [[{"text":"1","italic":false,"color":"gray"},{"text":"\uc009","italic":false,"font":"cook:default","color":"white"},{"text":"+10%","italic":false,"color":"gray"},{"text":"\uc00a","italic":false,"font":"cook:default","color":"white"}]]
+			},
+			{
               "function": "minecraft:set_nbt",
               "tag":"{CustomModelData:6429532, cook:{type:1b,food:1,quality:1, mixing:1b,washing:1b, boiling:1b,frying:1b, color:{red:247,green:247,blue:247},base_name:'{\"translate\":\"item.cook.white_tulip\",\"italic\":false}'}, cooked:{ tag:{cook:{food:3}} } }"
             }

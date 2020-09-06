@@ -13,6 +13,10 @@
 			  "name": {"translate":"item.cook.wither_rose","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [[{"text":"-2","italic":false,"color":"gray"},{"text":"\uc009","italic":false,"font":"cook:default","color":"white"},{"text":"-50%","italic":false,"color":"gray"},{"text":"\uc00a","italic":false,"font":"cook:default","color":"white"}]]
+			},
+			{
               "function": "minecraft:set_nbt",
               "tag":"{CustomModelData:6429537, cook:{type:1b,food:-2,quality:-5, mixing:1b,washing:1b, boiling:1b,frying:1b, color:{red:42,green:31,blue:25},base_name:'{\"translate\":\"item.cook.wither_rose\",\"italic\":false}'}, cooked:{ tag:{cook:{food:-4}} } }"
             }

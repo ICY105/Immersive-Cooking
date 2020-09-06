@@ -47,6 +47,8 @@ execute if score $temp_0 cook_data matches 4 run data modify entity @s HandItems
 execute if score $temp_0 cook_data matches 4 run data modify entity @s HandItems[0].tag.cook.flour set value 1b
 execute if score $temp_0 cook_data matches 4 run data modify entity @s HandItems[0].tag.CustomModelData set value 6429406
 
+
+#end
 execute if score $temp_0 cook_data matches 1..4 run data remove entity @s HandItems[0].tag.cooked.id
 execute if score $temp_0 cook_data matches 1..4 run data remove entity @s HandItems[0].tag.cooked.tag.CustomModelData
 execute if score $temp_0 cook_data matches 1..4 run data modify entity @s HandItems[0].tag.cook.cutting set value -1b

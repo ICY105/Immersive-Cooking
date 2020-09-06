@@ -13,8 +13,12 @@
 			  "name": [{"translate":"item.cook.roasted","italic":false,"with":[{"translate":"item.cook.rabbit"}]}]
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [[{"text":"6","italic":false,"color":"gray"},{"text":"\uc009","italic":false,"font":"cook:default","color":"white"}]]
+			},
+			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429547, cook:{type:4b,food:6,quality:-1, mixing:1b,cutting:1b, boiling:1b,frying:1b, color:{red:231,green:191,blue:162},base_name:'{\"translate\":\"item.cook.rabbit\",\"italic\":false}'} }"
+              "tag":"{CustomModelData:6429547, cook:{type:4b,food:6, mixing:1b,cutting:1b, boiling:1b,frying:1b, color:{red:231,green:191,blue:162},base_name:'{\"translate\":\"item.cook.rabbit\",\"italic\":false}'} }"
             }
           ]
         }

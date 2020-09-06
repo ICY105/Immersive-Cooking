@@ -13,8 +13,12 @@
 			  "name": [{"translate":"item.cook.roasted","italic":false,"with":[{"translate":"item.cook.chicken"}]}]
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [[{"text":"5","italic":false,"color":"gray"},{"text":"\uc009","italic":false,"font":"cook:default","color":"white"}]]
+			},
+			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429539, cook:{type:4b,food:5,quality:-1, mixing:1b,cutting:1b, boiling:1b,frying:1b, color:{red:222,green:157,blue:123},base_name:'{\"translate\":\"item.cook.chicken\",\"italic\":false}'} }"
+              "tag":"{CustomModelData:6429539, cook:{type:4b,food:5, mixing:1b,cutting:1b, boiling:1b,frying:1b, color:{red:222,green:157,blue:123},base_name:'{\"translate\":\"item.cook.chicken\",\"italic\":false}'} }"
             }
           ]
         }
