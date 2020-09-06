@@ -21,7 +21,7 @@ execute if score $temp_0 cook_data matches 4 run data modify block -29999999 0 1
 scoreboard players set $out_0 cook_data 1
 
 scoreboard players add $temp_8 cook_data 3
-scoreboard players add $temp_9 cook_data 1
+scoreboard players add $temp_9 cook_data 2
 
 #transform color
 scoreboard players remove $out_4 cook_data 40

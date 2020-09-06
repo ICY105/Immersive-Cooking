@@ -41,6 +41,7 @@ tag @s add cook_temp
 execute if score $temp_0 cook_data matches 1 if data block -29999999 0 1601 Items[0].tag.cook{roasting:1b} run data modify storage cook:temp var set from block -29999999 0 1601 Items[0].tag.cook.base_name
 execute if score $temp_0 cook_data matches 1 if data block -29999999 0 1601 Items[0].tag.cook{roasting:1b} run data modify block -29999999 0 1602 Text1 set value '[{"translate":"item.cook.roasted","italic":"false","with":[{"nbt":"var","storage":"cook:temp","interpret":true}]}]'
 execute if score $temp_0 cook_data matches 1 if data block -29999999 0 1601 Items[0].tag.cook{roasting:1b} run data modify block -29999999 0 1601 Items[0].tag.display.Name set from block -29999999 0 1602 Text1
+execute if score $temp_0 cook_data matches 1 if data block -29999999 0 1601 Items[0].tag.cook{roasting:1b} run data remove block -29999999 0 1601 Items[0].tag.du_smelt_id
 execute if score $temp_0 cook_data matches 1 run loot spawn ~ ~1 ~ mine -29999999 0 1601 air{drop_contents:true}
 tag @s remove cook_temp
 
