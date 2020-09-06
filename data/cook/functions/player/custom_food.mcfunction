@@ -7,10 +7,6 @@ scoreboard players operation $in_0 cook_data *= $in_1 cook_data
 scoreboard players add $in_0 cook_data 5
 scoreboard players operation $in_0 cook_data /= $cons.10 du_data
 
-execute if score $in_0 cook_data matches 40.. run scoreboard players operation @s cook_food += $in_0 cook_data
-execute if score $in_0 cook_data matches 40.. run scoreboard players remove @s cook_food 40
-execute if score $in_0 cook_data matches 40.. run scoreboard players set $in_0 cook_data 40
-
 #food quality
 execute if score $in_0 cook_data matches 3.. run effect give @s minecraft:regeneration 4 0 true
 execute if score $in_0 cook_data matches 5.. run effect give @s minecraft:regeneration 7 0 true
@@ -29,6 +25,12 @@ execute store result score $temp_2 cook_data run data get entity @p foodSaturati
 #find missing hunger
 scoreboard players set $temp_4 cook_data 20
 scoreboard players operation $temp_4 cook_data -= $temp_1 cook_data
+
+scoreboard players set $temp_5 cook_data 40
+scoreboard players operation $temp_5 cook_data -= $temp_1 cook_data
+execute if score $in_0 cook_data > $temp_5 cook_data run scoreboard players operation @s cook_food += $in_0 cook_data
+execute if score $in_0 cook_data > $temp_5 cook_data run scoreboard players operation @s cook_food -= $temp_5 cook_data
+execute if score $in_0 cook_data > $temp_5 cook_data run scoreboard players operation $in_0 cook_data = $temp_5 cook_data
 
 scoreboard players set $out_0 cook_data 0
 scoreboard players set $out_1 cook_data 0
