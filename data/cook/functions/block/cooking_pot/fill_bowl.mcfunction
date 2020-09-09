@@ -66,6 +66,11 @@ execute if score $in_0 cook_data matches 1 run scoreboard players add $temp_8 co
 
 execute if data storage cook:temp list[].tag.cook{cutting:2b} if data storage cook:temp list[].tag.cook{cutting:3b} if data storage cook:temp list[].tag.cook{cutting:4b} run scoreboard players add $temp_8 cook_data 1
 
+#add liquid data
+execute store result score $in_0 cook_data run data get entity @e[tag=cook_pot_liquid,distance=..0.1,limit=1] Item.tag.cook.food
+scoreboard players operation $temp_7 cook_data += $in_0 cook_data
+execute store result score $in_0 cook_data run data get entity @e[tag=cook_pot_liquid,distance=..0.1,limit=1] Item.tag.cook.quality
+scoreboard players operation $temp_8 cook_data += $in_0 cook_data
 
 
 ### Output

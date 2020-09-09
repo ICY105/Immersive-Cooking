@@ -1,4 +1,7 @@
 
+#set food stats
+data modify entity @s Item.tag.cook set from block -29999999 0 1601 Items[0].tag.cook
+
 #get color
 execute store result score $temp_0 cook_data run data get entity @s Item.tag.color.red
 execute store result score $temp_1 cook_data run data get entity @s Item.tag.color.green
