@@ -14,7 +14,7 @@
 			},
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [[{"text":"-2","italic":false,"color":"gray"},{"text":"\uc009","italic":false,"font":"cook:default","color":"white"},{"text":"-50%","italic":false,"color":"gray"},{"text":"\uc00a","italic":false,"font":"cook:default","color":"white"}]]
+			  "lore": [[{"text":"-2","italic":false,"color":"gray"},{"text":"\uc009 ","italic":false,"font":"cook:default","color":"white"},{"text":"-50%","italic":false,"color":"gray"},{"text":"\uc00a","italic":false,"font":"cook:default","color":"white"}]]
 			},
 			{
               "function": "minecraft:set_nbt",
