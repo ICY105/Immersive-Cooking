@@ -15,7 +15,7 @@ execute if score $in_0 cook_data matches 12.. run effect give @s minecraft:regen
 execute if score $in_0 cook_data matches 17.. run effect give @s minecraft:regeneration 14 0 true
 execute if score $in_0 cook_data matches 23.. run effect give @s minecraft:regeneration 17 0 true
 
-execute if score $in_1 cook_data matches 6..8 run effect give @s minecraft:poison 10 1
+execute if score $in_1 cook_data matches 6..7 run effect give @s minecraft:poison 10 0
 execute if score $in_1 cook_data matches ..5 run effect give @s minecraft:wither 10 1
 
 #current hunger
