@@ -41,7 +41,26 @@ scoreboard players operation $out_1 cook_data *= $cons.256 du_data
 scoreboard players operation $temp_0 cook_data += $out_1 cook_data
 execute store result storage cook:temp obj.tag.Explosion.Colors[0] int 1 run scoreboard players get $temp_0 cook_data
 
-#affect quality
+### Modify quality level
+
+#average ingredient quality
+scoreboard players operation $temp_8 cook_data /= $temp_0 cook_data
+
+# add quality based on number of ingredients
+execute if score $temp_0 cook_data matches 3..4 run scoreboard players add $temp_8 cook_data 1
+execute if score $temp_0 cook_data matches 5..6 run scoreboard players add $temp_8 cook_data 2
+execute if score $temp_0 cook_data matches 7..8 run scoreboard players add $temp_8 cook_data 3
+
+# modify quality based on preparation
+scoreboard players set $in_0 cook_data 0
+execute if data storage cook:temp list[].tag.cook{cutting:2b} run scoreboard players set $in_0 cook_data 1
+execute if data storage cook:temp list[].tag.cook{cutting:3b} run scoreboard players set $in_0 cook_data 1
+execute if data storage cook:temp list[].tag.cook{cutting:4b} run scoreboard players set $in_0 cook_data 1
+execute if score $in_0 cook_data matches 1 run scoreboard players add $temp_8 cook_data 1
+
+execute if data storage cook:temp list[].tag.cook{cutting:2b} if data storage cook:temp list[].tag.cook{cutting:3b} if data storage cook:temp list[].tag.cook{cutting:4b} run scoreboard players add $temp_8 cook_data 1
+
+# remove quality if raw
 execute if data storage cook:temp list[].tag.cook{raw:1b} run scoreboard players remove $temp_8 cook_data 2
 
 #store food levels
@@ -50,7 +69,7 @@ execute store result storage cook:temp obj.tag.cook.food int 1 run scoreboard pl
 execute store result storage cook:temp obj.tag.cook.quality int 1 run scoreboard players get $temp_8 cook_data
 
 execute if score $temp_8 cook_data matches 0 run data modify block -29999999 0 1602 Text2 set value '[{"score":{"name":"$temp_7","objective":"cook_data"},"italic":false,"color":"gray"},{"text":"\\uc009","italic":false,"font":"cook:default","color":"white"}]'
-execute unless score $temp_8 cook_data matches 0 run data modify block -29999999 0 1602 Text2 set value '[{"score":{"name":"$temp_7","objective":"cook_data"},"italic":false,"color":"gray"},{"text":"\\uc009","italic":false,"font":"cook:default","color":"white"},{"score":{"name":"$temp_8","objective":"cook_data"},"italic":false,"color":"gray"},{"text":"0%"},{"text":"\\uc00a","italic":false,"font":"cook:default","color":"white"}]'
+execute unless score $temp_8 cook_data matches 0 run data modify block -29999999 0 1602 Text2 set value '[{"score":{"name":"$temp_7","objective":"cook_data"},"italic":false,"color":"gray"},{"text":"\\uc009 ","italic":false,"font":"cook:default","color":"white"},{"score":{"name":"$temp_8","objective":"cook_data"},"italic":false,"color":"gray"},{"text":"0%"},{"text":"\\uc00a","italic":false,"font":"cook:default","color":"white"}]'
 data modify storage cook:temp obj.tag.display.Lore prepend from block -29999999 0 1602 Text2
 
 #get type counts
@@ -69,8 +88,10 @@ execute store result storage cook:temp obj.tag.stack int 1 run scoreboard player
 scoreboard players add $incr_id cook_data 1
 
 #cleanup
-execute as @p[tag=cook_interact] at @s run function cook:utils/take_one_selected_item
+tag @s remove cook_has_item
+
 data remove block -29999999 0 1601 Items
 data modify block -29999999 0 1601 Items append from storage cook:temp obj
 loot give @p[tag=cook_interact] mine -29999999 0 1601 minecraft:air{drop_contents:true}
+execute as @p[tag=cook_interact] at @s run function cook:utils/take_one_selected_item
 

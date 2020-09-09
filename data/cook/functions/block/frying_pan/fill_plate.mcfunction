@@ -14,7 +14,9 @@ scoreboard players set $temp_8 cook_data 0
 data merge storage cook:temp {list:[]}
 execute positioned ~ ~-0.56 ~ as @e[tag=cook_pan_item,distance=..0.25] at @s run function cook:block/frying_pan/fill_plate_2
 
-#get recipe
+
+
+### Set Name
 data modify storage cook:temp var set from entity @s Item.tag.name
 execute store result score $temp_0 cook_data run data get storage cook:temp list
 
@@ -32,7 +34,42 @@ tag @s remove cook_temp
 
 execute if score $temp_0 cook_data matches ..1 run scoreboard players remove $temp_8 cook_data 1
 
-#item
+
+
+### Modify quality level
+
+#average ingredient quality
+scoreboard players operation $temp_8 cook_data /= $temp_0 cook_data
+
+# add quality based on number of ingredients
+execute if score $temp_0 cook_data matches 3..4 run scoreboard players add $temp_8 cook_data 1
+execute if score $temp_0 cook_data matches 5..6 run scoreboard players add $temp_8 cook_data 2
+execute if score $temp_0 cook_data matches 7..8 run scoreboard players add $temp_8 cook_data 3
+
+# modify quality based on cook time
+execute if score @s cook_data matches ..69 run scoreboard players remove $temp_8 cook_data 3
+execute if score @s cook_data matches 70..79 run scoreboard players remove $temp_8 cook_data 1
+execute if score @s cook_data matches 97..99 run scoreboard players add $temp_8 cook_data 1
+execute if score @s cook_data matches 100..109 run scoreboard players remove $temp_8 cook_data 1
+execute if score @s cook_data matches 110..119 run scoreboard players remove $temp_8 cook_data 2
+execute if score @s cook_data matches 120.. run scoreboard players remove $temp_8 cook_data 3
+
+#modify quality based on stirring
+execute if score @s cook_food matches ..-10 run scoreboard players remove $temp_8 cook_data 1
+execute if score @s cook_food matches 2..7 run scoreboard players add $temp_8 cook_data 1
+
+# modify quality based on preparation
+scoreboard players set $in_0 cook_data 0
+execute if data storage cook:temp list[].tag.cook{cutting:2b} run scoreboard players set $in_0 cook_data 1
+execute if data storage cook:temp list[].tag.cook{cutting:3b} run scoreboard players set $in_0 cook_data 1
+execute if data storage cook:temp list[].tag.cook{cutting:4b} run scoreboard players set $in_0 cook_data 1
+execute if score $in_0 cook_data matches 1 run scoreboard players add $temp_8 cook_data 1
+
+execute if data storage cook:temp list[].tag.cook{cutting:2b} if data storage cook:temp list[].tag.cook{cutting:3b} if data storage cook:temp list[].tag.cook{cutting:4b} run scoreboard players add $temp_8 cook_data 1
+
+### Output
+
+# create item
 data remove block -29999999 0 1601 Items
 
 execute if score @s cook_data matches ..69 run data modify block -29999999 0 1601 Items append value {		id:"minecraft:firework_star",Count:1b,tag:{plate:2b,du_click_detect:1b,items:[],CustomModelData:6429410,cook:{type:7b,color:{red:0,green:0,blue:0}},HideFlags:32,Explosion:{Colors:[I;0]},display:{Name:'',Lore:['{"translate":"lore.cook.undercooked","color":"gray","italic":false}','{"text":""}','[{"translate":"lore.cook.ingredients","color":"light_purple","italic":false},{"text":":"}]']} }}
@@ -42,17 +79,6 @@ execute if score @s cook_data matches 82..85 run data modify block -29999999 0 1
 execute if score @s cook_data matches 100..109 run data modify block -29999999 0 1601 Items append value {	id:"minecraft:firework_star",Count:1b,tag:{plate:2b,du_click_detect:1b,items:[],CustomModelData:6429410,cook:{type:7b,color:{red:0,green:0,blue:0}},HideFlags:32,Explosion:{Colors:[I;0]},display:{Name:'',Lore:['{"translate":"lore.cook.slightly_overcooked","color":"gray","italic":false}','{"text":""}','[{"translate":"lore.cook.ingredients","color":"light_purple","italic":false},{"text":":"}]']} }}
 execute if score @s cook_data matches 110..119 run data modify block -29999999 0 1601 Items append value {	id:"minecraft:firework_star",Count:1b,tag:{plate:2b,du_click_detect:1b,items:[],CustomModelData:6429410,cook:{type:7b,color:{red:0,green:0,blue:0}},HideFlags:32,Explosion:{Colors:[I;0]},display:{Name:'',Lore:['{"translate":"lore.cook.overcooked","color":"gray","italic":false}','{"text":""}','[{"translate":"lore.cook.ingredients","color":"light_purple","italic":false},{"text":":"}]']} }}
 execute if score @s cook_data matches 120.. run data modify block -29999999 0 1601 Items append value {		id:"minecraft:firework_star",Count:1b,tag:{plate:2b,du_click_detect:1b,items:[],CustomModelData:6429410,cook:{type:7b,color:{red:0,green:0,blue:0}},HideFlags:32,Explosion:{Colors:[I;0]},display:{Name:'',Lore:['{"translate":"lore.cook.burnt","color":"gray","italic":false}','{"text":""}','[{"translate":"lore.cook.ingredients","color":"light_purple","italic":false},{"text":":"}]']} }}
-
-#modify quality level
-execute if score @s cook_data matches ..69 run scoreboard players remove $temp_8 cook_data 3
-execute if score @s cook_data matches 70..79 run scoreboard players remove $temp_8 cook_data 1
-execute if score @s cook_data matches 82..85 run scoreboard players add $temp_8 cook_data 1
-execute if score @s cook_data matches 100..109 run scoreboard players remove $temp_8 cook_data 1
-execute if score @s cook_data matches 110..119 run scoreboard players remove $temp_8 cook_data 2
-execute if score @s cook_data matches 120.. run scoreboard players remove $temp_8 cook_data 3
-
-execute if score @s cook_food matches ..-10 run scoreboard players remove $temp_8 cook_data 1
-execute if score @s cook_food matches 2..7 run scoreboard players add $temp_8 cook_data 1
 
 #set food type
 execute if score $temp_1 cook_data = $temp_0 cook_data run data modify entity @s Item.tag.cook.type set value 1b
@@ -81,7 +107,7 @@ data modify block -29999999 0 1601 Items[0].tag.items append from storage cook:t
 execute store result block -29999999 0 1601 Items[0].tag.stack int 1 run scoreboard players get $incr_id cook_data
 scoreboard players add $incr_id cook_data 1
 
-#finish
+### Finish
 tag @s remove cook_done
 tag @s remove cook_has_item
 tag @s remove cook_has_liquid
