@@ -38,6 +38,7 @@ execute if score $temp_0 cook_data matches 3 run data modify block -29999999 0 1
 execute if score $temp_0 cook_data matches 3 run data modify entity @s HandItems[0].tag.cook.mashing set value -1b
 execute if score $temp_0 cook_data matches 3 run data modify entity @s HandItems[0].tag.cook.type set value 7b
 execute if score $temp_0 cook_data matches 3 run data remove entity @s HandItems[0].tag.Explosion
+execute if score $temp_0 cook_data matches 3 run data remove entity @s HandItems[0].tag.CustomModelData
 execute if score $temp_0 cook_data matches 3 run data modify entity @s HandItems[0].id set value "minecraft:potion"
 execute if score $temp_0 cook_data matches 3 store result entity @s HandItems[0].tag.CustomPotionColor int 1 run scoreboard players get $temp_2 cook_data
 
