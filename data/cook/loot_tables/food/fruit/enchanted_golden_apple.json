@@ -18,7 +18,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429504, cook:{type:2b,food:8,quality:4, mashing:3b,mixing:1b,cutting:1b,washing:1b, roasting:1b,boiling:1b,frying:1b, color:{red:235,green:200,blue:70},base_name:'{\"translate\":\"item.cook.enchanted_golden_apple\",\"italic\":false, \"color\":\"light_purple\"}'}, cooked:{ tag:{cook:{food:12}} } }"
+              "tag":"{CustomModelData:6429504, cook:{type:2b,food:8,quality:4, mashing:1b,mixing:1b,cutting:1b,washing:1b,juicing:1b, roasting:1b,boiling:1b,frying:1b, color:{red:235,green:200,blue:70},base_name:'{\"translate\":\"item.cook.enchanted_golden_apple\",\"italic\":false, \"color\":\"light_purple\"}'}, cooked:{ tag:{cook:{food:12}} } }"
             }
           ]
         }

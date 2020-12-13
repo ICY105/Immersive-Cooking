@@ -18,7 +18,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429523, cook:{type:1b,food:2, mashing:3b,mixing:1b,washing:1b, roasting:1b,boiling:1b,frying:1b, color:{red:130,green:168,blue:89},base_name:'{\"translate\":\"item.cook.sugar_cane\",\"italic\":false}'} }"
+              "tag":"{CustomModelData:6429523, cook:{type:1b,food:2, mashing:1b,mixing:1b,washing:1b, roasting:1b,boiling:1b,frying:1b,juicing:1b, color:{red:130,green:168,blue:89},base_name:'{\"translate\":\"item.cook.sugar_cane\",\"italic\":false}'} }"
             }
           ]
         }

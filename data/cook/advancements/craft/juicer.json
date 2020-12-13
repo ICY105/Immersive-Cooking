@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"crafter":{
+			"trigger": "minecraft:recipe_unlocked",
+		    "conditions": {
+			  "recipe": "cook:juicer"
+		    }
+		}
+	},
+	"rewards":{ 
+		"function":"cook:player/craft/juicer_trigger"
+	},
+	"parent":"cook:cooking_base"
+}

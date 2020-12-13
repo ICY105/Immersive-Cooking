@@ -18,7 +18,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429514, cook:{type:1b,food:2, mashing:1b,mixing:1b,cutting:1b,washing:1b, roasting:1b,boiling:1b,frying:1b, color:{red:255,green:140,blue:10},base_name:'{\"translate\":\"item.cook.carrot\",\"italic\":false}'}, cooked:{ tag:{cook:{food:5}} } }"
+              "tag":"{CustomModelData:6429514, cook:{type:1b,food:2, mashing:1b,mixing:1b,cutting:1b,washing:1b,juicing:1b, roasting:1b,boiling:1b,frying:1b, color:{red:255,green:140,blue:10},base_name:'{\"translate\":\"item.cook.carrot\",\"italic\":false}'}, cooked:{ tag:{cook:{food:5}} } }"
             }
           ]
         }

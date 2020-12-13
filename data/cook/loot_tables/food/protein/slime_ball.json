@@ -18,7 +18,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429559, cook:{type:4b,raw:1b,food:2, mashing:2b,mixing:1b,cutting:1b, roasting:1b,smoking:1b,boiling:1b,frying:1b, color:{red:118,green:190,blue:109},base_name:'{\"translate\":\"item.cook.slime_ball\",\"italic\":false}'},   cooked:{tag:{cook:{raw:0b,food:5}}}}"
+              "tag":"{CustomModelData:6429559, cook:{type:4b,raw:1b,food:2, mashing:2b,mixing:1b,cutting:1b,juicing:2b, roasting:1b,smoking:1b,boiling:1b,frying:1b, color:{red:118,green:190,blue:109},base_name:'{\"translate\":\"item.cook.slime_ball\",\"italic\":false}'},   cooked:{tag:{cook:{raw:0b,food:5}}}}"
             }
           ]
         }

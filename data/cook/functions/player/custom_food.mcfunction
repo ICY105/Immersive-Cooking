@@ -22,7 +22,6 @@ scoreboard players operation $in_1 cook_data *= $in_0 cook_data
 scoreboard players add $in_1 cook_data 5
 scoreboard players operation $in_1 cook_data /= $cons.10 du_data
 
-tellraw @p {"score":{"name":"$in_1","objective":"cook_data"}}
 execute if score $in_2 cook_data matches 1 run scoreboard players remove $in_0 cook_data 1
 
 #current hunger

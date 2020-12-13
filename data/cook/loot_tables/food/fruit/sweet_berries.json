@@ -18,7 +18,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429501, cook:{type:2b,food:2, mashing:3b,mixing:1b,cutting:1b,washing:1b, roasting:1b,boiling:1b,frying:1b, color:{red:165,green:7,blue:0},base_name:'{\"translate\":\"item.cook.sweet_berries\",\"italic\":false}'}, cooked:{ tag:{cook:{food:3}} } }"
+              "tag":"{CustomModelData:6429501, cook:{type:2b,food:2, mashing:1b,mixing:1b,cutting:1b,washing:1b,juicing:1b, roasting:1b,boiling:1b,frying:1b, color:{red:165,green:7,blue:0},base_name:'{\"translate\":\"item.cook.sweet_berries\",\"italic\":false}'}, cooked:{ tag:{cook:{food:3}} } }"
             }
           ]
         }

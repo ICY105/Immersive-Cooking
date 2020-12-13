@@ -18,7 +18,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429524, cook:{type:1b,food:3, mashing:1b,mixing:1b, boiling:1b,frying:1b, color:{red:227,green:138,blue:29},base_name:'{\"translate\":\"item.cook.pumpkin\",\"italic\":false}'}, cooked:{ tag:{cook:{food:6}} } }"
+              "tag":"{CustomModelData:6429524, cook:{type:1b,food:3, mashing:1b,mixing:1b, boiling:1b,frying:1b,juicing:1b, color:{red:227,green:138,blue:29},base_name:'{\"translate\":\"item.cook.pumpkin\",\"italic\":false}'}, cooked:{ tag:{cook:{food:6}} } }"
             }
           ]
         }
