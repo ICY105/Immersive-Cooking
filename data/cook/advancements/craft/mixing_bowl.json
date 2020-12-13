@@ -1,0 +1,22 @@
+{
+	"display": {
+		"title": "craft_mixing_bowl",
+		"description": "",
+		"icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false
+    },
+	"criteria": {
+		"crafter":{
+			"trigger": "minecraft:recipe_unlocked",
+		    "conditions": {
+			  "recipe": "cook:mixing_bowl"
+		    }
+		}
+	},
+	"rewards":{ 
+		"function":"cook:player/craft/mixing_bowl_trigger"
+	},
+	"parent":"cook:cooking_base"
+}

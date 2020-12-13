@@ -1,0 +1,22 @@
+{
+	"display": {
+		"title": "craft_spoon",
+		"description": "",
+		"icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false
+    },
+	"criteria": {
+		"crafter":{
+			"trigger": "minecraft:recipe_unlocked",
+		    "conditions": {
+			  "recipe": "cook:spoon"
+		    }
+		}
+	},
+	"rewards":{ 
+		"function":"cook:player/craft/spoon_trigger"
+	},
+	"parent":"cook:cooking_base"
+}

@@ -1,0 +1,10 @@
+{
+	"required":false,
+	"values":[
+		"minecraft:milk_bucket",
+		"minecraft:water_bucket",
+		"minecraft:lava_bucket",
+		"minecraft:honey_bottle",
+		"minecraft:potion"
+	]
+}

@@ -1,0 +1,22 @@
+{
+	"display": {
+		"title": "craft_frying_pan",
+		"description": "",
+		"icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false
+    },
+	"criteria": {
+		"crafter":{
+			"trigger": "minecraft:recipe_unlocked",
+		    "conditions": {
+			  "recipe": "cook:frying_pan"
+		    }
+		}
+	},
+	"rewards":{ 
+		"function":"cook:player/craft/frying_pan_trigger"
+	},
+	"parent":"cook:cooking_base"
+}

@@ -1,0 +1,20 @@
+{
+	"required":false,
+	"values":[
+		"minecraft:potato",
+		"minecraft:pufferfish",
+		"minecraft:beef",
+		"minecraft:chicken",
+		"minecraft:porkchop",
+		"minecraft:cod",
+		"minecraft:salmon",
+		"minecraft:rotten_flesh",
+		"minecraft:spider_eye",
+		"minecraft:egg",
+		"minecraft:turtle_egg",
+		"minecraft:kelp",
+		"minecraft:rabbit_foot",
+		"minecraft:poisonous_potato",
+		"minecraft:rabbit"
+	]
+}

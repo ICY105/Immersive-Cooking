@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "cooking",
+  "pattern": [
+	"QQQ",
+    "TCT",
+    "TTT"
+  ],
+  "key": {
+    "Q": {
+      "tag": "cook:craft_quartz_slab"
+    },
+	"T": {
+      "tag": "cook:craft_terracotta"
+    },
+	"C": {
+      "item": "minecraft:chest"
+    }
+  },
+  "result": {
+    "item": "minecraft:structure_void"
+  }
+}

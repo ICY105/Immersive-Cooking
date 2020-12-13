@@ -1,0 +1,22 @@
+{
+	"display": {
+		"title": "craft_mortar",
+		"description": "",
+		"icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false
+    },
+	"criteria": {
+		"crafter":{
+			"trigger": "minecraft:recipe_unlocked",
+		    "conditions": {
+			  "recipe": "cook:mortar"
+		    }
+		}
+	},
+	"rewards":{ 
+		"function":"cook:player/craft/mortar_trigger"
+	},
+	"parent":"cook:cooking_base"
+}

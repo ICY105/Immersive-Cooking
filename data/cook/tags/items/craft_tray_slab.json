@@ -1,0 +1,21 @@
+{
+	"required":false,
+	"values":[
+		"minecraft:stone_slab",
+		"minecraft:cobblestone_slab",
+		"minecraft:smooth_stone_slab",
+		"minecraft:sandstone_slab",
+		"minecraft:cut_sandstone_slab",
+		"minecraft:stone_brick_slab",
+		"minecraft:mossy_stone_brick_slab",
+		"minecraft:diorite_slab",
+		"minecraft:polished_diorite_slab",
+		"minecraft:andesite_slab",
+		"minecraft:polished_andesite_slab",
+		"minecraft:granite_slab",
+		"minecraft:polished_granite_slab",
+		"minecraft:blackstone_slab",
+		"minecraft:polished_blackstone_slab",
+		"minecraft:polished_blackstone_brick_slab"
+	]
+}

@@ -14,8 +14,5 @@ execute if score $base.timer_20 du_data matches 3 as @e[tag=cook_pot,tag=cook_ha
 #frying pan
 execute if score $base.timer_20 du_data matches 4 as @e[tag=cook_frying_pan,tag=cook_has_item] at @s run function cook:block/frying_pan/tick
 
-#crafter
-execute as @e[tag=cook_crafter] at @s if entity @p[distance=..8] run function cook:block/crafter/tick
-
 #player
 execute as @a at @s run function cook:player/tick

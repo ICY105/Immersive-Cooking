@@ -8,7 +8,6 @@ execute if entity @s[y_rotation=45.01..135] run scoreboard players set $in_1 coo
 
 execute if score $in_0 cook_data matches 6429000 run function cook:block/counter/place
 execute if score $in_0 cook_data matches 6429001 run function cook:block/cabinet/place
-execute if score $in_0 cook_data matches 6429003 run function cook:block/crafter/place
 execute if score $in_0 cook_data matches 6429004 run function cook:block/sink/place
 
 execute if score $in_0 cook_data matches 6429085 run function cook:block/oven/place
@@ -18,3 +17,4 @@ execute if score $in_0 cook_data matches 6429096 run function cook:block/mixing_
 execute if score $in_0 cook_data matches 6429097 run function cook:block/smoking_rack/place
 execute if score $in_0 cook_data matches 6429098 run function cook:block/cooking_pot/place
 execute if score $in_0 cook_data matches 6429102 run function cook:block/tray/place
+execute if score $in_0 cook_data matches 6429103 run function cook:block/juicer/place

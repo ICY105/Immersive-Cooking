@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "cooking",
+  "pattern": [
+	"IMI",
+    "IGI",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+	"G": {
+      "item": "minecraft:black_stained_glass"
+    },
+	"M": {
+      "item": "minecraft:magma_block"
+    }
+  },
+  "result": {
+    "item": "minecraft:structure_void"
+  }
+}

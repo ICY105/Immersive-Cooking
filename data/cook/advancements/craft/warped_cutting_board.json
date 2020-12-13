@@ -1,0 +1,22 @@
+{
+	"display": {
+		"title": "craft_warped_cutting_board",
+		"description": "",
+		"icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false
+    },
+	"criteria": {
+		"crafter":{
+			"trigger": "minecraft:recipe_unlocked",
+		    "conditions": {
+			  "recipe": "cook:warped_cutting_board"
+		    }
+		}
+	},
+	"rewards":{ 
+		"function":"cook:player/craft/warped_cutting_board_trigger"
+	},
+	"parent":"cook:cooking_base"
+}

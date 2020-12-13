@@ -1,0 +1,22 @@
+{
+	"display": {
+		"title": "craft_sink",
+		"description": "",
+		"icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false
+    },
+	"criteria": {
+		"crafter":{
+			"trigger": "minecraft:recipe_unlocked",
+		    "conditions": {
+			  "recipe": "cook:sink"
+		    }
+		}
+	},
+	"rewards":{ 
+		"function":"cook:player/craft/sink_trigger"
+	},
+	"parent":"cook:cooking_base"
+}

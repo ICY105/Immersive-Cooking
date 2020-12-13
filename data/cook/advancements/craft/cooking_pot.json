@@ -1,0 +1,22 @@
+{
+	"display": {
+		"title": "craft_cooking_pot",
+		"description": "",
+		"icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false
+    },
+	"criteria": {
+		"crafter":{
+			"trigger": "minecraft:recipe_unlocked",
+		    "conditions": {
+			  "recipe": "cook:cooking_pot"
+		    }
+		}
+	},
+	"rewards":{ 
+		"function":"cook:player/craft/cooking_pot_trigger"
+	},
+	"parent":"cook:cooking_base"
+}

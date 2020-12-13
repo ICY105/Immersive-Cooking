@@ -1,0 +1,22 @@
+{
+	"display": {
+		"title": "craft_spruce_cutting_board",
+		"description": "",
+		"icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false
+    },
+	"criteria": {
+		"crafter":{
+			"trigger": "minecraft:recipe_unlocked",
+		    "conditions": {
+			  "recipe": "cook:spruce_cutting_board"
+		    }
+		}
+	},
+	"rewards":{ 
+		"function":"cook:player/craft/spruce_cutting_board_trigger"
+	},
+	"parent":"cook:cooking_base"
+}

@@ -1,19 +1,11 @@
 {
-	"display": {
-		"title": "interact",
-		"description": "",
-		"icon": {"item": "minecraft:stone"},
-		"hidden":true,
-		"show_toast": false,
-		"announce_to_chat": false
-    },
 	"criteria": {
 		"requirement": {
 			"trigger": "minecraft:inventory_changed",
 			"conditions": {
 				"items": [
 					{
-						"tag": "cook:cooked_food"
+						"tag": "cook:food_combined"
 					}
 				]
 			}

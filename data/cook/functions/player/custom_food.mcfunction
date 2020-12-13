@@ -2,60 +2,58 @@
 # $in_0 cook_data: food level
 # $in_1 cook_data: quality
 
+#normalize quality
+execute if score $in_1 cook_data matches ..-10 run scoreboard players set $in_1 cook_data -9
+
+#reduce hunger for negative quality
 scoreboard players add $in_1 cook_data 10
-scoreboard players operation $in_0 cook_data *= $in_1 cook_data
-scoreboard players add $in_0 cook_data 5
-scoreboard players operation $in_0 cook_data /= $cons.10 du_data
+execute if score $in_1 cook_data matches ..9 run scoreboard players operation $in_0 cook_data *= $in_1 cook_data
+execute if score $in_1 cook_data matches ..9 run scoreboard players add $in_0 cook_data 5
+execute if score $in_1 cook_data matches ..9 run scoreboard players operation $in_0 cook_data /= $cons.10 du_data
+scoreboard players remove $in_1 cook_data 10
 
-#food quality
-execute if score $in_0 cook_data matches 3.. run effect give @s minecraft:regeneration 4 0 true
-execute if score $in_0 cook_data matches 5.. run effect give @s minecraft:regeneration 7 0 true
-execute if score $in_0 cook_data matches 8.. run effect give @s minecraft:regeneration 9 0 true
-execute if score $in_0 cook_data matches 12.. run effect give @s minecraft:regeneration 12 0 true
-execute if score $in_0 cook_data matches 17.. run effect give @s minecraft:regeneration 14 0 true
-execute if score $in_0 cook_data matches 23.. run effect give @s minecraft:regeneration 17 0 true
+#food quality effects
+execute if score $in_1 cook_data matches -5..-3 run effect give @s minecraft:poison 10 0
+execute if score $in_1 cook_data matches ..-6 run effect give @s minecraft:wither 10 1
 
-execute if score $in_1 cook_data matches 6..7 run effect give @s minecraft:poison 10 0
-execute if score $in_1 cook_data matches ..5 run effect give @s minecraft:wither 10 1
+#calculate saturation
+scoreboard players operation $in_1 cook_data *= $in_0 cook_data
+scoreboard players add $in_1 cook_data 10
+scoreboard players operation $in_1 cook_data /= $cons.10 du_data
 
 #current hunger
 execute store result score $temp_1 cook_data run data get entity @p foodLevel
 execute store result score $temp_2 cook_data run data get entity @p foodSaturationLevel
 
-#find missing hunger
-scoreboard players set $temp_4 cook_data 20
-scoreboard players operation $temp_4 cook_data -= $temp_1 cook_data
-
-scoreboard players set $temp_5 cook_data 40
-scoreboard players operation $temp_5 cook_data -= $temp_1 cook_data
-execute if score $in_0 cook_data > $temp_5 cook_data run scoreboard players operation @s cook_food += $in_0 cook_data
-execute if score $in_0 cook_data > $temp_5 cook_data run scoreboard players operation @s cook_food -= $temp_5 cook_data
-execute if score $in_0 cook_data > $temp_5 cook_data run scoreboard players operation $in_0 cook_data = $temp_5 cook_data
-
 scoreboard players set $out_0 cook_data 0
 scoreboard players set $out_1 cook_data 0
 
-#if food cannot fill hunger, fill as much hunger as possible and remove added saturation
-execute if score $temp_4 cook_data >= $in_0 cook_data run scoreboard players operation $out_0 cook_data = $in_0 cook_data
-execute if score $temp_4 cook_data >= $in_0 cook_data run scoreboard players operation $out_1 cook_data = $temp_2 cook_data
-execute if score $temp_4 cook_data >= $in_0 cook_data run scoreboard players operation $out_1 cook_data += $in_0 cook_data
-execute if score $temp_4 cook_data >= $in_0 cook_data run scoreboard players operation $out_1 cook_data += $in_0 cook_data
-execute if score $temp_4 cook_data >= $in_0 cook_data run scoreboard players operation $temp_5 cook_data = $temp_1 cook_data
-execute if score $temp_4 cook_data >= $in_0 cook_data run scoreboard players operation $temp_5 cook_data += $in_0 cook_data
-execute if score $temp_4 cook_data >= $in_0 cook_data if score $out_1 cook_data > $temp_5 cook_data run scoreboard players operation $out_1 cook_data = $temp_5 cook_data
-execute if score $temp_4 cook_data >= $in_0 cook_data run scoreboard players operation $out_1 cook_data -= $temp_2 cook_data
+#find hunger to add
+scoreboard players set $temp_3 cook_data 20
+scoreboard players operation $temp_3 cook_data -= $temp_1 cook_data
+execute if score $in_0 cook_data >= $temp_3 cook_data run scoreboard players operation $out_0 cook_data = $temp_3 cook_data
+execute if score $in_0 cook_data < $temp_3 cook_data run scoreboard players operation $out_0 cook_data = $in_0 cook_data
 
-#if food surpasses hunger, fill hunger and find added saturation
-execute if score $temp_4 cook_data < $in_0 cook_data run scoreboard players operation $out_0 cook_data = $temp_4 cook_data
-execute if score $temp_4 cook_data < $in_0 cook_data run scoreboard players operation $temp_3 cook_data = $in_0 cook_data
-execute if score $temp_4 cook_data < $in_0 cook_data run scoreboard players operation $temp_3 cook_data -= $temp_4 cook_data
-execute if score $temp_4 cook_data < $in_0 cook_data run scoreboard players operation $temp_3 cook_data += $temp_2 cook_data
-execute if score $temp_4 cook_data < $in_0 cook_data run scoreboard players operation $temp_5 cook_data = $temp_3 cook_data
-execute if score $temp_4 cook_data < $in_0 cook_data run scoreboard players operation $temp_5 cook_data /= $cons.2 du_data
-execute if score $temp_4 cook_data < $in_0 cook_data if score $temp_5 cook_data >= $temp_4 cook_data run scoreboard players operation $out_0 cook_data = $temp_5 cook_data
-execute if score $temp_4 cook_data < $in_0 cook_data if score $temp_5 cook_data < $temp_4 cook_data run scoreboard players operation $out_1 cook_data = $temp_4 cook_data
-execute if score $temp_4 cook_data < $in_0 cook_data if score $temp_5 cook_data < $temp_4 cook_data run scoreboard players operation $out_1 cook_data += $temp_4 cook_data
-execute if score $temp_4 cook_data < $in_0 cook_data if score $temp_5 cook_data < $temp_4 cook_data run scoreboard players operation $out_1 cook_data -= $temp_3 cook_data
+#find saturation to add/remove
+scoreboard players operation $temp_5 cook_data = $temp_2 cook_data
+scoreboard players operation $temp_5 cook_data += $in_1 cook_data
+
+scoreboard players operation $temp_4 cook_data = $out_0 cook_data
+scoreboard players operation $temp_4 cook_data += $temp_4 cook_data
+scoreboard players operation $temp_1 cook_data += $in_0 cook_data
+scoreboard players operation $temp_2 cook_data += $temp_4 cook_data
+execute if score $temp_2 cook_data > $temp_1 cook_data run scoreboard players operation $temp_2 cook_data = $temp_1 cook_data
+execute if score $temp_2 cook_data matches 20.. run scoreboard players set $temp_2 cook_data 20
+
+#add hunger or additional saturation
+execute if score $temp_5 cook_data < $temp_2 cook_data run scoreboard players operation $out_1 cook_data = $temp_2 cook_data
+execute if score $temp_5 cook_data < $temp_2 cook_data run scoreboard players operation $out_1 cook_data -= $temp_5 cook_data
+
+execute if score $temp_5 cook_data > $temp_2 cook_data if score $in_0 cook_data >= $temp_3 cook_data run scoreboard players operation $out_0 cook_data += $temp_5 cook_data
+execute if score $temp_5 cook_data > $temp_2 cook_data if score $in_0 cook_data >= $temp_3 cook_data run scoreboard players operation $out_0 cook_data -= $temp_2 cook_data
+
+execute if score $temp_2 cook_data matches 20 run scoreboard players remove $temp_5 cook_data 20
+execute if score $temp_2 cook_data matches 20 if score $temp_5 cook_data matches 0.. run scoreboard players operation @s cook_food += $temp_5 cook_data
 
 #affect hunger
 execute if score $out_0 cook_data matches 1 run effect give @s minecraft:saturation 1 0 true

@@ -1,0 +1,22 @@
+{
+	"display": {
+		"title": "craft_knife",
+		"description": "",
+		"icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false
+    },
+	"criteria": {
+		"crafter":{
+			"trigger": "minecraft:recipe_unlocked",
+		    "conditions": {
+			  "recipe": "cook:knife"
+		    }
+		}
+	},
+	"rewards":{ 
+		"function":"cook:player/craft/knife_trigger"
+	},
+	"parent":"cook:cooking_base"
+}

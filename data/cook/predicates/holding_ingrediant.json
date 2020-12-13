@@ -7,7 +7,7 @@
       "predicate": {
         "equipment": {
           "mainhand": {
-            "tag": "cook:raw_food"
+            "tag": "cook:food_combined"
           }
         }
       }

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "cooking",
+  "pattern": [
+	"I I",
+    "III",
+    "BCB"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+	"B": {
+      "item": "minecraft:bricks"
+    },
+	"C": {
+      "tag": "minecraft:coals"
+    }
+  },
+  "result": {
+    "item": "minecraft:structure_void"
+  }
+}
