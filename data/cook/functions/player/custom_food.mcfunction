@@ -1,6 +1,7 @@
 
 # $in_0 cook_data: food level
 # $in_1 cook_data: quality
+# $in_2 cook_data: adjust for tropical fish restoration
 
 #normalize quality
 execute if score $in_1 cook_data matches ..-10 run scoreboard players set $in_1 cook_data -9
@@ -18,8 +19,11 @@ execute if score $in_1 cook_data matches ..-6 run effect give @s minecraft:withe
 
 #calculate saturation
 scoreboard players operation $in_1 cook_data *= $in_0 cook_data
-scoreboard players add $in_1 cook_data 10
+scoreboard players add $in_1 cook_data 5
 scoreboard players operation $in_1 cook_data /= $cons.10 du_data
+
+tellraw @p {"score":{"name":"$in_1","objective":"cook_data"}}
+execute if score $in_2 cook_data matches 1 run scoreboard players remove $in_0 cook_data 1
 
 #current hunger
 execute store result score $temp_1 cook_data run data get entity @p foodLevel

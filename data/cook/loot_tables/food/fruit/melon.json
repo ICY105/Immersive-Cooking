@@ -18,7 +18,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429505, cook:{type:2b,food:4, mashing:1b,cutting:1b, frying:1b, color:{red:80,green:130,blue:30},base_name:'{\"translate\":\"item.cook.melon\",\"italic\":false}'}, cooked:{ tag:{cook:{food:8}} } }"
+              "tag":"{CustomModelData:6429505, cook:{type:2b,food:4, mashing:1b,cutting:1b, frying:1b, color:{red:80,green:130,blue:30},base_name:'{\"translate\":\"item.cook.melon\",\"italic\":false}'}, cooked:{ tag:{cook:{food:6}} } }"
             }
           ]
         }
