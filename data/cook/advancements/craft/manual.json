@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"crafter":{
+			"trigger": "minecraft:recipe_unlocked",
+		    "conditions": {
+			  "recipe": "cook:manual"
+		    }
+		}
+	},
+	"rewards":{ 
+		"function":"cook:player/craft/manual_trigger"
+	},
+	"parent":"cook:cooking_base"
+}

@@ -15,3 +15,6 @@ execute if entity @s[tag=cook_crafted] run function cook:player/craft/craft
 #manual
 execute if score $base.timer_20 du_data matches 10 if entity @s[tag=!cook_has_manual] run function give:items/cooking_manual
 execute if score $base.timer_20 du_data matches 10 if data entity @s Inventory[{tag:{cook_manual:1b}}] run tag @s add cook_has_manual
+execute if score $base.timer_20 du_data matches 10 store result score $temp_0 cook_data run data get entity @s SelectedItem.tag{cook_manual:1b}.version
+execute if score $base.timer_20 du_data matches 10 if score $temp_0 cook_data matches 1 run clear @s minecraft:written_book{cook_manual:1b}
+execute if score $base.timer_20 du_data matches 10 if score $temp_0 cook_data matches 1 run function give:items/cooking_manual
