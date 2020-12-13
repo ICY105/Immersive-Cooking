@@ -44,6 +44,7 @@ execute store result storage cook:temp obj.tag.Explosion.Colors[0] int 1 run sco
 ### Modify quality level
 
 #average ingredient quality
+execute store result score $temp_0 cook_data run data get storage cook:temp list
 scoreboard players operation $temp_8 cook_data /= $temp_0 cook_data
 
 # add quality based on number of ingredients

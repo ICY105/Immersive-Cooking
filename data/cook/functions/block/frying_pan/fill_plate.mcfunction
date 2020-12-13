@@ -47,16 +47,18 @@ execute if score $temp_0 cook_data matches 5..6 run scoreboard players add $temp
 execute if score $temp_0 cook_data matches 7..8 run scoreboard players add $temp_8 cook_data 3
 
 # modify quality based on cook time
-execute if score @s cook_data matches ..69 run scoreboard players remove $temp_8 cook_data 3
-execute if score @s cook_data matches 70..79 run scoreboard players remove $temp_8 cook_data 1
-execute if score @s cook_data matches 97..99 run scoreboard players add $temp_8 cook_data 1
-execute if score @s cook_data matches 100..109 run scoreboard players remove $temp_8 cook_data 1
+execute if score @s cook_data matches ..69 run scoreboard players remove $temp_8 cook_data 2
+#execute if score @s cook_data matches 70..79 run scoreboard players remove $temp_8 cook_data 0
+execute if score @s cook_data matches 80..88 run scoreboard players add $temp_8 cook_data 2
+execute if score @s cook_data matches 89..91 run scoreboard players add $temp_8 cook_data 4
+execute if score @s cook_data matches 92..96 run scoreboard players add $temp_8 cook_data 2
+#execute if score @s cook_data matches 100..109 run scoreboard players remove $temp_8 cook_data 0
 execute if score @s cook_data matches 110..119 run scoreboard players remove $temp_8 cook_data 2
-execute if score @s cook_data matches 120.. run scoreboard players remove $temp_8 cook_data 3
+execute if score @s cook_data matches 120.. run scoreboard players remove $temp_8 cook_data 4
 
 #modify quality based on stirring
-execute if score @s cook_food matches ..-10 run scoreboard players remove $temp_8 cook_data 1
-execute if score @s cook_food matches 2..7 run scoreboard players add $temp_8 cook_data 1
+execute if score @s cook_food matches ..-10 run scoreboard players remove $temp_8 cook_data 2
+execute if score @s cook_food matches 2..7 run scoreboard players add $temp_8 cook_data 2
 
 # modify quality based on preparation
 scoreboard players set $in_0 cook_data 0

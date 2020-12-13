@@ -7,10 +7,10 @@ execute if score $in_0 cook_data matches 30 run scoreboard players remove $in_1 
 execute if score $in_0 cook_data matches 30 run function cook:block/smoking_rack/complete_recipe
 
 execute if score $in_0 cook_data matches 35 run data modify entity @s ArmorItems[3].tag.display.Lore[-1] set value '{"translate":"lore.cook.slightly_undercooked","italic":false,"color":"gray"}'
-execute if score $in_0 cook_data matches 35 run scoreboard players add $in_1 cook_data 1
+#execute if score $in_0 cook_data matches 35 run scoreboard players add $in_1 cook_data 0
 
 execute if score $in_0 cook_data matches 40 run data modify entity @s ArmorItems[3].tag.display.Lore[-1] set value '{"translate":"lore.cook.cooked","italic":false,"color":"gray"}'
-execute if score $in_0 cook_data matches 40 run scoreboard players add $in_1 cook_data 1
+execute if score $in_0 cook_data matches 40 run scoreboard players add $in_1 cook_data 2
 
 execute if score $in_0 cook_data matches 80 run scoreboard players add $in_1 cook_data 1
 execute if score $in_0 cook_data matches 120 run scoreboard players add $in_1 cook_data 1
