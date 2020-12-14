@@ -8,6 +8,10 @@ execute if score $temp_0 cook_data matches 1.. positioned ~ ~-1 ~ run data modif
 execute if score $temp_0 cook_data matches 1.. positioned ~ ~-1 ~ run kill @e[tag=cook_mixing_bowl_item,distance=..0.05,limit=1]
 execute if score $temp_0 cook_data matches 1.. run loot give @p[tag=cook_interact] mine -29999999 0 1601 air{drop_contents:true}
 
+#remove liquid
+execute if score $temp_0 cook_data matches 0 if entity @s[tag=cook_has_liquid] run kill @e[tag=cook_mixing_bowl_liquid,distance=..0.1]
+execute if score $temp_0 cook_data matches 0 if entity @s[tag=cook_has_liquid] run tag @s remove cook_has_liquid
+
 #tag
 execute if score $temp_0 cook_data matches 1 run tag @s remove cook_has_item
 execute if score $temp_0 cook_data matches 1 run tag @s remove cook_done

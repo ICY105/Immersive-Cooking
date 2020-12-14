@@ -5,6 +5,7 @@ data modify block -29999999 0 1601 Items[0].Count set value 1b
 
 scoreboard players set $temp_0 cook_data -1
 execute if data block -29999999 0 1601 Items[0].tag.cook{mixing:1b} run scoreboard players set $temp_0 cook_data 0
+execute if data block -29999999 0 1601 Items[0].tag.cook{type:7b} if entity @s[tag=!cook_has_liquid] run function cook:block/mixing_bowl/interact_add_liquid
 
 #count existing ingredients and squash to 8 spawning locations
 execute if score $temp_0 cook_data matches 0 positioned ~ ~-1 ~ store result score $temp_0 cook_data if entity @e[tag=cook_mixing_bowl_item,distance=..0.05]

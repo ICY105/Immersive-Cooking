@@ -27,4 +27,4 @@ execute if score $in_0 cook_data matches 9098 run function cook:block/cooking_po
 execute if score $in_0 cook_data matches 9100 run function cook:block/bowl/break
 execute if score $in_0 cook_data matches 9101 run function cook:block/plate/break
 execute if score $in_0 cook_data matches 9102 run function cook:block/tray/break
-execute if score $in_0 cook_data matches 9103 run function cook:block/tray/juicer
+execute if score $in_0 cook_data matches 9103 run function cook:block/juicer/break

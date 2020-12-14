@@ -6,19 +6,15 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:tropical_fish",
+		  "name": "minecraft:apple",
           "functions": [
-            {
-			  "function": "minecraft:set_name",
-			  "name": {"translate":"item.cook.apple","italic":false}
-			},
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [[{"text":"2","italic":false,"color":"gray"},{"text":"\uc009","italic":false,"font":"cook:default","color":"white"}]]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429500, cook:{type:2b,food:2, mashing:1b,juicing:1b,mixing:1b,cutting:1b,washing:1b, roasting:1b,boiling:1b,frying:1b, color:{red:255,green:30,blue:40},base_name:'{\"translate\":\"item.cook.apple\",\"italic\":false}'}, cooked:{ tag:{cook:{food:4}} } }"
+              "tag":"{cook:{type:2b,food:2,redux:[4,2], mashing:1b,juicing:1b,mixing:1b,cutting:1b,washing:1b, roasting:1b,boiling:1b,frying:1b, color:{red:255,green:30,blue:40},base_name:'{\"translate\":\"item.cook.apple\",\"italic\":false}'}, cooked:{ id:\"minecraft:tropical_fish\",tag:{CustomModelData:6429500,cook:{food:4,redux:[1,0]}} } }"
             }
           ]
         }

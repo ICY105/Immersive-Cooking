@@ -5,9 +5,6 @@ data modify block -29999999 0 1601 Items[0].Count set value 1b
 
 scoreboard players set $temp_0 cook_data -1
 execute if data block -29999999 0 1601 Items[0].tag.cook unless data block -29999999 0 1601 Items[0].tag.cook{type:7b} run scoreboard players set $temp_0 cook_data 0
-execute if data block -29999999 0 1601 Items[0].tag.cook{type:7b} run scoreboard players set $temp_0 cook_data 0
-execute if data block -29999999 0 1601 Items[0].tag{bowl:2b} run scoreboard players set $temp_0 cook_data -1
-execute if data block -29999999 0 1601 Items[0].tag{plate:2b} run scoreboard players set $temp_0 cook_data -1
 
 #count existing ingredients and squash to 8 spawning locations
 execute if score $temp_0 cook_data matches 0 positioned ~ ~-0.56 ~ store result score $temp_0 cook_data if entity @e[tag=cook_tray_item,distance=..0.25]

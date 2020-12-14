@@ -25,6 +25,7 @@ scoreboard players set $temp_8 cook_data 0
 scoreboard players set $temp_9 cook_data 0
 
 execute positioned ~ ~-1 ~ as @e[tag=cook_mixing_bowl_item,distance=..0.05] at @s run function cook:block/mixing_bowl/complete_recipe_2
+execute if entity @s[tag=cook_has_liquid] as @e[tag=cook_mixing_bowl_liquid,distance=..0.1] at @s run function cook:block/mixing_bowl/complete_recipe_3
 
 #average color
 scoreboard players operation $out_1 cook_data /= $out_0 cook_data
@@ -89,5 +90,6 @@ data modify entity @e[tag=cook_new,limit=1] ArmorItems[3] set from storage cook:
 tag @e[tag=cook_new] remove cook_new
 
 tag @s add cook_done
+tag @s remove cook_has_liquid
 scoreboard players set @s cook_data 0
 

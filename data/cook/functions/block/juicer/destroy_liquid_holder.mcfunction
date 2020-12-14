@@ -1,5 +1,5 @@
 
-function cook:utils/take_one_selected_item
+execute as @p[tag=cook_interact] run function cook:utils/take_one_selected_item
 
 #copy item to armor stand
 data remove block -29999999 0 1601 Items

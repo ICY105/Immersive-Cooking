@@ -8,3 +8,4 @@ loot spawn ~ ~ ~ mine -29999999 0 1601 air{drop_contents:true}
 
 #kill entities
 execute positioned ~ ~-1 ~ run kill @e[tag=cook_mixing_bowl_item,distance=..0.25]
+kill @e[tag=cook_mixing_bowl_liquid,distance=..0.1]

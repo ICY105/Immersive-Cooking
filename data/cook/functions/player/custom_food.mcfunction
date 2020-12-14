@@ -19,10 +19,13 @@ execute if score $in_1 cook_data matches ..-6 run effect give @s minecraft:withe
 
 #calculate saturation
 scoreboard players operation $in_1 cook_data *= $in_0 cook_data
+execute if score $in_1 cook_data matches 1..4 run scoreboard players set $in_1 cook_data 5
 scoreboard players add $in_1 cook_data 5
 scoreboard players operation $in_1 cook_data /= $cons.10 du_data
 
-execute if score $in_2 cook_data matches 1 run scoreboard players remove $in_0 cook_data 1
+#redux
+scoreboard players operation $in_0 cook_data -= $in_2 cook_data
+scoreboard players operation $in_1 cook_data -= $in_3 cook_data
 
 #current hunger
 execute store result score $temp_1 cook_data run data get entity @p foodLevel
@@ -57,6 +60,10 @@ execute if score $temp_5 cook_data > $temp_2 cook_data if score $in_0 cook_data 
 
 execute if score $temp_2 cook_data matches 20 run scoreboard players remove $temp_5 cook_data 20
 execute if score $temp_2 cook_data matches 20 if score $temp_5 cook_data matches 0.. run scoreboard players operation @s cook_food += $temp_5 cook_data
+
+#redux
+execute if score $out_0 cook_data matches ..-1 run scoreboard players operation $out_1 cook_data -= $out_0 cook_data
+execute if score $in_1 cook_data matches ..-1 run scoreboard players operation $out_1 cook_data -= $in_1 cook_data
 
 #affect hunger
 execute if score $out_0 cook_data matches 1 run effect give @s minecraft:saturation 1 0 true
