@@ -61,4 +61,4 @@ execute if score $temp_0 cook_data matches 1 run tag @s add cook_replace_food
 #execute if score $temp_0 cook_data matches 1 run loot give @s loot cook:food/premade/cake
 #execute if score $temp_0 cook_data matches 1 run tag @s add cook_replace_food
 
-execute if entity @s[tag=!cook_replace_food] run advancement revoke @s only cook:picked_up_food
+execute if entity @s[tag=cook_replace_food] run function cook:player/replace_food

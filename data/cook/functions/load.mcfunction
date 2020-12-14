@@ -1,6 +1,7 @@
 
 scoreboard objectives add cook_data dummy
 scoreboard objectives add cook_food dummy
+scoreboard objectives add cook_coas minecraft.used:minecraft.carrot_on_a_stick
 
 scoreboard players set $cook.ver load 00000005
 

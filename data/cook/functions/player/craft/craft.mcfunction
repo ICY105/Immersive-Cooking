@@ -18,7 +18,8 @@ execute if entity @s[tag=cook_craft_plate] run function cook:player/craft/plate_
 execute if entity @s[tag=cook_craft_pestle] run function cook:player/craft/pestle_replace
 execute if entity @s[tag=cook_craft_knife] run function cook:player/craft/knife_replace
 execute if entity @s[tag=cook_craft_spoon] run function cook:player/craft/spoon_replace
-execute if entity @s[tag=cook_craft_spatula] run function cook:player/craft/spatule_replace
+execute if entity @s[tag=cook_craft_spatula] run function cook:player/craft/spatula_replace
+execute if entity @s[tag=cook_craft_food_bag] run function cook:player/craft/food_bag_replace
 
 execute if entity @s[tag=cook_craft_oak_board] run function cook:player/craft/oak_cutting_board_replace
 execute if entity @s[tag=cook_craft_spruce_board] run function cook:player/craft/spruce_cutting_board_replace
@@ -32,4 +33,4 @@ execute if entity @s[tag=cook_craft_warped_board] run function cook:player/craft
 #cleanup
 kill @e[type=item,distance=..12,nbt={Item:{id:"minecraft:structure_void"}}]
 kill @e[type=item,distance=..12,nbt={Item:{id:"minecraft:knowledge_book"}}]
-tag @s[tag=cook_craft_saw] remove cook_crafted
+tag @s[tag=cook_crafted] remove cook_crafted

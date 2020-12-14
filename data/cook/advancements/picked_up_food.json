@@ -12,7 +12,7 @@
 		}
 	},
 	"rewards":{ 
-		"function":"cook:player/replace_food"
+		"function":"cook:player/replace_food_trigger"
 	},
 	"parent":"cook:cooking_base"
 }

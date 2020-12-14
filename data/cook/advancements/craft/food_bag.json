@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"crafter":{
+			"trigger": "minecraft:recipe_unlocked",
+		    "conditions": {
+			  "recipe": "cook:food_bag"
+		    }
+		}
+	},
+	"rewards":{ 
+		"function":"cook:player/craft/food_bag_trigger"
+	},
+	"parent":"cook:cooking_base"
+}

@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"item.cook.food_bag","italic":false}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{Unbreakable:1b,HideFlags:38,CustomModelData:6429406,food_bag:1b,items:[]}"
+            },
+			{
+			  "function":"set_attributes",
+			  "modifiers": [
+				{
+				  "name":"generic.follow_range",
+				  "attribute":"generic.follow_range",
+				  "operation":"addition",
+				  "amount": {
+					"min": 0.0,
+					"max": 1.0
+				  },
+				  "slot":"feet"
+				}
+			  ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
