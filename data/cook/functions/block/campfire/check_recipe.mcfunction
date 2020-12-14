@@ -6,6 +6,7 @@ execute if score $crafting.in_0 du_data matches 6429002 run data modify storage 
 execute if score $crafting.in_0 du_data matches 6429003 run data modify storage cook:temp obj set from block ~ ~ ~ Items[{Slot:3b}]
 
 function cook:utils/convert_vanilla_ingrediant
+scoreboard players operation $temp_0 cook_data = $utils.temp_0 cook_data
 
 #modify result
 execute if score $temp_0 cook_data matches 1 if data block -29999999 0 1601 Items[0].tag.cook{roasting:1b} if data block -29999999 0 1601 Items[0].tag.cooked run data modify block -29999999 0 1601 Items[0] merge from block -29999999 0 1601 Items[0].tag.cooked
