@@ -1,12 +1,4 @@
 {
-	"display": {
-		"title": "craft_spatula",
-		"description": "",
-		"icon": {"item": "minecraft:stone"},
-		"hidden":true,
-		"show_toast": false,
-		"announce_to_chat": false
-    },
 	"criteria": {
 		"crafter":{
 			"trigger": "minecraft:recipe_unlocked",

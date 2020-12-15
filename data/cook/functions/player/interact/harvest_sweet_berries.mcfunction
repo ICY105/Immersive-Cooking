@@ -1,0 +1,3 @@
+
+advancement revoke @s only cook:interact/harvest_sweet_berries
+execute as @e[type=item,distance=..12] if data entity @s Item{id:"minecraft:sweet_berries"} run data modify entity @s Item.tag set value {cook: {base_name: '{"translate":"item.cook.sweet_berries","italic":false}', color: {red: 165, green: 7, blue: 0}, mixing: 1b, mashing: 1b, type: 2b, juicing: 1b, food: 2, washing: 1b, boiling: 1b, roasting: 1b, cutting: 1b, frying: 1b}, display: {Lore: ['{"italic":false,"color":"white","font":"cook:default","translate":"lore.cook.food_level","with":[{"color":"gray","text":"2"}]}']}, cooked: {id: "minecraft:tropical_fish", tag: {CustomModelData: 6429501, cook: {redux: [1, 0], food: 3}}}}

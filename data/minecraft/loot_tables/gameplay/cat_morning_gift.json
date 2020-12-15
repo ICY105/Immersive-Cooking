@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:gift",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "minecraft:rabbit_hide"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 10,
+          "name": "cook:food/protein/rabbit_foot"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 10,
+          "name": "cook:food/protein/chicken"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "minecraft:feather"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 10,
+          "name": "cook:food/protein/rotten_flesh"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "name": "minecraft:string"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:phantom_membrane"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:gift",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cook:food/premade/cooked_rabbit"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "cook:food/premade/cooked_chicken"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "cook:food/premade/cooked_pork"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "cook:food/premade/cooked_beef"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "cook:food/premade/cooked_mutton"
+        }
+      ]
+    }
+  ]
+}

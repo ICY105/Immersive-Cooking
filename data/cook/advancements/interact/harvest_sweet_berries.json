@@ -1,0 +1,21 @@
+{
+	"criteria": {
+		"example": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"block": "minecraft:sweet_berry_bush",
+						"state": {
+							"age": 1
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards":{ 
+		"function":"cook:player/interact/harvest_sweet_berries"
+	},
+	"parent":"cook:cooking_base"
+}

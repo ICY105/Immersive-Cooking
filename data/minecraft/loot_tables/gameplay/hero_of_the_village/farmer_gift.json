@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:gift",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cook:food/premade/bread"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "cook:food/premade/pumpkin_pie"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "cook:food/premade/cookie"
+        }
+      ]
+    }
+  ]
+}

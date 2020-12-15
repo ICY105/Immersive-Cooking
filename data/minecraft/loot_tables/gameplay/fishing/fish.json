@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 60,
+          "name": "cook:food/protein/cod"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 25,
+          "name": "cook:food/protein/salmon"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 2,
+          "name": "cook:food/protein/tropical_fish"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 13,
+          "name": "cook:food/protein/pufferfish"
+        }
+      ]
+    }
+  ]
+}

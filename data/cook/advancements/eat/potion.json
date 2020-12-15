@@ -1,12 +1,4 @@
 {
-	"display": {
-		"title": "consume_potion",
-		"description": "",
-		"icon": {"item": "minecraft:stone"},
-		"hidden":true,
-		"show_toast": false,
-		"announce_to_chat": false
-    },
 	"criteria": {
 		"example": {
 			"trigger": "minecraft:consume_item",
