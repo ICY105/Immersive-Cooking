@@ -6,15 +6,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:tropical_fish",
+		  "name": "minecraft:honeycomb",
           "functions": [
-            {
-			  "function": "minecraft:set_name",
-			  "name": {"translate":"item.cook.honeycomb","italic":false}
-			},
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [[{"text":"2","italic":false,"color":"gray"},{"text":"\uc009 ","italic":false,"font":"cook:default","color":"white"},{"text":"10%","italic":false,"color":"gray"},{"text":"\uc00a","italic":false,"font":"cook:default","color":"white"}]]
+			  "lore": [{"translate":"lore.cook.food_level_quality","italic":false,"font":"cook:default","color":"white","with":[{"text":"2","color":"gray"},{"text":"10%","color":"gray"}]}]
 			},
 			{
               "function": "minecraft:set_nbt",

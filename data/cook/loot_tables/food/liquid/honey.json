@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:potion",
+		  "name": "minecraft:honey_bottle",
           "functions": [
             {
 			  "function": "minecraft:set_name",
@@ -14,11 +14,11 @@
 			},
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [[{"text":"2","italic":false,"color":"gray"},{"text":"\uc009 ","italic":false,"font":"cook:default","color":"white"},{"text":"20%","italic":false,"color":"gray"},{"text":"\uc00a","italic":false,"font":"cook:default","color":"white"}]]
+			  "lore": [{"translate":"lore.cook.food_level_quality","italic":false,"font":"cook:default","color":"white","with":[{"text":"2","color":"gray"},{"text":"20%","color":"gray"}]}]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{HideFlags:32,CustomPotionColor:16748822, cook:{type:7b,food:2,quality:2,honey:1b, color:{red:255,green:145,blue:22},base_name:'{\"translate\":\"item.cook.honey\",\"italic\":false}'}}"
+              "tag":"{CustomPotionColor:16748822,cook:{type:7b,food:2,quality:2,honey:1b, color:{red:255,green:145,blue:22},base_name:'{\"translate\":\"item.cook.honey\",\"italic\":false}'}}"
             }
           ]
         }

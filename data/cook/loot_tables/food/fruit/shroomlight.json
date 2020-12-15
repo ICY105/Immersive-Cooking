@@ -6,19 +6,15 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:tropical_fish",
+		  "name": "minecraft:shroomlight",
           "functions": [
-            {
-			  "function": "minecraft:set_name",
-			  "name": {"translate":"item.cook.shroomlight","italic":false}
-			},
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [[{"text":"2","italic":false,"color":"gray"},{"text":"\uc009","italic":false,"font":"cook:default","color":"white"}]]
+			  "lore": [{"translate":"lore.cook.food_level","italic":false,"font":"cook:default","color":"white","with":[{"text":"2","color":"gray"}]}]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429509, cook:{type:2b,food:2, mashing:1b,juicing:1b, boiling:1b,frying:1b, color:{red:230,green:115,blue:5},base_name:'{\"translate\":\"item.cook.shroomlight\",\"italic\":false}'}, cooked:{ tag:{cook:{food:4}} } }"
+              "tag":"{cook:{type:2b,food:2, mashing:1b,juicing:1b, boiling:1b,frying:1b, color:{red:230,green:115,blue:5},base_name:'{\"translate\":\"item.cook.shroomlight\",\"italic\":false}'}, cooked:{ id:\"minecraft:tropical_fish\",tag:{CustomModelData:6429509,cook:{food:4,redux:[1,0]}} } }"
             }
           ]
         }

@@ -6,19 +6,15 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:tropical_fish",
+		  "name": "minecraft:wither_rose",
           "functions": [
-            {
-			  "function": "minecraft:set_name",
-			  "name": {"translate":"item.cook.wither_rose","italic":false}
-			},
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [[{"text":"-2","italic":false,"color":"gray"},{"text":"\uc009 ","italic":false,"font":"cook:default","color":"white"},{"text":"-50%","italic":false,"color":"gray"},{"text":"\uc00a","italic":false,"font":"cook:default","color":"white"}]]
+			  "lore": [{"translate":"lore.cook.food_level_quality","italic":false,"font":"cook:default","color":"white","with":[{"text":"-2","color":"gray"},{"text":"-50%","color":"gray"}]}]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429537, cook:{type:1b,food:-2,quality:-5, mixing:1b,washing:1b, boiling:1b,frying:1b, color:{red:42,green:31,blue:25},base_name:'{\"translate\":\"item.cook.wither_rose\",\"italic\":false}'}, cooked:{ tag:{cook:{food:-4}} } }"
+              "tag":"{cook:{type:1b,food:-2,quality:-5, mixing:1b,washing:1b, boiling:1b,frying:1b, color:{red:42,green:31,blue:25},base_name:'{\"translate\":\"item.cook.wither_rose\",\"italic\":false}'}, cooked:{ id:\"minecraft:tropical_fish\",tag:{CustomModelData:6429537,cook:{food:-4,redux:[1,0]}} } }"
             }
           ]
         }

@@ -6,15 +6,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:tropical_fish",
+		  "name": "minecraft:dried_kelp",
           "functions": [
-            {
-			  "function": "minecraft:set_name",
-			  "name": {"translate":"item.cook.dried_kelp","italic":false}
-			},
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [[{"text":"2","italic":false,"color":"gray"},{"text":"\uc009","italic":false,"font":"cook:default","color":"white"}]]
+			  "lore": [{"translate":"lore.cook.food_level","italic":false,"font":"cook:default","color":"white","with":[{"text":"2","color":"gray"}]}]
 			},
 			{
               "function": "minecraft:set_nbt",

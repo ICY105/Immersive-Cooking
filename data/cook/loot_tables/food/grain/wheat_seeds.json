@@ -6,15 +6,15 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:tropical_fish",
+		  "name": "minecraft:wheat_seeds",
           "functions": [
-            {
-			  "function": "minecraft:set_name",
-			  "name": {"translate":"item.cook.wheat_seed","italic":false}
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [{"translate":"lore.cook.food_level","italic":false,"font":"cook:default","color":"white","with":[{"text":"1","color":"gray"}]}]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429562, cook:{type:3b,raw:1b,food:0, mashing:1b,mixing:1b, roasting:1b,boiling:1b,frying:1b, color:{red:68,green:114,blue:36},base_name:'{\"translate\":\"item.cook.wheat_seed\",\"italic\":false}'}, cooked:{ tag:{cook:{food:1,raw:0b}} } }"
+              "tag":"{cook:{type:3b,raw:1b,food:0, mashing:1b,mixing:1b, roasting:1b,boiling:1b,frying:1b, color:{red:68,green:114,blue:36},base_name:'{\"translate\":\"item.cook.wheat_seed\",\"italic\":false}'}, cooked:{ id:\"minecraft:tropical_fish\",tag:{CustomModelData:6429562,cook:{food:1,redux:[1,0]}} } }"
             }
           ]
         }

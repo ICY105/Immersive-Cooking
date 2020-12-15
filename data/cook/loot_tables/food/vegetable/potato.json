@@ -6,19 +6,15 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:tropical_fish",
+		  "name": "minecraft:potato",
           "functions": [
-            {
-			  "function": "minecraft:set_name",
-			  "name": {"translate":"item.cook.potato","italic":false}
-			},
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [[{"text":"2","italic":false,"color":"gray"},{"text":"\uc009","italic":false,"font":"cook:default","color":"white"}]]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429511, cook:{type:1b,food:2, mashing:1b,mixing:1b,cutting:1b,washing:1b, roasting:1b,boiling:1b,baking:1b,frying:1b, color:{red:220,green:170,blue:80},base_name:'{\"translate\":\"item.cook.potato\",\"italic\":false}'}, cooked:{ tag:{CustomModelData:6429512,cook:{food:5}} } }"
+              "tag":"{cook:{type:1b,food:2, mashing:1b,mixing:1b,cutting:1b,washing:1b, roasting:1b,boiling:1b,baking:1b,frying:1b, color:{red:220,green:170,blue:80},base_name:'{\"translate\":\"item.cook.potato\",\"italic\":false}'}, cooked:{ id:\"minecraft:tropical_fish\",tag:{CustomModelData:6429511,cook:{food:5,redux:[1,0]}} } }"
             }
           ]
         }

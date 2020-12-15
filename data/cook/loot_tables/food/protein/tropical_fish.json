@@ -8,17 +8,13 @@
           "type": "minecraft:item",
 		  "name": "minecraft:tropical_fish",
           "functions": [
-            {
-			  "function": "minecraft:set_name",
-			  "name": {"translate":"item.cook.tropical_fish","italic":false}
-			},
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [[{"text":"1","italic":false,"color":"gray"},{"text":"\uc009","italic":false,"font":"cook:default","color":"white"}]]
+			  "lore": [{"translate":"lore.cook.food_level","italic":false,"font":"cook:default","color":"white","with":[{"text":"1","color":"gray"}]}]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429552, cook:{type:4b,raw:1b,food:1, mashing:2b,mixing:1b,cutting:1b, roasting:1b,smoking:1b,boiling:1b,frying:1b, color:{red:244,green:111,blue:32},base_name:'{\"translate\":\"item.cook.tropical_fish\",\"italic\":false}'},   cooked:{tag:{cook:{raw:0b,food:3}}}   }"
+              "tag":"{cook:{type:4b,raw:1b,food:1, mashing:2b,mixing:1b,cutting:1b, roasting:1b,smoking:1b,boiling:1b,frying:1b, color:{red:244,green:111,blue:32},base_name:'{\"translate\":\"item.cook.tropical_fish\",\"italic\":false}'}, cooked:{ id:\"minecraft:tropical_fish\",tag:{CustomModelData:6429552,cook:{food:3,raw:0b,redux:[1,0]}} } }"
             }
           ]
         }

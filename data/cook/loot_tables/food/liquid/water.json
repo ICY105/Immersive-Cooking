@@ -8,13 +8,9 @@
           "type": "minecraft:item",
 		  "name": "minecraft:potion",
           "functions": [
-            {
-			  "function": "minecraft:set_name",
-			  "name": {"translate":"item.cook.water","italic":false}
-			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{HideFlags:32,CustomPotionColor:30719, cook:{type:7b,water:1b, color:{red:0,green:127,blue:255},base_name:'{\"translate\":\"item.cook.water\",\"italic\":false}'}}"
+              "tag":"{HideFlags:32,CustomPotionColor:30719,Potion:\"minecraft:water\", cook:{type:7b,water:1b, color:{red:0,green:127,blue:255},base_name:'{\"translate\":\"item.cook.water\",\"italic\":false}'}}"
             }
           ]
         }

@@ -6,19 +6,15 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:tropical_fish",
+		  "name": "minecraft:egg",
           "functions": [
-            {
-			  "function": "minecraft:set_name",
-			  "name": {"translate":"item.cook.egg","italic":false}
-			},
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [[{"text":"1","italic":false,"color":"gray"},{"text":"\uc009","italic":false,"font":"cook:default","color":"white"}]]
+			  "lore": [{"translate":"lore.cook.food_level","italic":false,"font":"cook:default","color":"white","with":[{"text":"1","color":"gray"}]}]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429555, cook:{type:4b,raw:1b,food:1,egg:1b, mashing:2b,mixing:1b,cutting:1b, roasting:1b,smoking:1b,boiling:1b,frying:1b, color:{red:223,green:206,blue:155},base_name:'{\"translate\":\"item.cook.egg\",\"italic\":false}'},   cooked:{tag:{cook:{raw:0b,food:3}}}}"
+              "tag":"{cook:{type:4b,raw:1b,food:1,egg:1b, mashing:2b,mixing:1b,cutting:1b, roasting:1b,smoking:1b,boiling:1b,frying:1b, color:{red:223,green:206,blue:155},base_name:'{\"translate\":\"item.cook.egg\",\"italic\":false}'}, cooked:{ id:\"minecraft:tropical_fish\",tag:{CustomModelData:6429555,cook:{food:3,raw:0b,redux:[1,0]}} } }"
             }
           ]
         }
