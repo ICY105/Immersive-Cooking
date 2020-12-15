@@ -14,11 +14,11 @@
 			},
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [[{"text":"4","italic":false,"color":"gray"},{"text":"\uc009","italic":false,"font":"cook:default","color":"white"}]]
+			  "lore": [{"translate":"lore.cook.food_level_quality","italic":false,"font":"cook:default","color":"white","with":[{"text":"5","color":"gray"},{"text":"20%","color":"gray"}]}]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429512, cook:{type:1b,food:4, mixing:1b,cutting:1b, boiling:1b,frying:1b, color:{red:220,green:170,blue:80},base_name:'{\"translate\":\"item.cook.potato\",\"italic\":false}'} }"
+              "tag":"{CustomModelData:6429512, cook:{type:1b,food:5,quality:2, mixing:1b,cutting:1b, boiling:1b,frying:1b, color:{red:220,green:170,blue:80},base_name:'{\"translate\":\"item.cook.potato\",\"italic\":false}'} }"
             }
           ]
         }

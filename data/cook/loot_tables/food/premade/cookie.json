@@ -18,7 +18,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429413,HideFlags:32,du_click_detect:1b, Explosion: {Colors: [I; 15241301]}, cook:{type:1b,food:5, frying:1b,boiling:1b, color:{red: 232, green: 144, blue: 85}} }"
+              "tag":"{CustomModelData:6429413,HideFlags:32,du_click_detect:1b, Explosion: {Colors: [I; 15241301]}, cook:{type:1b,food:2, frying:1b,boiling:1b, color:{red: 232, green: 144, blue: 85}} }"
             }
           ]
         }

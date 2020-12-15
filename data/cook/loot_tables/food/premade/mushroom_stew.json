@@ -14,11 +14,11 @@
 			},
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [[{"text":"8","italic":false,"color":"gray"},{"text":"\uc009","italic":false,"font":"cook:default","color":"white"}]]
+			  "lore": [{"translate":"lore.cook.food_level_quality","italic":false,"font":"cook:default","color":"white","with":[{"text":"8","color":"gray"},{"text":"20%","color":"gray"}]}]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429408,du_click_detect:1b,HideFlags:63,bowl:2b, Explosion: {Colors: [I; 32767]}, cook:{type:7b,food:8,color:{red: 0, green: 127, blue: 255}}, items: [ {id:\"minecraft:red_mushroom\",Count:1b},{id:\"minecraft:brown_mushroom\",Count:1b} ] }"
+              "tag":"{CustomModelData:6429408,du_click_detect:1b,HideFlags:63,bowl:2b, Explosion: {Colors: [I; 32767]}, cook:{type:7b,food:8,quality:2,color:{red: 0, green: 127, blue: 255}}, items: [ {id:\"minecraft:red_mushroom\",Count:1b},{id:\"minecraft:brown_mushroom\",Count:1b} ] }"
             }
           ]
         }

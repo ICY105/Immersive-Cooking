@@ -14,11 +14,11 @@
 			},
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [[{"text":"6","italic":false,"color":"gray"},{"text":"\uc009","italic":false,"font":"cook:default","color":"white"}]]
+			  "lore": [{"translate":"lore.cook.food_level","italic":false,"font":"cook:default","color":"white","with":[{"text":"8","color":"gray"}]}]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429543, cook:{type:4b,food:6, mixing:1b,cutting:1b, boiling:1b,frying:1b, color:{red:211,green:192,blue:136},base_name:'{\"translate\":\"item.cook.pork\",\"italic\":false}'} }"
+              "tag":"{CustomModelData:6429543, cook:{type:4b,food:8, mixing:1b,cutting:1b, boiling:1b,frying:1b, color:{red:211,green:192,blue:136},base_name:'{\"translate\":\"item.cook.pork\",\"italic\":false}'} }"
             }
           ]
         }
