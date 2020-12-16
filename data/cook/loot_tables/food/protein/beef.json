@@ -10,11 +10,14 @@
           "functions": [
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [{"translate":"lore.cook.food_level","italic":false,"font":"cook:default","color":"white","with":[{"text":"3","color":"gray"}]}]
+			  "lore": [{"translate":"lore.cook.food_level","italic":false,"font":"cook:default","color":"white","with":[{"text":"2","color":"gray"}]}]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{cook:{type:4b,raw:1b,food:3, mashing:2b,mixing:1b,cutting:1b,juicing:2b, roasting:1b,smoking:1b,baking:1b,boiling:1b,frying:1b, color:{red:226,green:83,blue:74},base_name:'{\"translate\":\"item.cook.beef\",\"italic\":false}'},   cooked:{id:\"minecraft:tropical_fish\",tag:{CustomModelData:6429545,cook:{raw:0b,food:8,redux:[1,0],color:{red:142,green:82,blue:60}}}}   }"
+              "tag":"{
+			    cook:{type:4b,raw:1b,food:2, mashing:2b,mixing:1b,cutting:1b,juicing:2b, roasting:1b,smoking:1b,baking:1b,boiling:1b,frying:1b, color:{red:226,green:83,blue:74},base_name:'{\"translate\":\"item.cook.beef\",\"italic\":false}'},
+			    cooked:{tag:{cook:{food:6,redux:[1,0],color:{red:142,green:82,blue:60}}},CustomModelData:6429545,id:\"minecraft:tropical_fish\"}
+			  }"
             }
           ]
         }
