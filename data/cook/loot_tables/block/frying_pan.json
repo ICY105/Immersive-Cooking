@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:tropical_fish",
+		  "name": "minecraft:firework_star",
           "functions": [
             {
 			  "function": "minecraft:set_name",
@@ -14,7 +14,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{frying_pan:1b,CustomModelData: 6429099, HideFlags: 32, BlockEntityTag: {Lock: \"§cook\"}}"
+              "tag":"{frying_pan:1b,CustomModelData: 6429103, HideFlags: 32, BlockEntityTag: {Lock: \"§cook\"}}"
             }
           ]
         }
