@@ -14,7 +14,7 @@ data merge storage cook:temp {list:[]}
 execute positioned ~ ~-1.5 ~ as @e[tag=cook_pot_item,distance=..0.05] at @s run function cook:block/cooking_pot/fill_bowl_2
 
 ### Set Name
-data modify storage cook:temp var set from entity @s Item.tag.name
+data modify storage cook:temp var set from entity @e[tag=cook_pot_liquid,distance=..0.1,limit=1] Item.tag.liquid_item.tag.cook.base_name
 execute store result score $temp_0 cook_data run data get storage cook:temp list
 
 data modify block -29999999 0 1602 Text1 set value '[{"translate":"item.cook.stew","italic":false,"with":[{"translate":"item.cook.hearty_stew"},{"nbt":"var","storage":"cook:temp","interpret":true}]}]'

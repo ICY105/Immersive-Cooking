@@ -14,15 +14,15 @@ data merge storage cook:temp {list:[]}
 execute positioned ~ ~-0.56 ~ as @e[tag=cook_pan_item,distance=..0.25] at @s run function cook:block/frying_pan/fill_plate_2
 
 ### Set Name
-data modify storage cook:temp var set from entity @s Item.tag.name
+data modify storage cook:temp var set from entity @e[tag=cook_pan_liquid,distance=..0.1,limit=1] Item.tag.liquid_item.tag.cook.base_name
 execute store result score $temp_0 cook_data run data get storage cook:temp list
 
-data modify block -29999999 0 1602 Text1 set value '[{"translate":"item.cook.stir_fried","italic":false,"with":[{"nbt":"var","storage":"cook:temp","interpret":true}]}]'
-execute if score $temp_1 cook_data = $temp_0 cook_data run data modify block -29999999 0 1602 Text1 set value '[{"translate":"item.cook.fried","italic":false,"with":[{"translate":"item.cook.mixed_vegetable"},{"nbt":"var","storage":"cook:temp","interpret":true}]}]'
-execute if score $temp_2 cook_data = $temp_0 cook_data run data modify block -29999999 0 1602 Text1 set value '[{"translate":"item.cook.fried","italic":false,"with":[{"translate":"item.cook.mixed_fruit"},{"nbt":"var","storage":"cook:temp","interpret":true}]}]'
-execute if score $temp_3 cook_data = $temp_0 cook_data run data modify block -29999999 0 1602 Text1 set value '[{"translate":"item.cook.fried","italic":false,"with":[{"translate":"item.cook.mixed_grain"},{"nbt":"var","storage":"cook:temp","interpret":true}]}]'
-execute if score $temp_4 cook_data = $temp_0 cook_data run data modify block -29999999 0 1602 Text1 set value '[{"translate":"item.cook.fried","italic":false,"with":[{"translate":"item.cook.mixed_protein"},{"nbt":"var","storage":"cook:temp","interpret":true}]}]'
-execute if score $temp_5 cook_data = $temp_0 cook_data run data modify block -29999999 0 1602 Text1 set value '[{"translate":"item.cook.fried","italic":false,"with":[{"translate":"item.cook.mixed_dairy"},{"nbt":"var","storage":"cook:temp","interpret":true}]}]'
+data modify block -29999999 0 1602 Text1 set value '[{"translate":"item.cook.stir_fry","italic":false,"with":[{"nbt":"var","storage":"cook:temp","interpret":true}]}]'
+execute if score $temp_1 cook_data = $temp_0 cook_data run data modify block -29999999 0 1602 Text1 set value '[{"translate":"item.cook.stir_fried","italic":false,"with":[{"translate":"item.cook.mixed_vegetable"},{"nbt":"var","storage":"cook:temp","interpret":true}]}]'
+execute if score $temp_2 cook_data = $temp_0 cook_data run data modify block -29999999 0 1602 Text1 set value '[{"translate":"item.cook.stir_fried","italic":false,"with":[{"translate":"item.cook.mixed_fruit"},{"nbt":"var","storage":"cook:temp","interpret":true}]}]'
+execute if score $temp_3 cook_data = $temp_0 cook_data run data modify block -29999999 0 1602 Text1 set value '[{"translate":"item.cook.stir_fried","italic":false,"with":[{"translate":"item.cook.mixed_grain"},{"nbt":"var","storage":"cook:temp","interpret":true}]}]'
+execute if score $temp_4 cook_data = $temp_0 cook_data run data modify block -29999999 0 1602 Text1 set value '[{"translate":"item.cook.stir_fried","italic":false,"with":[{"translate":"item.cook.mixed_protein"},{"nbt":"var","storage":"cook:temp","interpret":true}]}]'
+execute if score $temp_5 cook_data = $temp_0 cook_data run data modify block -29999999 0 1602 Text1 set value '[{"translate":"item.cook.stir_fried","italic":false,"with":[{"translate":"item.cook.mixed_dairy"},{"nbt":"var","storage":"cook:temp","interpret":true}]}]'
 
 execute if score $temp_0 cook_data matches ..1 run scoreboard players remove $temp_8 cook_data 1
 
