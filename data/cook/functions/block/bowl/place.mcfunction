@@ -13,7 +13,7 @@ execute if score $temp_0 cook_data matches 1 run summon armor_stand ~0.5 ~ ~0.5 
 execute if score $temp_0 cook_data matches 1 run data modify entity @e[tag=cook_new,limit=1] HandItems[0].tag.Explosion.Colors[0] set from entity @s SelectedItem.tag.Explosion.Colors[0]
 execute if score $temp_0 cook_data matches 1 run tag @e[tag=cook_new] remove cook_new
 
-execute if score $temp_0 cook_data matches 1 run data modify storage cook:temp list set from entity @s SelectedItem.tag.items
+execute if score $temp_0 cook_data matches 1 run data modify storage cook:temp list set from entity @s SelectedItem.tag.ingredients
 execute if score $temp_0 cook_data matches 1 run scoreboard players set $temp_1 cook_data 0
 execute if score $temp_0 cook_data matches 1 if data storage cook:temp list[0] positioned ~0.5 ~ ~0.5 run function cook:block/bowl/add_items
 

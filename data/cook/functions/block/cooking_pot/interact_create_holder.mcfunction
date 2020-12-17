@@ -3,9 +3,9 @@ data modify storage cook:temp obj set from entity @p[tag=cook_interact] Selected
 function cook:utils/convert_vanilla_ingrediant
 data modify block -29999999 0 1601 Items[0].Count set value 1b
 
-execute if data block -29999999 0 1601 Items[0].tag.cook{type:7b} run function cook:block/cooking_pot/interact_add_liquid
-
 scoreboard players set $temp_0 cook_data -1
+execute if entity @s[tag=!cook_has_liquid] if data block -29999999 0 1601 Items[0].tag.cook{type:7b} run function cook:block/cooking_pot/interact_add_liquid
+execute if entity @s[tag=cook_has_liquid] if data block -29999999 0 1601 Items[0].tag.cook{type:6b} run function cook:block/cooking_pot/interact_add_seasoning
 execute if entity @s[tag=cook_has_liquid] if data block -29999999 0 1601 Items[0].tag.cook{boiling:1b} run scoreboard players set $temp_0 cook_data 0
 
 #count existing ingredients and squash to 8 spawning locations

@@ -12,27 +12,17 @@ scoreboard players operation $temp_0 cook_data = $utils.temp_0 cook_data
 execute if score $temp_0 cook_data matches 1 if data block -29999999 0 1601 Items[0].tag.cook{roasting:1b} if data block -29999999 0 1601 Items[0].tag.cooked run data modify block -29999999 0 1601 Items[0] merge from block -29999999 0 1601 Items[0].tag.cooked
 execute if score $temp_0 cook_data matches 1 if data block -29999999 0 1601 Items[0].tag.cook{roasting:1b} if data block -29999999 0 1601 Items[0].tag.cooked run data remove block -29999999 0 1601 Items[0].tag.cooked
 
-execute store result score $temp_5 cook_data run data get block -29999999 0 1601 Items[0].tag.cook.color.red
-execute store result score $temp_1 cook_data run data get block -29999999 0 1601 Items[0].tag.cook.color.green
-execute store result score $temp_2 cook_data run data get block -29999999 0 1601 Items[0].tag.cook.color.blue
+#modify color
+execute store result score $utils.in_0 cook_data run data get block -29999999 0 1601 Items[0].tag.cook.color.red
+execute store result score $utils.in_1 cook_data run data get block -29999999 0 1601 Items[0].tag.cook.color.green
+execute store result score $utils.in_2 cook_data run data get block -29999999 0 1601 Items[0].tag.cook.color.blue
 
-#compute color
-scoreboard players set $temp_3 cook_data 0
-scoreboard players set $temp_4 cook_data 256
-
-scoreboard players operation $temp_3 cook_data += $temp_2 cook_data
-
-scoreboard players operation $temp_1 cook_data *= $temp_4 cook_data
-scoreboard players operation $temp_3 cook_data += $temp_1 cook_data
-
-scoreboard players operation $temp_5 cook_data *= $temp_4 cook_data
-scoreboard players operation $temp_5 cook_data *= $temp_4 cook_data
-scoreboard players operation $temp_3 cook_data += $temp_5 cook_data
+function cook:utils/calc_color
 
 execute if data block -29999999 0 1601 Items[0].tag.cook.color if data block -29999999 0 1601 Items[{Slot:0b,id:"minecraft:firework_star"}] run data modify block -29999999 0 1601 Items[0].tag.Explosion set value {Colors:[I;0]}
-execute if data block -29999999 0 1601 Items[0].tag.cook.color if data block -29999999 0 1601 Items[{Slot:0b,id:"minecraft:firework_star"}] store result block -29999999 0 1601 Items[0].tag.Explosion.Colors[0] int 1 run scoreboard players get $temp_3 cook_data
+execute if data block -29999999 0 1601 Items[0].tag.cook.color if data block -29999999 0 1601 Items[{Slot:0b,id:"minecraft:firework_star"}] store result block -29999999 0 1601 Items[0].tag.Explosion.Colors[0] int 1 run scoreboard players get $utils.out_0 cook_data
 
-#reduce quality
+#modify quality
 execute if score $temp_0 cook_data matches 1 if data block -29999999 0 1601 Items[0].tag.cook{roasting:1b} store result score $temp_2 cook_data run data get block -29999999 0 1601 Items[0].tag.cook.quality
 scoreboard players add $temp_2 cook_data 2
 execute if score $temp_0 cook_data matches 1 if data block -29999999 0 1601 Items[0].tag.cook{roasting:1b} store result block -29999999 0 1601 Items[0].tag.cook.quality int 1 run scoreboard players get $temp_2 cook_data
@@ -40,8 +30,8 @@ execute if score $temp_0 cook_data matches 1 if data block -29999999 0 1601 Item
 #modify food level
 execute store result score $temp_7 cook_data run data get block -29999999 0 1601 Items[0].tag.cook.food
 execute store result score $temp_8 cook_data run data get block -29999999 0 1601 Items[0].tag.cook.quality
-execute if score $temp_8 cook_data matches 0 run data modify block -29999999 0 1602 Text2 set value '[{"score":{"name":"$temp_7","objective":"cook_data"},"italic":false,"color":"gray"},{"text":"\\uc009","italic":false,"font":"cook:default","color":"white"}]'
-execute unless score $temp_8 cook_data matches 0 run data modify block -29999999 0 1602 Text2 set value '[{"score":{"name":"$temp_7","objective":"cook_data"},"italic":false,"color":"gray"},{"text":"\\uc009 ","italic":false,"font":"cook:default","color":"white"},{"score":{"name":"$temp_8","objective":"cook_data"},"italic":false,"color":"gray"},{"text":"0%"},{"text":"\\uc00a","italic":false,"font":"cook:default","color":"white"}]'
+execute if score $temp_8 cook_data matches 0 run data modify block -29999999 0 1602 Text1 set value '[{"translate":"lore.cook.food_level","italic":false,"font":"cook:default","color":"white","with":[{"score":{"name":"$temp_7","objective":"cook_data"},"color":"gray"}]}]'
+execute unless score $temp_8 cook_data matches 0 run data modify block -29999999 0 1602 Text1 set value '[{"translate":"lore.cook.food_level_quality","italic":false,"font":"cook:default","color":"white","with":[{"score":{"name":"$temp_7","objective":"cook_data"},"color":"gray"},[{"score":{"name":"$temp_8","objective":"cook_data"},"color":"gray"},{"text":"0%","color":"gray"}]]}]'
 data modify block -29999999 0 1601 Items[0].tag.display.Lore[0] set from block -29999999 0 1602 Text2
 
 #set output

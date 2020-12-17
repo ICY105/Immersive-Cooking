@@ -14,7 +14,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{cook:{type:4b,egg:1b,food:2, mashing:2b,mixing:1b,cutting:1b, roasting:1b,smoking:1b,boiling:1b,frying:1b, color:{red:234,green:224,blue:187},base_name:'{\"translate\":\"item.cook.turtle_egg\",\"italic\":false}'}, cooked:{ id:\"minecraft:tropical_fish\",tag:{CustomModelData:6429556,cook:{food:5,redux:[1,0]}} } }"
+              "tag":"{cook:{type:4b,egg:1b,food:2, mashing:2b,mixing:1b,cutting:1b, roasting:1b,smoking:1b,boiling:1b,frying:1b, color:{red:234,green:224,blue:187},base_name:'{\"translate\":\"item.cook.turtle_egg\",\"italic\":false}'}, cooked:{ id:\"minecraft:tropical_fish\",tag:{CustomModelData:6429572,cook:{food:5,redux:[1,0]}} } }"
             }
           ]
         }
