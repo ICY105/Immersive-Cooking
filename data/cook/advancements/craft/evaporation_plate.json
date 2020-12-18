@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"crafter":{
+			"trigger": "minecraft:recipe_unlocked",
+		    "conditions": {
+			  "recipe": "cook:evaporation_plate"
+		    }
+		}
+	},
+	"rewards":{ 
+		"function":"cook:player/craft/evaporation_plate_trigger"
+	},
+	"parent":"cook:cooking_base"
+}

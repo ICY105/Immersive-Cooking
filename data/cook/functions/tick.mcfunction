@@ -2,6 +2,12 @@
 #campfires
 execute if score $base.timer_100 du_data matches 0 as @e[tag=du_campfire] at @s if data block ~ ~ ~ Items run function cook:block/campfire/check_items
 
+#evaporation plates
+execute if score $base.timer_100 du_data matches 1 as @e[tag=cook_evaporation] at @s run function cook:block/evaporation_plate/tick
+
+#cleanup any abandoned bag entities
+execute if score $base.timer_100 du_data matches 2 as @e[tag=cook_bag_interface] at @s unless entity @p[tag=cook_open_bag,distance=..12] run tp @s ~ -300 ~
+
 #oven
 execute if score $base.timer_20 du_data matches 1 as @e[tag=cook_oven,tag=cook_has_item,tag=!cook_open] at @s run function cook:block/oven/tick
 
@@ -16,9 +22,6 @@ execute if score $base.timer_20 du_data matches 4 as @e[tag=cook_frying_pan,tag=
 
 #frying pan
 execute if score $base.timer_20 du_data matches 5 as @e[tag=cook_fermenter] at @s positioned ^ ^ ^-0.5 run function cook:block/fermenter/tick
-
-#cleanup any abandoned bag entities
-execute if score $base.timer_100 du_data matches 0 as @e[tag=cook_bag_interface] at @s unless entity @p[tag=cook_open_bag,distance=..12] run tp @s ~ -300 ~
 
 #player
 execute as @a at @s run function cook:player/tick

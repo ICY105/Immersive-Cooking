@@ -11,6 +11,7 @@ execute if entity @s[tag=cook_craft_smoking_rack] run function cook:player/craft
 execute if entity @s[tag=cook_craft_tray] run function cook:player/craft/tray_replace
 execute if entity @s[tag=cook_craft_juicer] run function cook:player/craft/juicer_replace
 execute if entity @s[tag=cook_craft_fermenter] run function cook:player/craft/fermenter_replace
+execute if entity @s[tag=cook_craft_evaporation] run function cook:player/craft/evaporation_plate_replace
 
 execute if entity @s[tag=cook_craft_manual] run function cook:player/craft/manual_replace
 execute if entity @s[tag=cook_craft_saw] run function cook:player/craft/saw_replace

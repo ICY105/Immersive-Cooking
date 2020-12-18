@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "cooking",
+  "pattern": [
+    "TTT",
+    "TTT"
+  ],
+  "key": {
+	"T": {
+      "tag": "cook:craft_terracotta"
+    }
+  },
+  "result": {
+    "item": "minecraft:structure_void"
+  }
+}

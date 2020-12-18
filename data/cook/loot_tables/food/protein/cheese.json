@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:tropical_fish",
+          "functions": [
+			{
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"item.cook.cheese","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [{"translate":"lore.cook.food_level_quality","italic":false,"font":"cook:default","color":"white","with":[{"text":"6","color":"gray"},{"text":"20%","color":"gray"}]}]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData:6429575, cook:{type:4b,food:6,quality:2,cheese:1b, mixing:1b,cutting:1b,frying:1b,boiling:1b,cutting_models:[6429415], color:{red:255,green:255,blue:0},base_name:'{\"translate\":\"item.cook.cheese\",\"italic\":false}'} }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

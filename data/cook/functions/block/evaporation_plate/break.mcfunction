@@ -6,5 +6,5 @@ execute positioned ~ ~-0.56 ~ as @e[tag=cook_evaporation_item,distance=..0.5] ru
 loot spawn ~ ~ ~ mine -29999999 0 1601 minecraft:air{drop_contents:true}
 
 execute positioned ~ ~-0.56 ~ run kill @e[tag=cook_evaporation_item,distance=..0.5]
-execute positioned ~ ~ ~ run kill @e[tag=cook_evaporation_liquid,distance=..0.5]
+execute positioned ~ ~0.95 ~ run kill @e[tag=cook_evaporation_liquid,distance=..0.5]
 kill @s
