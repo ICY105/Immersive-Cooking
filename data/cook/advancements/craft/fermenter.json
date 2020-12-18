@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"crafter":{
+			"trigger": "minecraft:recipe_unlocked",
+		    "conditions": {
+			  "recipe": "cook:fermenter"
+		    }
+		}
+	},
+	"rewards":{ 
+		"function":"cook:player/craft/fermenter_trigger"
+	},
+	"parent":"cook:cooking_base"
+}

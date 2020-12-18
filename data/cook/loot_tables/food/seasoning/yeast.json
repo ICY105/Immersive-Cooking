@@ -6,15 +6,19 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:sweet_berries",
+		  "name": "minecraft:tropical_fish",
           "functions": [
+			{
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"item.cook.yeast","italic":false}
+			},
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [{"translate":"lore.cook.food_level","italic":false,"font":"cook:default","color":"white","with":[{"text":"1","color":"gray"}]}]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{cook:{type:2b,food:1, mashing:1b,mixing:1b,cutting:1b,washing:1b,juicing:1b,berries:1b, roasting:1b,boiling:1b,frying:1b, color:{red:165,green:7,blue:0},base_name:'{\"translate\":\"item.cook.sweet_berries\",\"italic\":false}'}, cooked:{ id:\"minecraft:tropical_fish\",tag:{CustomModelData:6429501,cook:{food:3,redux:[1,0]}} } }"
+              "tag":"{CustomModelData:6429573, cook:{type:6b,food:1,yeast:1b, mixing:1b, color:{red:242,green:242,blue:170},base_name:'{\"translate\":\"item.cook.yeast\",\"italic\":false}'} }"
             }
           ]
         }

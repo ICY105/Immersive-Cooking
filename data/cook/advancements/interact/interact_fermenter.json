@@ -1,0 +1,17 @@
+{
+	"criteria": {
+		"example": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:item_frame",
+					"nbt": "{Tags:[\"cook_fermenter\"]}"
+				}
+			}
+		}
+	},
+	"rewards":{ 
+		"function":"cook:player/interact/fermenter"
+	},
+	"parent":"cook:cooking_base"
+}

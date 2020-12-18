@@ -31,14 +31,17 @@ tag @s add cook_temp
 execute if score $temp_0 cook_data matches 1 run data modify block -29999999 0 1602 Text1 set value '{"translate":"item.cook.sliced","italic":false,"with":[{"nbt":"var","storage":"cook:temp","interpret":true}]}'
 execute if score $temp_0 cook_data matches 1 run data modify entity @s HandItems[0].tag.cook.cutting set value 2b
 execute if score $temp_0 cook_data matches 1 run data modify entity @s HandItems[0].tag.CustomModelData set value 6429401
+execute if score $temp_0 cook_data matches 1 if data entity @s HandItems[0].tag.cook.cutting_models[0] run data modify entity @s HandItems[0].tag.CustomModelData set from entity @s HandItems[0].tag.cook.cutting_models[0]
 
 execute if score $temp_0 cook_data matches 2 run data modify block -29999999 0 1602 Text1 set value '{"translate":"item.cook.chopped","italic":false,"with":[{"nbt":"var","storage":"cook:temp","interpret":true}]}'
 execute if score $temp_0 cook_data matches 2 run data modify entity @s HandItems[0].tag.cook.cutting set value 3b
 execute if score $temp_0 cook_data matches 2 run data modify entity @s HandItems[0].tag.CustomModelData set value 6429402
+execute if score $temp_0 cook_data matches 1 if data entity @s HandItems[0].tag.cook.cutting_models[1] run data modify entity @s HandItems[0].tag.CustomModelData set from entity @s HandItems[0].tag.cook.cutting_models[1]
 
 execute if score $temp_0 cook_data matches 3 run data modify block -29999999 0 1602 Text1 set value '{"translate":"item.cook.minced","italic":false,"with":[{"nbt":"var","storage":"cook:temp","interpret":true}]}'
 execute if score $temp_0 cook_data matches 3 run data modify entity @s HandItems[0].tag.cook.cutting set value 4b
 execute if score $temp_0 cook_data matches 3 run data modify entity @s HandItems[0].tag.CustomModelData set value 6429403
+execute if score $temp_0 cook_data matches 1 if data entity @s HandItems[0].tag.cook.cutting_models[2] run data modify entity @s HandItems[0].tag.CustomModelData set from entity @s HandItems[0].tag.cook.cutting_models[2]
 
 execute if score $temp_0 cook_data matches 1..3 run data remove entity @s HandItems[0].tag.cooked.id
 execute if score $temp_0 cook_data matches 1..3 run data remove entity @s HandItems[0].tag.cooked.tag.CustomModelData

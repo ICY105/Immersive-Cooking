@@ -18,3 +18,5 @@ execute if score $in_0 cook_data matches 6429097 run function cook:block/smoking
 execute if score $in_0 cook_data matches 6429098 run function cook:block/cooking_pot/place
 execute if score $in_0 cook_data matches 6429102 run function cook:block/tray/place
 execute if score $in_0 cook_data matches 6429103 run function cook:block/juicer/place
+execute if score $in_0 cook_data matches 6429104 run function cook:block/fermenter/place
+execute if score $in_0 cook_data matches 6429105 run function cook:block/evaporation_plate/place

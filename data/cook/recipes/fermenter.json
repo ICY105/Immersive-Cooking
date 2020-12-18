@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "cooking",
+  "pattern": [
+    "III",
+	"GBG",
+    "III"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:barrel"
+    },
+	"G": {
+      "item": "minecraft:glass"
+    },
+	"I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "minecraft:structure_void"
+  }
+}

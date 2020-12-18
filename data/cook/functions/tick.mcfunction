@@ -14,6 +14,9 @@ execute if score $base.timer_20 du_data matches 3 as @e[tag=cook_pot,tag=cook_ha
 #frying pan
 execute if score $base.timer_20 du_data matches 4 as @e[tag=cook_frying_pan,tag=cook_has_item] at @s run function cook:block/frying_pan/tick
 
+#frying pan
+execute if score $base.timer_20 du_data matches 5 as @e[tag=cook_fermenter] at @s positioned ^ ^ ^-0.5 run function cook:block/fermenter/tick
+
 #cleanup any abandoned bag entities
 execute if score $base.timer_100 du_data matches 0 as @e[tag=cook_bag_interface] at @s unless entity @p[tag=cook_open_bag,distance=..12] run tp @s ~ -300 ~
 

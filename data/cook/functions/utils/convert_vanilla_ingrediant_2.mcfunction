@@ -80,4 +80,3 @@ execute if score $utils.temp_0 cook_data matches 0 if data storage cook:temp obj
 execute if score $utils.temp_0 cook_data matches 0 if data storage cook:temp obj{id:"minecraft:gold_ingot"} store success score $utils.temp_0 cook_data run loot replace block -29999999 0 1601 container.0 loot cook:food/seasoning/gold_ingot
 execute if score $utils.temp_0 cook_data matches 0 if data storage cook:temp obj{id:"minecraft:redstone"} store success score $utils.temp_0 cook_data run loot replace block -29999999 0 1601 container.0 loot cook:food/seasoning/redstone
 execute if score $utils.temp_0 cook_data matches 0 if data storage cook:temp obj{id:"minecraft:glowstone_dust"} store success score $utils.temp_0 cook_data run loot replace block -29999999 0 1601 container.0 loot cook:food/seasoning/glowstone_dust
-

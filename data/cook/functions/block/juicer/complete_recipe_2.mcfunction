@@ -1,5 +1,5 @@
 
-data modify storage cook:temp obj set value {id:"minecraft:potion",Count:1b,tag:{HideFlags:32,CustomPotionColor:0,display:{Name:"",Lore:[]},cook:{type:7b,base_name:""}}}
+data modify storage cook:temp obj set value {id:"minecraft:potion",Count:1b,tag:{HideFlags:32,CustomPotionColor:0,display:{Name:"",Lore:[]},cook:{type:7b,ferment:1b,base_name:""}}}
 
 #color
 execute store result score $utils.in_0 cook_data run data get entity @s HandItems[0].tag.cook.color.red
@@ -21,5 +21,6 @@ data modify storage cook:temp obj.tag.cook.food set from entity @s HandItems[0].
 data modify storage cook:temp obj.tag.cook.quality set from entity @s HandItems[0].tag.cook.quality
 data modify storage cook:temp obj.tag.cook.base_name set from entity @s HandItems[0].tag.cook.base_name
 data modify storage cook:temp obj.tag.display.Lore set from entity @s HandItems[0].tag.display.Lore
+execute if data entity @s HandItems[0].tag.cook{berries:1b} run data modify storage cook:temp obj.tag.cook.berries set value 1b
 
 kill @s

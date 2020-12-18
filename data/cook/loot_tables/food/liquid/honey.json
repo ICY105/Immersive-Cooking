@@ -18,7 +18,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomPotionColor:16748822,cook:{type:7b,food:2,quality:2,honey:1b, color:{red:255,green:145,blue:22},base_name:'{\"translate\":\"item.cook.honey\",\"italic\":false}'}}"
+              "tag":"{CustomPotionColor:16748822,cook:{type:7b,food:2,quality:2,ferment:1b,honey:1b, color:{red:255,green:145,blue:22},base_name:'{\"translate\":\"item.cook.honey\",\"italic\":false}'}}"
             }
           ]
         }

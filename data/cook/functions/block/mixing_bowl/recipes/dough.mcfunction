@@ -1,6 +1,6 @@
 
-data modify storage cook:temp obj.tag merge value {CustomModelData:6429407, cook:{ type:3b,raw:1b, baking:1b,boiling:0b } }
-data modify storage cook:temp obj.tag.cooked merge value {id:"minecraft:firework_star",du_click_detect:1b,tag:{ CustomModelData:6429412,cook:{ raw:0b,base_name:'',boiling:1b,frying:1b } }}
+data modify storage cook:temp obj.tag merge value {CustomModelData:6429407, cook:{ type:3b, baking:1b,boiling:0b } }
+data modify storage cook:temp obj.tag.cooked merge value {id:"minecraft:firework_star",du_click_detect:1b,tag:{ CustomModelData:6429414,cook:{ base_name:'',boiling:1b,frying:1b,cutting:1b,cutting_models:[6429573] } }}
 data modify storage cook:temp var set from storage cook:temp list[].tag{cook:{flour:1b}}.cook.base_name
 
 execute if score $temp_0 cook_data matches 2 run data modify block -29999999 0 1602 Text1 set value '[{"translate":"item.cook.bread","italic":"false","with":[{"nbt":"var","storage":"cook:temp","interpret":true}]}]'
