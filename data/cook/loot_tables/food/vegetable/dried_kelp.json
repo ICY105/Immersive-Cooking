@@ -14,7 +14,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429522, cook:{type:1b,food:2, mixing:1b,cutting:1b, boiling:1b,frying:1b, color:{red:60,green:51,blue:36},base_name:'{\"translate\":\"item.cook.dried_kelp\",\"italic\":false}'} }"
+              "tag":"{CustomModelData:6429522, cook:{type:1b,food:2, mixing:1b,cutting:1b, boiling:1b,frying:1b, color:{red:60,green:51,blue:36},base_name:'{\"translate\":\"item.minecraft.dried_kelp\",\"italic\":false}'} }"
             }
           ]
         }

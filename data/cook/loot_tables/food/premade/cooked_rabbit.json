@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": [{"translate":"item.cook.roasted","italic":false,"with":[{"translate":"item.cook.rabbit"}]}]
+			  "name": [{"translate":"item.cook.roasted","italic":false,"with":[{"translate":"item.minecraft.rabbit"}]}]
 			},
 			{
 			  "function": "minecraft:set_lore",
@@ -18,7 +18,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429547, cook:{type:4b,food:8, mixing:1b,cutting:1b, boiling:1b,frying:1b, color:{red:231,green:191,blue:162},base_name:'{\"translate\":\"item.cook.rabbit\",\"italic\":false}'} }"
+              "tag":"{CustomModelData:6429547, cook:{type:4b,food:8, mixing:1b,cutting:1b, boiling:1b,frying:1b, color:{red:231,green:191,blue:162},base_name:'{\"translate\":\"item.minecraft.rabbit\",\"italic\":false}'} }"
             }
           ]
         }

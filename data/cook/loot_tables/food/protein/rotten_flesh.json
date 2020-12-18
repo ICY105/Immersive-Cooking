@@ -14,7 +14,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{cook:{type:4b,food:2,quality:-1, mashing:2b,mixing:1b,cutting:1b, roasting:1b,smoking:1b,boiling:1b,frying:1b, color:{red:106,green:93,blue:24},base_name:'{\"translate\":\"item.cook.rotten_flesh\",\"italic\":false}'}, cooked:{ id:\"minecraft:tropical_fish\",tag:{CustomModelData:6429554,cook:{food:4,redux:[1,0]}} } }"
+              "tag":"{cook:{type:4b,food:2,quality:-1, mashing:2b,mixing:1b,cutting:1b, roasting:1b,smoking:1b,boiling:1b,frying:1b, color:{red:106,green:93,blue:24},base_name:'{\"translate\":\"item.minecraft.rotten_flesh\",\"italic\":false}'}, cooked:{ id:\"minecraft:tropical_fish\",tag:{CustomModelData:6429554,cook:{food:4,redux:[1,0]}} } }"
             }
           ]
         }

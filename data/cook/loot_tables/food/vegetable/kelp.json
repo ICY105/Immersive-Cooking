@@ -14,7 +14,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{cook:{type:1b,food:1, mixing:1b,cutting:1b,washing:1b, roasting:1b,boiling:1b,baking:1b,frying:1b, color:{red:89,green:171,blue:48},base_name:'{\"translate\":\"item.cook.kelp\",\"italic\":false}'}, cooked:{ id:\"minecraft:dried_kelp\",tag:{cook:{type:1b,food:2, mixing:1b,cutting:1b, boiling:1b,frying:1b,baking:0b,roasting:0b, color:{red:60,green:51,blue:36}} }} }"
+              "tag":"{cook:{type:1b,food:1, mixing:1b,cutting:1b,washing:1b, roasting:1b,boiling:1b,baking:1b,frying:1b, color:{red:89,green:171,blue:48},base_name:'{\"translate\":\"item.minecraft.kelp\",\"italic\":false}'}, cooked:{ id:\"minecraft:dried_kelp\",tag:{cook:{type:1b,food:2, mixing:1b,cutting:1b, boiling:1b,frying:1b,baking:0b,roasting:0b, color:{red:60,green:51,blue:36}} }} }"
             }
           ]
         }

@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": [ {"translate":"item.cook.cookie","italic":false,"with":[{"translate":"item.minecraft.wheat"}]} ]
+			  "name": [ {"translate":"item.minecraft.cookie","italic":false,"with":[{"translate":"item.minecraft.wheat"}]} ]
 			},
 			{
 			  "function": "minecraft:set_lore",

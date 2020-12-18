@@ -14,7 +14,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{cook:{type:1b,food:1,quality:1, mixing:1b,washing:1b, boiling:1b,frying:1b, color:{red:237,green:48,blue:44},base_name:'{\"translate\":\"item.cook.red_tulip\",\"italic\":false}'}, cooked:{ id:\"minecraft:tropical_fish\",tag:{CustomModelData:6429530,cook:{food:3,redux:[1,0]}} } }"
+              "tag":"{cook:{type:1b,food:1,quality:1, mixing:1b,washing:1b, boiling:1b,frying:1b, color:{red:237,green:48,blue:44},base_name:'{\"translate\":\"item.minecraft.red_tulip\",\"italic\":false}'}, cooked:{ id:\"minecraft:tropical_fish\",tag:{CustomModelData:6429530,cook:{food:3,redux:[1,0]}} } }"
             }
           ]
         }

@@ -14,7 +14,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{cook:{type:4b,raw:1b,food:2,quality:-3, mashing:2b,mixing:1b,cutting:1b,juicing:2b, roasting:1b,smoking:1b,boiling:1b,frying:1b, color:{red:101,green:6,blue:43},base_name:'{\"translate\":\"item.cook.spider_eye\",\"italic\":false}'}, cooked:{ id:\"minecraft:tropical_fish\",tag:{CustomModelData:6429557,cook:{food:5,raw:0b,redux:[1,0]}} } }"
+              "tag":"{cook:{type:4b,raw:1b,food:2,quality:-3, mashing:2b,mixing:1b,cutting:1b,juicing:2b, roasting:1b,smoking:1b,boiling:1b,frying:1b, color:{red:101,green:6,blue:43},base_name:'{\"translate\":\"item.minecraft.spider_eye\",\"italic\":false}'}, cooked:{ id:\"minecraft:tropical_fish\",tag:{CustomModelData:6429557,cook:{food:5,raw:0b,redux:[1,0]}} } }"
             }
           ]
         }

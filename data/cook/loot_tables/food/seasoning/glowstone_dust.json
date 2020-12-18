@@ -14,7 +14,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429569, cook:{type:6b,food:2,quality:1, mixing:1b, baking:1b,frying:1b, color:{red:255,green:188,blue:94},base_name:'{\"translate\":\"item.cook.glowstone_dust\",\"italic\":false}'} }"
+              "tag":"{CustomModelData:6429569, cook:{type:6b,food:2,quality:1, mixing:1b, baking:1b,frying:1b, color:{red:255,green:188,blue:94},base_name:'{\"translate\":\"item.minecraft.glowstone_dust\",\"italic\":false}'} }"
             }
           ]
         }

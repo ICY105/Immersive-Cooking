@@ -14,7 +14,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{cook:{type:1b,food:1, mashing:1b,mixing:1b,cutting:1b,washing:1b,juicing:1b, roasting:1b,boiling:1b,frying:1b, color:{red:182,green:72,blue:76},base_name:'{\"translate\":\"item.cook.beetroot\",\"italic\":false}'}, cooked:{ id:\"minecraft:tropical_fish\",tag:{CustomModelData:6429520,cook:{food:3,redux:[1,0]}} } }"
+              "tag":"{cook:{type:1b,food:1, mashing:1b,mixing:1b,cutting:1b,washing:1b,juicing:1b, roasting:1b,boiling:1b,frying:1b, color:{red:182,green:72,blue:76},base_name:'{\"translate\":\"item.minecraft.beetroot\",\"italic\":false}'}, cooked:{ id:\"minecraft:tropical_fish\",tag:{CustomModelData:6429520,cook:{food:3,redux:[1,0]}} } }"
             }
           ]
         }

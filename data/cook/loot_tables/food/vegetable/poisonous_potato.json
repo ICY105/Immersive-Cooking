@@ -14,7 +14,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{cook:{type:0b,raw:0b,food:1,quality:-2, mashing:1b,mixing:1b,cutting:1b,washing:1b, roasting:1b,boiling:1b,frying:1b, color:{red:175,green:200,blue:60},base_name:'{\"translate\":\"item.cook.poisonous_potato\",\"italic\":false}'}, cooked:{ id:\"minecraft:tropical_fish\",tag:{CustomModelData:6429513,cook:{food:3,redux:[1,0]}} } }"
+              "tag":"{cook:{type:0b,raw:0b,food:1,quality:-2, mashing:1b,mixing:1b,cutting:1b,washing:1b, roasting:1b,boiling:1b,frying:1b, color:{red:175,green:200,blue:60},base_name:'{\"translate\":\"item.minecraft.poisonous_potato\",\"italic\":false}'}, cooked:{ id:\"minecraft:tropical_fish\",tag:{CustomModelData:6429513,cook:{food:3,redux:[1,0]}} } }"
             }
           ]
         }

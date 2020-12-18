@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": [{"translate":"item.cook.roasted","italic":false,"with":[{"translate":"item.cook.potato"}]}]
+			  "name": [{"translate":"item.cook.roasted","italic":false,"with":[{"translate":"item.minecraft.potato"}]}]
 			},
 			{
 			  "function": "minecraft:set_lore",
@@ -18,7 +18,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429512, cook:{type:1b,food:5,quality:2, mixing:1b,cutting:1b, boiling:1b,frying:1b, color:{red:220,green:170,blue:80},base_name:'{\"translate\":\"item.cook.potato\",\"italic\":false}'} }"
+              "tag":"{CustomModelData:6429512, cook:{type:1b,food:5,quality:2, mixing:1b,cutting:1b, boiling:1b,frying:1b, color:{red:220,green:170,blue:80},base_name:'{\"translate\":\"item.minecraft.potato\",\"italic\":false}'} }"
             }
           ]
         }

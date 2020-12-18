@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": [{"translate":"item.cook.roasted","italic":false,"with":[{"translate":"item.cook.cod"}]}]
+			  "name": [{"translate":"item.cook.roasted","italic":false,"with":[{"translate":"item.cooked.cod"}]}]
 			},
 			{
 			  "function": "minecraft:set_lore",
