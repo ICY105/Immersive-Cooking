@@ -10,7 +10,7 @@ execute unless score $du.ver load matches 2020100.. run scoreboard players set $
 execute unless score $du.ver load matches 2020100.. run tellraw @a [{"text":"Error: Immersive Cooking requires Datapack Utilities version +2.2.1. You can download that [here].\n","color":"red","clickEvent":{"action":"open_url","value":"https://github.com/ImCoolYeah105/Datapack-Utilities/releases"}}]
 
 #print install message
-execute if score $install cook_data matches 1 run tellraw @a [{"text":"[Loaded Immersive Cooking v1.0 Prerelease 7]","color":"dark_green"}]
+execute if score $install cook_data matches 1 run tellraw @a [{"text":"[Loaded Immersive Cooking v1.0 Prerelease 8]","color":"dark_green"}]
 
 #resourcepack
 tellraw @a [{"translate":"Looks like you don't have the resourcepack for Immersive Cooking. You can download that [here].","color":"red","clickEvent":{"action":"open_url","value":"https://github.com/ImCoolYeah105/Immersive-Cooking/releases"}}]
