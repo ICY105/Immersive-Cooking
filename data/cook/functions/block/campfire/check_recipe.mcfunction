@@ -32,7 +32,7 @@ execute store result score $temp_7 cook_data run data get block -29999999 0 1601
 execute store result score $temp_8 cook_data run data get block -29999999 0 1601 Items[0].tag.cook.quality
 execute if score $temp_8 cook_data matches 0 run data modify block -29999999 0 1602 Text1 set value '[{"translate":"lore.cook.food_level","italic":false,"font":"cook:default","color":"white","with":[{"score":{"name":"$temp_7","objective":"cook_data"},"color":"gray"}]}]'
 execute unless score $temp_8 cook_data matches 0 run data modify block -29999999 0 1602 Text1 set value '[{"translate":"lore.cook.food_level_quality","italic":false,"font":"cook:default","color":"white","with":[{"score":{"name":"$temp_7","objective":"cook_data"},"color":"gray"},[{"score":{"name":"$temp_8","objective":"cook_data"},"color":"gray"},{"text":"0%","color":"gray"}]]}]'
-data modify block -29999999 0 1601 Items[0].tag.display.Lore[0] set from block -29999999 0 1602 Text2
+data modify block -29999999 0 1601 Items[0].tag.display.Lore[0] set from block -29999999 0 1602 Text1
 
 #set output
 tag @s add cook_temp
