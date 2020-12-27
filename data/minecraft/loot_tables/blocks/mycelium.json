@@ -1,0 +1,79 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "name": "minecraft:mycelium"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:survives_explosion"
+                }
+              ],
+              "name": "minecraft:dirt"
+            }
+          ]
+        }
+      ]
+    },
+	{
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cook:food/vegetable/truffle"
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "cook:food/vegetable/white_mushroom"
+        }
+      ],
+      "conditions": [
+		{
+		  "condition": "minecraft:inverted",
+		  "term": {
+			"condition": "minecraft:match_tool",
+            "predicate": {
+              "enchantments": [
+			    {
+				  "enchantment": "minecraft:silk_touch",
+				  "levels": {
+				    "min": 1
+				  }
+			    }
+			  ]
+            }
+          }
+        },
+		{
+          "condition": "minecraft:table_bonus",
+          "enchantment": "minecraft:fortune",
+          "chances": [ 0.25, 0.3, 0.35, 0.4, 0.5 ]
+        }
+      ]
+    }
+  ]
+}

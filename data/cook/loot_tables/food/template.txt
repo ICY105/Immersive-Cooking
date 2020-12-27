@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:tropical_fish",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"item.cook.food","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [{"translate":"lore.cook.food_level_quality","italic":false,"font":"cook:default","color":"white","with":[{"text":"1","color":"gray"},{"text":"10%","color":"gray"}]}]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{
+			    CustomModelData:6429000,
+				cook:{																//you will need to remove these comments- not valid json!
+				  type:1b,food:1,quality:1,redux:[1,0],								//food stats - redux is how much food the base item restores (for tropical fish, 1 food 0 saturation)
+				  mashing:1b,mixing:1b,cutting:1b,washing:1b,juicing:1b,			//allowed processing
+				  roasting:1b,smoking:1b,boiling:1b,baking:1b,frying:1b,			//allowed cooking
+				  color:{red:255,green:255,blue:255},								//color used with grayscale textures (ie. chopped items)
+				  base_name:'{\"translate\":\"item.cook.food\",\"italic\":false}'	//base name used for transformations, ie. frying the item = "Fried <Base Name>"
+				},
+				cooked:{								//applies transformation when cooked - ussually increases food value, can also change model or even item ID
+				  tag:{
+				    cook:{
+					  food:2
+					}
+				  }
+				}
+			  }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

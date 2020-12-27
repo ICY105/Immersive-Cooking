@@ -186,21 +186,6 @@
             }
           ],
           "name": "cook:food/grain/pumpkin_seeds"
-        },
-        {
-          "type": "minecraft:loot_table",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 2.0,
-                "max": 4.0,
-                "type": "minecraft:uniform"
-              }
-            }
-          ],
-          "name": "cook:food/grain/beetroot_seeds"
         }
       ]
     },

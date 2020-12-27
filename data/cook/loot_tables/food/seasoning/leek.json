@@ -6,15 +6,19 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:beetroot_seeds",
+		  "name": "minecraft:tropical_fish",
           "functions": [
+			{
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"item.cook.leek","italic":false}
+			},
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [{"translate":"lore.cook.food_level","italic":false,"font":"cook:default","color":"white","with":[{"text":"1","color":"gray"}]}]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{cook:{type:3b,raw:1b,food:0, mashing:1b,mixing:1b, roasting:1b,boiling:1b,frying:1b, color:{red:133,green:111,blue:74},base_name:'{\"translate\":\"item.minecraft.beetroot_seeds\",\"italic\":false}'}, cooked:{ id:\"minecraft:tropical_fish\",tag:{CustomModelData:6429563,cook:{food:1,redux:[1,0]}} } }"
+              "tag":"{CustomModelData:6429641, cook:{type:6b,food:1, mixing:1b,redux:[1,0], color:{red:0,green:208,blue:0},base_name:'{\"translate\":\"item.cook.leek\",\"italic\":false}'} }"
             }
           ]
         }

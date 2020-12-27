@@ -1,0 +1,124 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "biome": "minecraft:ocean"
+      }
+    },
+		{
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "biome": "minecraft:deep_ocean"
+      }
+    },
+	{
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "biome": "minecraft:cold_ocean"
+      }
+    },
+	{
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "biome": "minecraft:deep_cold_ocean"
+      }
+    },
+	{
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "biome": "minecraft:lukewarm_ocean"
+      }
+    },
+	{
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "biome": "minecraft:deep_lukewarm_ocean"
+      }
+    },
+	{
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "biome": "minecraft:warm_ocean"
+      }
+    },
+	{
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "biome": "minecraft:deep_warm_ocean"
+      }
+    },
+	{
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "biome": "minecraft:jungle"
+      }
+    },
+	{
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "biome": "minecraft:jungle_hills"
+      }
+    },
+	{
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "biome": "minecraft:modified_jungle"
+      }
+    },
+	{
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "biome": "minecraft:jungle_edge"
+      }
+    },
+	{
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "biome": "minecraft:modified_jungle_edge"
+      }
+    },
+	{
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "biome": "minecraft:bamboo_jungle"
+      }
+    },
+	{
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "biome": "minecraft:bamboo_jungle_hills"
+      }
+    },{
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "biome": "minecraft:river"
+      }
+    },
+	{
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "biome": "minecraft:beach"
+      }
+    },
+	{
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "biome": "minecraft:stone_shore"
+      }
+    },
+	{
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "biome": "minecraft:swamp"
+      }
+    },
+	{
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "biome": "minecraft:swamp_hills"
+      }
+    }
+  ]
+}

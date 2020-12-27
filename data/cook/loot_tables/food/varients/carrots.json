@@ -1,0 +1,22 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cook:food/vegetable/carrot",
+		  "weight": 2
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "cook:food/vegetable/white_carrot"
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "cook:food/vegetable/purple_carrot"
+        }
+      ]
+    }
+  ]
+}

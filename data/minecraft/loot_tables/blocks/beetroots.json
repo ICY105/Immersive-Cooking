@@ -16,13 +16,68 @@
                   "properties": {
                     "age": "3"
                   }
-                }
+				},
+				{
+				  "condition": "minecraft:reference",
+				  "name": "cook:temperate"
+				}
               ],
-              "name": "cook:food/vegetable/beetroot"
+              "name": "cook:food/vegetable/asparagus"
+            },
+			{
+              "type": "minecraft:loot_table",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "minecraft:beetroots",
+                  "properties": {
+                    "age": "3"
+                  }
+				},
+				{
+				  "condition": "minecraft:reference",
+				  "name": "cook:humid"
+				}
+              ],
+              "name": "cook:food/varients/bell_peppers"
+            },
+			{
+              "type": "minecraft:loot_table",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "minecraft:beetroots",
+                  "properties": {
+                    "age": "3"
+                  }
+				},
+				{
+				  "condition": "minecraft:reference",
+				  "name": "cook:arid"
+				}
+              ],
+              "name": "cook:food/vegetable/turnip"
+            },
+			{
+              "type": "minecraft:loot_table",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "minecraft:beetroots",
+                  "properties": {
+                    "age": "3"
+                  }
+				},
+				{
+				  "condition": "minecraft:reference",
+				  "name": "cook:artic"
+				}
+              ],
+              "name": "cook:food/vegetable/onion"
             },
             {
               "type": "minecraft:loot_table",
-              "name": "cook:food/grain/beetroot_seeds"
+              "name": "cook:food/grain/stem_vegetable_seeds"
             }
           ]
         }
@@ -44,7 +99,7 @@
               }
             }
           ],
-          "name": "cook:food/grain/beetroot_seeds"
+          "name": "cook:food/grain/stem_vegetable_seeds"
         }
       ],
       "conditions": [

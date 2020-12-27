@@ -1,0 +1,26 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cook:food/grain/grain_seeds",
+		  "weight": 3
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "cook:food/grain/leafy_vegetable_seeds"
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "cook:food/grain/root_vegetable_seeds"
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "cook:food/grain/stem_vegetable_seeds"
+        }
+      ]
+    }
+  ]
+}

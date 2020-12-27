@@ -82,7 +82,7 @@
               }
             }
           ],
-          "name": "cook:food/grain/wheat_seeds"
+          "name": "cook:food/grain/grain_seeds"
         },
         {
           "type": "minecraft:item",

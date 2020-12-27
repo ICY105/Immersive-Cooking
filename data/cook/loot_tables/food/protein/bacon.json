@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:tropical_fish",
+          "functions": [
+			{
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"item.cook.bacon","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [{"translate":"lore.cook.food_level_quality","italic":false,"font":"cook:default","color":"white","with":[{"text":"3","color":"gray"},{"text":"10%","color":"gray"}]}]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData:6429620, cook:{type:4b,food:3,quality:1,redux:[1,0], mashing:2b,roasting:1b,cutting:1b,frying:1b,boiling:1b,smoking:1b, color:{red:175,green:106,blue:123},base_name:'{\"translate\":\"item.cook.bacon\",\"italic\":false}'},   cooked:{tag:{CustomModelData:6429621,cook:{food:8,color:{red:174,green:148,blue:105}}}}    }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

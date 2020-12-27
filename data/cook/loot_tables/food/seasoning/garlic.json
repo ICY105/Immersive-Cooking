@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:tropical_fish",
+          "functions": [
+			{
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"item.cook.garlic","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [{"translate":"lore.cook.food_level","italic":false,"font":"cook:default","color":"white","with":[{"text":"1","color":"gray"}]}]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData:6429640, cook:{type:6b,food:1, mixing:1b,redux:[1,0], color:{red:240,green:240,blue:240},base_name:'{\"translate\":\"item.cook.garlic\",\"italic\":false}'} }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

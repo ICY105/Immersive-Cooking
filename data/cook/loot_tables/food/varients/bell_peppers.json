@@ -1,0 +1,21 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cook:food/vegetable/red_bell_pepper"
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "cook:food/vegetable/yellow_bell_pepper"
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "cook:food/vegetable/green_bell_pepper"
+        }
+      ]
+    }
+  ]
+}

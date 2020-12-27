@@ -18,7 +18,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429575, cook:{type:4b,food:6,quality:2,cheese:1b, mixing:1b,cutting:1b,frying:1b,boiling:1b,cutting_models:[6429415], color:{red:255,green:255,blue:0},base_name:'{\"translate\":\"item.cook.cheese\",\"italic\":false}'} }"
+              "tag":"{CustomModelData:6429575, cook:{type:4b,food:6,quality:2,redux:[1,0],cheese:1b, mixing:1b,cutting:1b,frying:1b,boiling:1b,cutting_models:[6429415], color:{red:255,green:255,blue:0},base_name:'{\"translate\":\"item.cook.cheese\",\"italic\":false}'} }"
             }
           ]
         }

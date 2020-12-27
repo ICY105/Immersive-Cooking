@@ -1,0 +1,17 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cook:food/fruit/purple_grapes"
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "cook:food/fruit/white_grapes"
+        }
+      ]
+    }
+  ]
+}

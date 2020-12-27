@@ -5,8 +5,81 @@
       "rolls": 1.0,
       "entries": [
         {
-          "type": "minecraft:loot_table",
-          "name": "cook:food/vegetable/potato"
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:loot_table",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "minecraft:potatoes",
+                  "properties": {
+                    "age": "7"
+                  }
+				},
+				{
+				  "condition": "minecraft:reference",
+				  "name": "cook:temperate"
+				}
+              ],
+              "name": "cook:food/varients/potatoes"
+            },
+			{
+              "type": "minecraft:loot_table",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "minecraft:potatoes",
+                  "properties": {
+                    "age": "7"
+                  }
+				},
+				{
+				  "condition": "minecraft:reference",
+				  "name": "cook:humid"
+				}
+              ],
+              "name": "cook:food/varients/carrots"
+            },
+			{
+              "type": "minecraft:loot_table",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "minecraft:potatoes",
+                  "properties": {
+                    "age": "7"
+                  }
+				},
+				{
+				  "condition": "minecraft:reference",
+				  "name": "cook:arid"
+				}
+              ],
+              "name": "cook:food/vegetable/yam"
+            },
+			{
+              "type": "minecraft:loot_table",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "minecraft:potatoes",
+                  "properties": {
+                    "age": "7"
+                  }
+				},
+				{
+				  "condition": "minecraft:reference",
+				  "name": "cook:artic"
+				}
+              ],
+              "name": "cook:food/vegetable/beetroot"
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "cook:food/grain/root_vegetable_seeds"
+            }
+          ]
         }
       ]
     },
@@ -26,31 +99,7 @@
               }
             }
           ],
-          "name": "cook:food/vegetable/potato"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:block_state_property",
-          "block": "minecraft:potatoes",
-          "properties": {
-            "age": "7"
-          }
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "conditions": [
-            {
-              "condition": "minecraft:random_chance",
-              "chance": 0.02
-            }
-          ],
-          "name": "cook:food/vegetable/poisonous_potato"
+          "name": "cook:food/grain/root_vegetable_seeds"
         }
       ],
       "conditions": [

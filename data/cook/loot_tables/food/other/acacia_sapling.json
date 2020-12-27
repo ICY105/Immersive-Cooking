@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:acacia_sapling",
+          "functions": [
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    [{"italic":false,"color":"dark_green","translate":"lore.cook.climate"}],
+			    [{"italic":false,"color":"gray","translate":"lore.cook.mild",	"with":[ [{"translate":"item.cook.almond"},{"text":", "},{"translate":"item.cook.walnut"}] ]}],
+			    [{"italic":false,"color":"gray","translate":"lore.cook.humid",	"with":[ [{"translate":"item.cook.coconut"},{"text":", "},{"translate":"item.cook.pistachio"}] ]}],
+			    [{"italic":false,"color":"gray","translate":"lore.cook.arid",	"with":[ [{"translate":"item.cook.chestnut"},{"text":", "},{"translate":"item.cook.hazelnut"}] ]}],
+			    [{"italic":false,"color":"gray","translate":"lore.cook.artic",	"with":[ [{"translate":"item.cook.pecan"},{"text":", "},{"translate":"item.cook.cashew"}] ]}]
+			  ]
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

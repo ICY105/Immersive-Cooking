@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:crimson_roots"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "item": "minecraft:shears"
+          }
+        }
+      ]
+    },
+	{
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cook:food/vegetable/blood_root"
+        }
+      ],
+      "conditions": [
+		{
+		  "condition": "minecraft:inverted",
+		  "term": {
+			"condition": "minecraft:match_tool",
+            "predicate": {
+              "item": "minecraft:shears"
+            }
+          }
+        },
+		{
+          "condition": "minecraft:table_bonus",
+          "enchantment": "minecraft:fortune",
+          "chances": [ 0.25, 0.3, 0.35, 0.4, 0.5 ]
+        }
+      ]
+    }
+  ]
+}

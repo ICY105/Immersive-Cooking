@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:beetroot_seeds",
+          "functions": [
+		    {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"item.cook.stem_vegetable_seeds","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    [{"italic":false,"color":"dark_green","translate":"lore.cook.climate"}],
+			    [{"italic":false,"color":"gray","translate":"lore.cook.mild",	"with":[{"translate":"item.cook.asparagus"}]}],
+			    [{"italic":false,"color":"gray","translate":"lore.cook.humid",	"with":[{"translate":"item.cook.bell_pepper"}]}],
+			    [{"italic":false,"color":"gray","translate":"lore.cook.arid",	"with":[{"translate":"item.cook.turnip"}]}],
+			    [{"italic":false,"color":"gray","translate":"lore.cook.artic",	"with":[{"translate":"item.cook.onion"}]}]
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{cook:{type:3b,food:0, mixing:1b, roasting:1b,boiling:1b,frying:1b, color:{red:222,green:176,blue:117},base_name:'{\"translate\":\"item.cook.stem_vegetable_seeds\",\"italic\":false}'}, cooked:{ id:\"minecraft:tropical_fish\",tag:{CustomModelData:6429562,cook:{food:1,redux:[1,0]}} } }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

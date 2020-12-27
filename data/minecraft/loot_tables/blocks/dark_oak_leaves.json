@@ -35,10 +35,10 @@
                   ]
                 }
               ],
-              "name": "minecraft:dark_oak_leaves"
+              "name": "minecraft:oak_leaves"
             },
             {
-              "type": "minecraft:item",
+              "type": "minecraft:loot_table",
               "conditions": [
                 {
                   "condition": "minecraft:survives_explosion"
@@ -54,7 +54,7 @@
                   ]
                 }
               ],
-              "name": "minecraft:dark_oak_sapling"
+              "name": "cook:food/other/dark_oak_sapling"
             }
           ]
         }
@@ -136,16 +136,68 @@
             {
               "condition": "minecraft:table_bonus",
               "enchantment": "minecraft:fortune",
-              "chances": [
-                0.005,
-                0.0055555557,
-                0.00625,
-                0.008333334,
-                0.025
-              ]
+              "chances": [ 0.01, 0.012, 0.0014, 0.016, 0.05 ]
+            },
+			{
+              "condition": "minecraft:reference",
+			  "name": "cook:temperate"
             }
           ],
-          "name": "cook:food/fruit/apple"
+          "name": "cook:food/fruit/peach"
+        },
+		{
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:survives_explosion"
+            },
+            {
+              "condition": "minecraft:table_bonus",
+              "enchantment": "minecraft:fortune",
+              "chances": [ 0.01, 0.012, 0.0014, 0.016, 0.05 ]
+            },
+			{
+              "condition": "minecraft:reference",
+			  "name": "cook:humid"
+            }
+          ],
+          "name": "cook:food/fruit/pomegranate"
+        },
+		{
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:survives_explosion"
+            },
+            {
+              "condition": "minecraft:table_bonus",
+              "enchantment": "minecraft:fortune",
+              "chances": [ 0.01, 0.012, 0.0014, 0.016, 0.05 ]
+            },
+			{
+              "condition": "minecraft:reference",
+			  "name": "cook:arid"
+            }
+          ],
+          "name": "cook:food/fruit/jackfruit"
+        },
+		{
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:survives_explosion"
+            },
+            {
+              "condition": "minecraft:table_bonus",
+              "enchantment": "minecraft:fortune",
+              "chances": [ 0.01, 0.012, 0.0014, 0.016, 0.05 ]
+            },
+			{
+              "condition": "minecraft:reference",
+			  "name": "cook:artic"
+            }
+          ],
+          "name": "cook:food/fruit/persimmon"
         }
       ],
       "conditions": [

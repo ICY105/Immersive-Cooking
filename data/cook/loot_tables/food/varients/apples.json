@@ -1,0 +1,22 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cook:food/fruit/apple",
+		  "weight": 2
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "cook:food/fruit/yellow_apple"
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "cook:food/fruit/green_apple"
+        }
+      ]
+    }
+  ]
+}

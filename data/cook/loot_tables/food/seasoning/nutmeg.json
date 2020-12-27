@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:tropical_fish",
+          "functions": [
+			{
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"item.cook.nutmeg","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [{"translate":"lore.cook.food_level_quality","italic":false,"font":"cook:default","color":"white","with":[{"text":"2","color":"gray"},{"text":"30%","color":"gray"}]}]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData:6429605, cook:{type:6b,food:2,quality:3, mixing:1b,redux:[1,0], color:{red:80,green:41,blue:17},base_name:'{\"translate\":\"item.cook.nutmeg\",\"italic\":false}'} }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

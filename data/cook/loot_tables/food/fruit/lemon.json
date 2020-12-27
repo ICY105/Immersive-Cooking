@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:tropical_fish",
+          "functions": [
+			{
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"item.cook.lemon","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [{"translate":"lore.cook.food_level","italic":false,"font":"cook:default","color":"white","with":[{"text":"1","color":"gray"}]}]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData:6429635,cook:{type:1b,food:1,redux:[1,0], mashing:1b,mixing:1b,cutting:1b,washing:1b,juicing:1b, roasting:1b,boiling:1b,frying:1b, color:{red:248,green:248,blue:69},base_name:'{\"translate\":\"item.cook.lemon\",\"italic\":false}'}, cooked:{ tag:{cook:{food:4}} } }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

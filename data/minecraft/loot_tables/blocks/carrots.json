@@ -5,8 +5,81 @@
       "rolls": 1.0,
       "entries": [
         {
-          "type": "minecraft:loot_table",
-          "name": "cook:food/vegetable/carrot"
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:loot_table",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "minecraft:carrots",
+                  "properties": {
+                    "age": "7"
+                  }
+				},
+				{
+				  "condition": "minecraft:reference",
+				  "name": "cook:temperate"
+				}
+              ],
+              "name": "cook:food/vegetable/lettuce"
+            },
+			{
+              "type": "minecraft:loot_table",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "minecraft:carrots",
+                  "properties": {
+                    "age": "7"
+                  }
+				},
+				{
+				  "condition": "minecraft:reference",
+				  "name": "cook:humid"
+				}
+              ],
+              "name": "cook:food/vegetable/celery"
+            },
+			{
+              "type": "minecraft:loot_table",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "minecraft:carrots",
+                  "properties": {
+                    "age": "7"
+                  }
+				},
+				{
+				  "condition": "minecraft:reference",
+				  "name": "cook:arid"
+				}
+              ],
+              "name": "cook:food/vegetable/broccoli"
+            },
+			{
+              "type": "minecraft:loot_table",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "minecraft:carrots",
+                  "properties": {
+                    "age": "7"
+                  }
+				},
+				{
+				  "condition": "minecraft:reference",
+				  "name": "cook:artic"
+				}
+              ],
+              "name": "cook:food/vegetable/peas"
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "cook:food/grain/leafy_vegetable_seeds"
+            }
+          ]
         }
       ]
     },
@@ -26,7 +99,7 @@
               }
             }
           ],
-          "name": "cook:food/vegetable/carrot"
+          "name": "cook:food/grain/leafy_vegetable_seeds"
         }
       ],
       "conditions": [

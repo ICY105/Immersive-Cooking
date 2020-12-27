@@ -1,0 +1,49 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+		  "conditions": [
+			{
+			  "condition": "minecraft:reference",
+			  "name": "cook:temperate"
+			}
+		  ],
+          "name": "cook:food/fruit/black_berries"
+        },
+		{
+          "type": "minecraft:loot_table",
+		  "conditions": [
+			{
+			  "condition": "minecraft:reference",
+			  "name": "cook:humid"
+			}
+		  ],
+          "name": "cook:food/fruit/blue_berries"
+        },
+		{
+          "type": "minecraft:loot_table",
+		  "conditions": [
+			{
+			  "condition": "minecraft:reference",
+			  "name": "cook:arid"
+			}
+		  ],
+          "name": "cook:food/fruit/mulberries"
+        },
+		{
+          "type": "minecraft:loot_table",
+		  "conditions": [
+			{
+			  "condition": "minecraft:reference",
+			  "name": "cook:artic"
+			}
+		  ],
+          "name": "cook:food/fruit/cranberries"
+        }
+      ]
+    }
+  ]
+}

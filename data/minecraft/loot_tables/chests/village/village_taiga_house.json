@@ -60,7 +60,7 @@
               }
             }
           ],
-          "name": "cook:food/fruit/sweet_berries"
+          "name": "cook:food/fruit/cranberries"
         },
         {
           "type": "minecraft:loot_table",

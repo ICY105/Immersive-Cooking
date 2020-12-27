@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:tropical_fish",
+          "functions": [
+			{
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"item.cook.mystery_meat","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [{"translate":"lore.cook.food_level_quality","italic":false,"font":"cook:default","color":"white","with":[{"text":"?","color":"gray"},{"text":"?","color":"gray"}]}]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData:6429614, cook:{type:4b,food:2,quality:-2,redux:[1,0], mashing:2b,roasting:1b,cutting:1b,frying:1b,boiling:1b,smoking:1b, color:{red:160,green:135,blue:102},base_name:'{\"translate\":\"item.cook.mystery_meat\",\"italic\":false}'},   cooked:{tag:{CustomModelData:6429615,cook:{food:6,color:{red:93,green:93,blue:54}}}}    }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

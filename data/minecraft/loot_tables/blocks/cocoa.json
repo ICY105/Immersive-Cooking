@@ -2,13 +2,13 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 1,
+      "rolls": 1.0,
       "entries": [
         {
-          "type": "minecraft:loot_table",
-          "functions": [
+          "type": "minecraft:alternatives",
+          "children": [
             {
-              "function": "minecraft:set_count",
+              "type": "minecraft:loot_table",
               "conditions": [
                 {
                   "condition": "minecraft:block_state_property",
@@ -16,17 +16,106 @@
                   "properties": {
                     "age": "2"
                   }
-                }
+				},
+				{
+				  "condition": "minecraft:reference",
+				  "name": "cook:temperate"
+				}
               ],
-              "count": 3
+              "name": "cook:food/seasoning/cocoa_beans"
+            },
+			{
+              "type": "minecraft:loot_table",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "minecraft:cocoa",
+                  "properties": {
+                    "age": "2"
+                  }
+				},
+				{
+				  "condition": "minecraft:reference",
+				  "name": "cook:humid"
+				}
+              ],
+              "name": "cook:food/seasoning/cocoa_beans"
+            },
+			{
+              "type": "minecraft:loot_table",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "minecraft:cocoa",
+                  "properties": {
+                    "age": "2"
+                  }
+				},
+				{
+				  "condition": "minecraft:reference",
+				  "name": "cook:arid"
+				}
+              ],
+              "name": "cook:food/seasoning/coffee_beans"
+            },
+			{
+              "type": "minecraft:loot_table",
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "minecraft:cocoa",
+                  "properties": {
+                    "age": "2"
+                  }
+				},
+				{
+				  "condition": "minecraft:reference",
+				  "name": "cook:artic"
+				}
+              ],
+              "name": "cook:food/seasoning/coffee_beans"
             },
             {
-              "function": "minecraft:explosion_decay"
+              "type": "minecraft:loot_table",
+              "name": "cook:food/grain/bean_seeds"
             }
-          ],
-          "name": "cook:food/seasoning/cocoa_beans"
+          ]
         }
       ]
+    },
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "functions": [
+            {
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:binomial_with_bonus_count",
+              "parameters": {
+                "extra": 3,
+                "probability": 0.5714286
+              }
+            }
+          ],
+          "name": "cook:food/grain/bean_seeds"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "minecraft:cocoa",
+          "properties": {
+            "age": "2"
+          }
+        }
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "function": "minecraft:explosion_decay"
     }
   ]
 }

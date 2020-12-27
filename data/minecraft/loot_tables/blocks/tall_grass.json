@@ -36,7 +36,7 @@
                   "chance": 0.125
                 }
               ],
-              "name": "cook:food/grain/wheat_seeds"
+              "name": "cook:food/varients/seeds"
             }
           ]
         }
@@ -98,7 +98,7 @@
                   "chance": 0.125
                 }
               ],
-              "name": "cook:food/grain/wheat_seeds"
+              "name": "cook:food/varients/seeds"
             }
           ]
         }

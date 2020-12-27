@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:tropical_fish",
+          "functions": [
+			{
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"item.cook.cashew","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [{"translate":"lore.cook.food_level","italic":false,"font":"cook:default","color":"white","with":[{"text":"1","color":"gray"}]}]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData:6429630, cook:{type:4b,food:1,redux:[1,0], mixing:1b,cutting:1b,frying:1b,boiling:1b, color:{red:193,green:158,blue:99},base_name:'{\"translate\":\"item.cook.cashew\",\"italic\":false}'},   cooked:{tag:{cook:{food:3}}}    }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

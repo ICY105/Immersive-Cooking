@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:vine",
+          "functions": [
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    [{"italic":false,"color":"dark_green","translate":"lore.cook.climate"}],
+			    [{"italic":false,"color":"gray","translate":"lore.cook.mild",	"with":[{"translate":"item.cook.tomato"}]}],
+			    [{"italic":false,"color":"gray","translate":"lore.cook.humid",	"with":[{"translate":"item.cook.grape"}]}],
+			    [{"italic":false,"color":"gray","translate":"lore.cook.arid",	"with":[{"translate":"item.cook.tea"}]}],
+			    [{"italic":false,"color":"gray","translate":"lore.cook.artic",	"with":[{"translate":"item.cook.strawberry"}]}]
+			  ]
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

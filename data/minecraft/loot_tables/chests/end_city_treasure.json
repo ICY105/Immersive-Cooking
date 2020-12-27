@@ -69,21 +69,6 @@
           "name": "minecraft:emerald"
         },
         {
-          "type": "minecraft:loot_table",
-          "weight": 5,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1.0,
-                "max": 10.0,
-                "type": "minecraft:uniform"
-              }
-            }
-          ],
-          "name": "cook:food/grain/beetroot_seeds"
-        },
-        {
           "type": "minecraft:item",
           "weight": 3,
           "name": "minecraft:saddle"

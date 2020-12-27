@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:potato",
+          "functions": [
+		    {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"item.cook.root_vegetable_seeds","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    [{"italic":false,"color":"dark_green","translate":"lore.cook.climate"}],
+			    [{"italic":false,"color":"gray","translate":"lore.cook.mild",	"with":[{"translate":"item.minecraft.potato"}]}],
+			    [{"italic":false,"color":"gray","translate":"lore.cook.humid",	"with":[{"translate":"item.minecraft.carrot"}]}],
+			    [{"italic":false,"color":"gray","translate":"lore.cook.arid",	"with":[{"translate":"item.minecraft.yam"}]}],
+			    [{"italic":false,"color":"gray","translate":"lore.cook.artic",	"with":[{"translate":"item.cook.beetroot"}]}]
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData:6429580,cook:{type:3b,food:0, mixing:1b, roasting:1b,boiling:1b,frying:1b, color:{red:72,green:50,blue:28},base_name:'{\"translate\":\"item.cook.root_vegetable_seeds\",\"italic\":false}'}, cooked:{ id:\"minecraft:tropical_fish\",tag:{cook:{food:1,redux:[1,0]}} } }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

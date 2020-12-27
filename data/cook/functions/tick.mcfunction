@@ -8,6 +8,9 @@ execute if score $base.timer_100 du_data matches 1 as @e[tag=cook_evaporation] a
 #cleanup any abandoned bag entities
 execute if score $base.timer_100 du_data matches 2 as @e[tag=cook_bag_interface] at @s unless entity @p[tag=cook_open_bag,distance=..12] run tp @s ~ -300 ~
 
+#check wandering trader
+execute if score $base.timer_100 du_data matches 3 as @e[type=wandering_trader,tag=!cook_has_trades] at @s run function cook:entities/add_wandering_trades
+
 #oven
 execute if score $base.timer_20 du_data matches 1 as @e[tag=cook_oven,tag=cook_has_item,tag=!cook_open] at @s run function cook:block/oven/tick
 

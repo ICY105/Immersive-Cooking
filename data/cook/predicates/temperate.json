@@ -1,0 +1,20 @@
+{
+  "condition": "minecraft:inverted",
+  "term": {
+    "condition": "minecraft:alternative",
+    "terms": [
+	  {
+        "condition": "minecraft:reference",
+        "name": "cook:humid"
+      },
+	  {
+        "condition": "minecraft:reference",
+        "name": "cook:arid"
+      },
+	  {
+        "condition": "minecraft:reference",
+        "name": "cook:artic"
+      }
+	]
+  }
+}

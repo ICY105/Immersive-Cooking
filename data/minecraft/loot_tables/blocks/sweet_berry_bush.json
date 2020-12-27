@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "cook:food/fruit/sweet_berries"
+          "name": "cook:food/varients/berry_biomes"
         }
       ],
       "conditions": [
@@ -42,7 +42,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "cook:food/fruit/sweet_berries"
+          "name": "cook:food/varients/berry_biomes"
         }
       ],
       "conditions": [

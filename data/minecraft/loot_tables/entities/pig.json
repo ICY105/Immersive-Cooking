@@ -40,6 +40,25 @@
           "name": "cook:food/protein/pork"
         }
       ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "cook:food/protein/bacon"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:killed_by_player"
+        },
+        {
+          "condition": "minecraft:random_chance_with_looting",
+          "chance": 0.25,
+          "looting_multiplier": 0.1
+        }
+      ]
     }
   ]
 }

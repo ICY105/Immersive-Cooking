@@ -18,7 +18,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429573, cook:{type:6b,food:1,yeast:1b, mixing:1b, color:{red:242,green:242,blue:170},base_name:'{\"translate\":\"item.cook.yeast\",\"italic\":false}'} }"
+              "tag":"{CustomModelData:6429573, cook:{type:6b,food:1,redux:[1,0],yeast:1b, mixing:1b, color:{red:242,green:242,blue:170},base_name:'{\"translate\":\"item.cook.yeast\",\"italic\":false}'} }"
             }
           ]
         }
