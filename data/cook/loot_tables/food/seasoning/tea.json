@@ -10,7 +10,7 @@
           "functions": [
 			{
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"item.cook.tea","italic":false}
+			  "name": {"translate":"item.cook.tea_leaves","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",
@@ -18,7 +18,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429639, cook:{type:6b,food:1,redux:[1,0],tea:1b, mixing:1b, color:{red:0,green:139,blue:0},base_name:'{\"translate\":\"item.cook.tea\",\"italic\":false}'} }"
+              "tag":"{CustomModelData:6429639, cook:{type:6b,food:1,redux:[1,0],tea:1b, mixing:1b, color:{red:0,green:139,blue:0},base_name:'{\"translate\":\"item.cook.tea_leaves\",\"italic\":false}'} }"
             }
           ]
         }

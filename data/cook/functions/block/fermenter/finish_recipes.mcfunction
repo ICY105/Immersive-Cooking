@@ -63,6 +63,15 @@ execute if score $temp_0 cook_data matches 7 if data storage cook:temp list[0].t
 execute if score $temp_0 cook_data matches 7 if data storage cook:temp list[0].tag.cook{flour:1b} run data modify entity @s Item.tag.liquid_item.tag.cook.color set from storage cook:temp list[0].tag.cook.color
 execute if score $temp_0 cook_data matches 7 run data modify block -29999999 0 1602 Text1 set value '[{"translate":"item.cook.beer","italic":false,"with":[{"nbt":"var","storage":"cook:temp","interpret":true}]}]'
 
+#coffee
+execute if score $temp_0 cook_data matches 0 if data entity @s Item.tag.liquid_item.tag.cook{water:1b} if data storage cook:temp list[{tag:{cook:{coffee:1b}}}] run scoreboard players set $temp_0 cook_data 8
+execute if score $temp_0 cook_data matches 8 run data modify entity @s Item.tag.liquid_item.tag.cook merge value {food:4,quality:0,water:0b,base_name:'{"translate":"item.cook.coffee","italic":false}',color:{red:38,green:26,blue:17}}
+execute if score $temp_0 cook_data matches 8 run data modify block -29999999 0 1602 Text1 set value '[{"translate":"item.cook.coffee","italic":false}]'
+
+#tea
+execute if score $temp_0 cook_data matches 0 if data entity @s Item.tag.liquid_item.tag.cook{water:1b} if data storage cook:temp list[{tag:{cook:{tea:1b}}}] run scoreboard players set $temp_0 cook_data 9
+execute if score $temp_0 cook_data matches 9 run data modify entity @s Item.tag.liquid_item.tag.cook merge value {food:3,quality:1,water:0b,base_name:'{"translate":"item.cook.tea","italic":false}',color:{red:0,green:139,blue:0}}
+execute if score $temp_0 cook_data matches 9 run data modify block -29999999 0 1602 Text1 set value '[{"translate":"item.cook.tea","italic":false}]'
 
 ### change item data
 
@@ -74,6 +83,7 @@ execute unless score $temp_1 cook_data matches 0 run data modify block -29999999
 
 #store name/lore
 data modify entity @s Item.tag.liquid_item.tag.display.Name set from block -29999999 0 1602 Text1
+execute unless data entity @s Item.tag.liquid_item.tag.display.Lore run data modify entity @s Item.tag.liquid_item.tag.display.Lore set value ['{"text":""}']
 data modify entity @s Item.tag.liquid_item.tag.display.Lore[0] set from block -29999999 0 1602 Text2
 
 #darken color
@@ -81,12 +91,12 @@ execute store result score $utils.in_0 cook_data run data get entity @s Item.tag
 execute store result score $utils.in_1 cook_data run data get entity @s Item.tag.liquid_item.tag.cook.color.green
 execute store result score $utils.in_2 cook_data run data get entity @s Item.tag.liquid_item.tag.cook.color.blue
 
-scoreboard players remove $utils.in_0 cook_data 30
-execute if score $utils.in_0 cook_data matches ..-1 run scoreboard players set $utils.in_0 cook_data 0
-scoreboard players remove $utils.in_1 cook_data 30
-execute if score $utils.in_1 cook_data matches ..-1 run scoreboard players set $utils.in_1 cook_data 0
-scoreboard players remove $utils.in_2 cook_data 30
-execute if score $utils.in_2 cook_data matches ..-1 run scoreboard players set $utils.in_2 cook_data 0
+execute if score $utils.in_0 cook_data matches 127.. run scoreboard players remove $utils.in_0 cook_data 30
+execute if score $utils.in_1 cook_data matches 127.. run scoreboard players remove $utils.in_1 cook_data 30
+execute if score $utils.in_2 cook_data matches 127.. run scoreboard players remove $utils.in_2 cook_data 30
+execute if score $utils.in_0 cook_data matches ..127 run scoreboard players add $utils.in_0 cook_data 30
+execute if score $utils.in_1 cook_data matches ..127 run scoreboard players add $utils.in_1 cook_data 30
+execute if score $utils.in_2 cook_data matches ..127 run scoreboard players add $utils.in_2 cook_data 30
 
 execute store result entity @s Item.tag.liquid_item.tag.cook.color.red int 1 run scoreboard players get $utils.in_0 cook_data
 execute store result entity @s Item.tag.liquid_item.tag.cook.color.green int 1 run scoreboard players get $utils.in_1 cook_data
