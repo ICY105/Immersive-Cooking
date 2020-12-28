@@ -26,7 +26,7 @@ scoreboard players set $out_0 cook_data 1
 scoreboard players set $temp_0 cook_data 0
 
 #food transform
-scoreboard players add $temp_8 cook_data 1
+scoreboard players remove $temp_8 cook_data 1
 scoreboard players add $temp_9 cook_data 1
 
 #color transfrom

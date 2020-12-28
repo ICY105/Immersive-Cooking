@@ -73,6 +73,11 @@ execute if score $temp_0 cook_data matches 0 if data entity @s Item.tag.liquid_i
 execute if score $temp_0 cook_data matches 9 run data modify entity @s Item.tag.liquid_item.tag.cook merge value {food:3,quality:1,water:0b,base_name:'{"translate":"item.cook.tea","italic":false}',color:{red:0,green:139,blue:0}}
 execute if score $temp_0 cook_data matches 9 run data modify block -29999999 0 1602 Text1 set value '[{"translate":"item.cook.tea","italic":false}]'
 
+#chocolate lacquer
+execute if score $temp_0 cook_data matches 0 if data entity @s Item.tag.liquid_item.tag.cook{milk:1b} if data storage cook:temp list[{tag:{cook:{cocoa:1b}}}] if data storage cook:temp list[{tag:{cook:{sugar:1b}}}] run scoreboard players set $temp_0 cook_data 10
+execute if score $temp_0 cook_data matches 10 run data modify entity @s Item.tag.liquid_item.tag.cook merge value {food:2,quality:2,cocoa:0b,chocolate:1b,base_name:'{"translate":"item.cook.chocolate_laquer","italic":false}',color:{red:58,green:14,blue:0}}
+execute if score $temp_0 cook_data matches 10 run data modify block -29999999 0 1602 Text1 set value '[{"translate":"item.cook.chocolate_laquer","italic":false}]'
+
 ### change item data
 
 #store food/quality to lore
