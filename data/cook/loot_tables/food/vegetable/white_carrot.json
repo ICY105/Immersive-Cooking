@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:tropical_fish",
+		  "name": "minecraft:carrot",
           "functions": [
 			{
 			  "function": "minecraft:set_name",
@@ -18,7 +18,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429590,cook:{type:1b,food:1,redux:[1,0], mashing:1b,mixing:1b,cutting:1b,washing:1b, roasting:1b,boiling:1b,frying:1b, color:{red:237,green:237,blue:237},base_name:'{\"translate\":\"item.minecraft.carrot\",\"italic\":false}'}, cooked:{ tag:{cook:{food:4}} } }"
+              "tag":"{CustomModelData:6429590,cook:{type:1b,food:1,redux:[1,0], mashing:1b,mixing:1b,cutting:1b,washing:1b, roasting:1b,boiling:1b,frying:1b, color:{red:237,green:237,blue:237},base_name:'{\"translate\":\"item.minecraft.carrot\",\"italic\":false}'}, cooked:{ id:\"minecraft:tropical_fish\",tag:{cook:{food:4}} } }"
             }
           ]
         }
