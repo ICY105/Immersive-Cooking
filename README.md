@@ -9,4 +9,4 @@ Immersive Cooking requires the library [Datapack Utils](https://github.com/ImCoo
 
 For downloads, head over to the [Releases Page](https://github.com/ImCoolYeah105/Immersive-Cooking/releases).
 
-![Image](https://ibb.co/qnJDTGr)
+![Image](https://i.ibb.co/RSjgRnD/ic-screen.png)
