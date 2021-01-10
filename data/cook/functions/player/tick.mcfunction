@@ -11,6 +11,7 @@ execute if score @s cook_data matches 1.. run scoreboard players remove @s cook_
 
 #recipes
 execute if entity @s[tag=cook_crafted] run function cook:player/craft/craft
+execute if score $timer_20 du_data matches 1 run function cook:player/reset_recipes
 
 #manual
 execute if score $base.timer_20 du_data matches 10 if entity @s[tag=!cook_has_manual] run function give:items/cooking_manual
