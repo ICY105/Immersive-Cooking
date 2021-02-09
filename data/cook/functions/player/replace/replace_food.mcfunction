@@ -1,6 +1,7 @@
 
 tag @s remove cook_replace_food
 
+#vanilla
 execute store success score $temp_0 cook_data run clear @s minecraft:baked_potato 1
 execute if score $temp_0 cook_data matches 1 run loot give @s loot cook:food/premade/cooked_potato
 execute if score $temp_0 cook_data matches 1 run tag @s add cook_replace_food
@@ -57,8 +58,5 @@ execute store success score $temp_0 cook_data run clear @s minecraft:cookie 1
 execute if score $temp_0 cook_data matches 1 run loot give @s loot cook:food/premade/cookie
 execute if score $temp_0 cook_data matches 1 run tag @s add cook_replace_food
 
-#execute store success score $temp_0 cook_data run clear @s minecraft:cake 1
-#execute if score $temp_0 cook_data matches 1 run loot give @s loot cook:food/premade/cake
-#execute if score $temp_0 cook_data matches 1 run tag @s add cook_replace_food
 
-execute if entity @s[tag=cook_replace_food] run function cook:player/replace_food
+execute if entity @s[tag=cook_replace_food] run function cook:player/replace/replace_food

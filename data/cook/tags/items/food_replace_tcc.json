@@ -1,0 +1,10 @@
+{
+	"required":false,
+	"values":[
+		"minecraft:bread",
+		"minecraft:cookie",
+		"minecraft:structure_block",
+		"minecraft:tropical_fish",
+		"minecraft:porkchop"
+	]
+}

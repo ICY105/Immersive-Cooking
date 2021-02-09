@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:tropical_fish",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": [ {"translate":"item.tcc.frostbloom_petals","italic":false} ]
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    {"translate":"lore.cook.food_level","italic":false,"font":"cook:default","color":"white","with":[{"text":"1","color":"gray"}]},
+				{"translate": "pack.tcc","color": "#008725","italic": true}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData:6429907,HideFlags:63,tcc:{id:\"frostbloom_petals\"}, cook:{type:2b,food:1,quality:0,redux:[2,2], mashing:1b,juicing:1b,mixing:1b,cutting:1b,washing:1b, roasting:1b,boiling:1b,frying:1b, color:{red:100,green:200,blue:255},base_name:'{\"translate\":\"item.tcc.frostbloom_petals\",\"italic\":false}'}, cooked:{tag:{cook:{food:3}}}  }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

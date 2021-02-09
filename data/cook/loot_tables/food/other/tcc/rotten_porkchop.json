@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:tropical_fish",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": [ {"translate":"item.tcc.rotten_porkchop","italic":false} ]
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    {"translate":"lore.cook.food_level_quality","italic":false,"font":"cook:default","color":"white","with":[{"text":"2","color":"gray"},{"text":"-10%","color":"gray"}]},
+				{"translate": "pack.tcc","color": "#008725","italic": true}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData:6429910,HideFlags:63,tcc:{id:\"rotten_porkchop\"}, cook:{type:3b,food:2,quality:-1,redux:[1,0], mashing:2b,mixing:1b,cutting:1b, roasting:1b,smoking:1b,boiling:1b,frying:1b, color:{red:106,green:93,blue:24},base_name:'{\"translate\":\"item.tcc.rotten_porkchop\",\"italic\":false}'}, cooked:{tag:{cook:{food:4}}}  }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

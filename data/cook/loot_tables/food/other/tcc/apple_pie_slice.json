@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:tropical_fish",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": [ {"translate":"item.tcc.apple_pie_slice","italic":false} ]
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    {"translate":"lore.cook.food_level_quality","italic":false,"font":"cook:default","color":"white","with":[{"text":"3","color":"gray"},{"text":"20%","color":"gray"}]},
+				{"translate": "pack.tcc","color": "#008725","italic": true}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData:6429902,HideFlags:63,tcc:{id:\"apple_pie_slice\"}, cook:{type:8b,food:3,quality:2,redux:[1,0], color:{red:255,green:30,blue:40},base_name:'{\"translate\":\"item.tcc.apple_pie\",\"italic\":false}'} }"
+            },
+			{
+			  "function": "minecraft:set_attributes",
+			  "modifiers": [{
+				"attribute": "generic.movement_speed",
+				"name": "generic.movement_speed",
+				"amount": 0.0,
+				"operation": "multiply_base",
+				"slot": [
+				  "head"
+				]
+			  }]
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

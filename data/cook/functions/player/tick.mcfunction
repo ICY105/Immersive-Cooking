@@ -1,6 +1,7 @@
 
 #food replace
-execute if entity @s[tag=cook_replace_food] run function cook:player/replace_food
+execute if entity @s[tag=cook_tcc_replace_food] run function cook:player/replace/tcc_replace_food
+execute if entity @s[tag=cook_replace_food] run function cook:player/replace/replace_food
 
 #bonus saturation
 execute if score $base.timer_20 du_data matches 0 if score @s cook_food matches 3.. run function cook:player/bonus_saturation

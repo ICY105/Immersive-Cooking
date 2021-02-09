@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:tropical_fish",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": [ {"translate":"item.tcc.enchanted_golden_apple_pie","italic":false,"color":"dark_purple"} ]
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    {"translate":"lore.cook.food_level_quality","italic":false,"font":"cook:default","color":"white","with":[{"text":"24","color":"gray"},{"text":"60%","color":"gray"}]},
+				{"translate": "pack.tcc","color": "#008725","italic": true}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData:6429903,HideFlags:63,Enchantments:[{lvl:1s,id:\"minecraft:binding_curse\"}],tcc:{id:\"enchanted_golden_apple_pie\"}, cook:{type:8b,food:8,quality:6,redux:[1,0], color:{red:235,green:200,blue:70},base_name:'{\"translate\":\"item.tcc.enchanted_golden_apple_pie\",\"italic\":false}'} }"
+            },
+			{
+			  "function": "minecraft:set_attributes",
+			  "modifiers": [{
+				"attribute": "generic.movement_speed",
+				"name": "generic.movement_speed",
+				"amount": 0.0,
+				"operation": "multiply_base",
+				"slot": [
+				  "head"
+				]
+			  }]
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

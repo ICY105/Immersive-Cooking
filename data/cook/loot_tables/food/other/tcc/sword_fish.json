@@ -1,0 +1,91 @@
+{
+  "pools": [{
+    "rolls": 1,
+    "entries": [{
+      "type": "minecraft:item",
+      "weight": 1,
+      "functions": [{
+          "function": "minecraft:set_nbt",
+          "tag": "{HideFlags:63,tcc:{id:\"swordfish\"},CustomModelData:6429909, cook:{type:2b,food:3,quality:-2,redux:[2,2], mashing:1b,juicing:1b,mixing:1b,cutting:1b,washing:1b, roasting:1b,boiling:1b,frying:1b, color:{red:100,green:200,blue:255},base_name:'{\"translate\":\"item.tcc.swordfish\",\"italic\":false}'}, cooked:{tag:{cook:{food:5}}}  }"
+        },
+        {
+          "function": "minecraft:set_name",
+          "name": {
+            "translate": "item.tcc.swordfish",
+            "italic": false
+          }
+        },
+        {
+          "function": "minecraft:set_lore",
+          "lore": [
+		    {"translate":"lore.cook.food_level_quality","italic":false,"font":"cook:default","color":"white","with":[{"text":"3","color":"gray"},{"text":"-20%","color":"gray"}]},
+		    {
+              "translate": "pack.tcc",
+              "color": "#008725",
+              "italic": true
+            },
+            "",
+            {
+              "translate": "item.modifiers.mainhand",
+              "color": "gray",
+              "italic": false
+            },
+            [{
+                "translate": "attribute.tcc.spacer"
+              },
+              {
+                "translate": "attribute.modifier.equals.0",
+                "italic": false,
+                "color": "dark_green",
+                "with": [
+                  4,
+                  {
+                    "translate": "attribute.name.generic.attack_damage"
+                  }
+                ]
+              }
+            ],
+            [{
+                "translate": "attribute.tcc.spacer"
+              },
+              {
+                "translate": "attribute.modifier.equals.0",
+                "italic": false,
+                "color": "dark_green",
+                "with": [
+                  2,
+                  {
+                    "translate": "attribute.name.generic.attack_speed"
+                  }
+                ]
+              }
+            ]
+          ]
+        },
+        {
+          "function": "minecraft:set_attributes",
+          "modifiers": [{
+              "attribute": "generic.attack_damage",
+              "name": "generic.attack_damage",
+              "amount": 4.0,
+              "operation": "addition",
+              "slot": [
+                "mainhand"
+              ]
+            },
+            {
+              "attribute": "generic.attack_speed",
+              "name": "generic.attack_speed",
+              "amount": -2,
+              "operation": "addition",
+              "slot": [
+                "mainhand"
+              ]
+            }
+          ]
+        }
+      ],
+      "name": "minecraft:tropical_fish"
+    }]
+  }]
+}

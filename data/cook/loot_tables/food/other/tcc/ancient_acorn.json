@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:tropical_fish",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": [ {"translate":"item.tcc.ancient_acorn","italic":false,"color":"light_purple"} ]
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    {"translate":"lore.cook.food_level_quality","italic":false,"font":"cook:default","color":"white","with":[{"text":"3","color":"gray"},{"text":"10%","color":"gray"}]},
+				{"translate": "pack.tcc","color": "#008725","italic": true}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData:6429908,HideFlags:63,tcc:{id:\"ancient_acorn\"}, cook:{type:3b,food:3,quality:1,redux:[1,0], mashing:1b,mixing:1b,cutting:1b,washing:1b, roasting:1b,boiling:1b,frying:1b, color:{red:100,green:200,blue:255},base_name:'{\"translate\":\"item.tcc.ancient_acorn\",\"italic\":false}'}, cooked:{tag:{cook:{food:5}}}  }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

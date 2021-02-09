@@ -5,14 +5,14 @@
 			"conditions": {
 				"items": [
 					{
-						"tag": "cook:food_replace"
+						"tag": "cook:food_replace_tcc"
 					}
 				]
 			}
 		}
 	},
 	"rewards":{ 
-		"function":"cook:player/replace/trigger"
+		"function":"cook:player/replace/tcc_trigger"
 	},
 	"parent":"cook:cooking_base"
 }
