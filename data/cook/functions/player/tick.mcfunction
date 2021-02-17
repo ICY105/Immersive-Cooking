@@ -25,6 +25,7 @@ execute if score $base.timer_20 du_data matches 10 if score $temp_0 cook_data ma
 execute if score @s cook_coas matches 1.. unless predicate du:entity/is_sneaking if entity @s[nbt={SelectedItem:{tag:{ food_bag:1b,items:[{}] }}},nbt=!{foodLevel:20}] run function cook:player/tools/eat_from_bag
 execute if entity @s[tag=!cook_open_bag,tag=!du_moving] if predicate du:entity/is_sneaking if entity @s[nbt={SelectedItem:{tag:{ food_bag:1b }}}] run function cook:player/tools/open_bag
 execute if entity @s[tag=cook_open_bag] run function cook:player/tools/bag_tick
+execute if data entity @s RootVehicle.Entity{Tags:["cook_bag_interface"]} run tp @s ~ ~ ~
 
 #scores
 scoreboard players set @s cook_coas 0
