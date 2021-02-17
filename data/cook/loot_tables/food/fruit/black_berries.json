@@ -18,7 +18,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429602,cook:{type:2b,food:1,redux:[1,0], mashing:1b,mixing:1b,cutting:1b,washing:1b,juicing:1b,berries:1b, roasting:1b,boiling:1b,frying:1b, color:{red:12,green:7,blue:7},base_name:'{\"translate\":\"item.cook.black_berry\",\"italic\":false}'}, cooked:{ id:\"minecraft:tropical_fish\",tag:{cook:{food:3}} } }"
+              "tag":"{CustomModelData:6429602,cook:{type:2b,food:1,redux:[1,0], mashing:1b,mixing:1b,cutting:1b,washing:1b,juicing:1b,berries:1b, roasting:1b,boiling:1b,frying:1b, color:{red:12,green:7,blue:7},base_name:'{\"translate\":\"item.cook.black_berry\",\"italic\":false}'}, cooked:{ id:\"minecraft:tropical_fish\",tag:{cook:{food:2}} } }"
             }
           ]
         }

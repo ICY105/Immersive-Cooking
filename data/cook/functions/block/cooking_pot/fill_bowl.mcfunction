@@ -46,9 +46,9 @@ execute if score @s cook_data matches 110..119 run scoreboard players remove $te
 execute if score @s cook_data matches 120.. run scoreboard players remove $temp_8 cook_data 4
 
 #add liquid data
-execute store result score $in_0 cook_data run data get entity @e[tag=cook_pot_liquid,distance=..0.1,limit=1] Item.tag.cook.food
+execute store result score $in_0 cook_data run data get entity @e[tag=cook_pot_liquid,distance=..0.1,limit=1] Item.tag.liquid_item.tag.cook.food
 scoreboard players operation $temp_7 cook_data += $in_0 cook_data
-execute store result score $in_0 cook_data run data get entity @e[tag=cook_pot_liquid,distance=..0.1,limit=1] Item.tag.cook.quality
+execute store result score $in_0 cook_data run data get entity @e[tag=cook_pot_liquid,distance=..0.1,limit=1] Item.tag.liquid_item.tag.cook.quality
 scoreboard players operation $temp_8 cook_data += $in_0 cook_data
 
 

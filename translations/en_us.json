@@ -275,7 +275,7 @@
 	"cook.book.fermenter.body":"Combines liquids and solid ingredients into beverages or new cooking ingredients. Takes ~10 minutes to complete a recipe.",
 	"cook.book.fermenter_recipes":"Recipes\n",
 	"cook.book.fermenter_recipes.body":"Milk + Vinegar\n -> Curdled Milk\nJuice + Yeast\n -> Cider or Wine\nWater + Yeast, Flour\n -> Beer\nHoney + Yeast\n -> Mead\nWater + Coffee Beans\n -> Coffee\nWater + Tea Leaves\n -> Tea",
-	"cook.book.fermenter_recipes.body2":"Milk + Cocoa, Sugar\n -> Chocolate Laquer",
+	"cook.book.fermenter_recipes.body2":"Milk + Cocoa, Sugar\n -> Chocolate Laquer\nAny Alcohol + Yeast\n -> Vinegar",
 		"cook.book.evaporation_plate":"Evaporation Plate\n",
 		"cook.book.evaporation_plate.body":"Evaporates liquids, leaving behind their dissolved contents. Requires sunlight and takes ~5 minutes.",
 		"cook.book.evaporation_plate_recipes":"Recipes\n",

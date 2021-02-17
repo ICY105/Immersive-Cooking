@@ -25,7 +25,7 @@ execute if data block -29999999 0 1601 Items[0].tag.cook.color if data block -29
 
 #modify quality
 execute if score $temp_0 cook_data matches 1 if data block -29999999 0 1601 Items[0].tag.cook{roasting:1b} store result score $temp_2 cook_data run data get block -29999999 0 1601 Items[0].tag.cook.quality
-scoreboard players add $temp_2 cook_data 2
+scoreboard players add $temp_2 cook_data 1
 execute if score $temp_0 cook_data matches 1 if data block -29999999 0 1601 Items[0].tag.cook{roasting:1b} store result block -29999999 0 1601 Items[0].tag.cook.quality int 1 run scoreboard players get $temp_2 cook_data
 
 #modify food level
