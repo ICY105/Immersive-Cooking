@@ -20,7 +20,7 @@ execute if entity @s[tag=cook_temp] run tag @s add cook_active
 tag @s remove cook_temp
 
 #wash food
-execute if entity @s[tag=cook_active] if entity @p[tag=cook_interact,predicate=du:entity/is_sneaking,predicate=cook:holding_ingrediant,distance=..8] run function cook:block/sink/complete_recipe
+execute if entity @s[tag=cook_active] if entity @p[tag=cook_interact,predicate=du:entity/is_sneaking,predicate=cook:holding_ingrediant,distance=..8] unless data entity @p[tag=cook_interact] Inventory[35] run function cook:block/sink/complete_recipe
 
 #change color
 execute if entity @p[tag=cook_interact,predicate=cook:holding_dye,distance=..8] run function cook:block/sink/change_color

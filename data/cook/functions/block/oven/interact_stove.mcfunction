@@ -8,7 +8,7 @@ execute if entity @s[tag=cook_rot_4] run data merge entity @s {ItemRotation:6}
 #item add/remove tool
 scoreboard players set $in_0 cook_data 0
 execute if score $in_0 cook_data matches 0 if entity @s[tag=!cook_frying_pan] if entity @p[tag=cook_interact,predicate=du:entity/is_sneaking,distance=..8,nbt={SelectedItem:{ tag:{frying_pan:1b} }}] at @s run function cook:block/frying_pan/place
-execute if score $in_0 cook_data matches 0 if entity @s[tag=cook_frying_pan,tag=!cook_has_item,tag=!cook_has_liquid] if entity @p[tag=cook_interact,predicate=du:entity/is_sneaking,predicate=!cook:holding_ingrediant,distance=..8] at @s run function cook:block/oven/retrieve_stove_tool
+execute if score $in_0 cook_data matches 0 if entity @s[tag=cook_frying_pan,tag=!cook_has_item,tag=!cook_has_liquid] if entity @p[tag=cook_interact,predicate=du:entity/is_sneaking,predicate=!cook:holding_ingrediant,distance=..8] unless data entity @p[tag=cook_interact] Inventory[35] run function cook:block/oven/retrieve_stove_tool
 
 #interaction
 execute if entity @s[tag=cook_frying_pan] run function cook:block/frying_pan/interact 
