@@ -14,11 +14,11 @@
 			},
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [{"translate":"lore.cook.food_level","italic":false,"font":"cook:default","color":"white","with":[{"text":"1","color":"gray"}]}]
+			  "lore": [{"translate":"lore.cook.food_level","italic":false,"font":"cook:default","color":"white","with":[{"text":"3","color":"gray"}]}]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429584,cook:{type:1b,food:1,redux:[1,0], mashing:1b,mixing:1b,cutting:1b,washing:1b, roasting:1b,boiling:1b,frying:1b, color:{red:252,green:0,blue:10},base_name:'{\"translate\":\"item.cook.bell_pepper\",\"italic\":false}'}, cooked:{ tag:{cook:{food:4}} } }"
+              "tag":"{CustomModelData:6429584,cook:{type:1b,food:3,redux:[1,0], mashing:1b,mixing:1b,cutting:1b,washing:1b, roasting:1b,boiling:1b,frying:1b, color:{red:252,green:0,blue:10},base_name:'{\"translate\":\"item.cook.bell_pepper\",\"italic\":false}'}, cooked:{ tag:{cook:{food:5}} } }"
             }
           ]
         }

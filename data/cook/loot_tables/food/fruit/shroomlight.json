@@ -10,11 +10,11 @@
           "functions": [
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [{"translate":"lore.cook.food_level","italic":false,"font":"cook:default","color":"white","with":[{"text":"1","color":"gray"}]}]
+			  "lore": [{"translate":"lore.cook.food_level_quality","italic":false,"font":"cook:default","color":"white","with":[{"text":"3","color":"gray"},{"text":"20%","color":"gray"}]}]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{cook:{type:2b,food:1, mashing:1b,juicing:1b, boiling:1b,frying:1b, color:{red:230,green:115,blue:5},base_name:'{\"translate\":\"block.minecraft.shroomlight\",\"italic\":false}'}, cooked:{ id:\"minecraft:tropical_fish\",tag:{CustomModelData:6429509,cook:{food:4,redux:[1,0]}} } }"
+              "tag":"{cook:{type:2b,food:3,quality:2, mashing:1b,juicing:1b, boiling:1b,frying:1b, color:{red:230,green:115,blue:5},base_name:'{\"translate\":\"block.minecraft.shroomlight\",\"italic\":false}'}, cooked:{ id:\"minecraft:tropical_fish\",tag:{CustomModelData:6429509,cook:{food:5,redux:[1,0]}} } }"
             }
           ]
         }

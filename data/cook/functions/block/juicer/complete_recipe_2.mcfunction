@@ -23,4 +23,12 @@ data modify storage cook:temp obj.tag.cook.base_name set from entity @s HandItem
 data modify storage cook:temp obj.tag.display.Lore set from entity @s HandItems[0].tag.display.Lore
 execute if data entity @s HandItems[0].tag.cook{berries:1b} run data modify storage cook:temp obj.tag.cook.berries set value 1b
 
+execute store result score $temp_0 cook_data run data get storage cook:temp obj.tag.cook.food
+scoreboard players operation $temp_0 cook_data /= $cons.2 du_data
+execute store result storage cook:temp obj.tag.cook.food int 1 run scoreboard players get $temp_0 cook_data
+
+execute store result score $temp_0 cook_data run data get storage cook:temp obj.tag.cook.quality
+scoreboard players operation $temp_0 cook_data /= $cons.2 du_data
+execute store result storage cook:temp obj.tag.cook.quality int 1 run scoreboard players get $temp_0 cook_data
+
 kill @s

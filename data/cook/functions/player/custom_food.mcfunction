@@ -14,6 +14,8 @@ execute if score $in_1 cook_data matches ..9 run scoreboard players operation $i
 scoreboard players remove $in_1 cook_data 10
 
 #food quality effects
+execute if score $in_1 cook_data matches -1 run effect give @s minecraft:nausea 10 0 true
+execute if score $in_1 cook_data matches ..-2 run effect give @s minecraft:nausea 15 0 true
 execute if score $in_1 cook_data matches -5..-3 run effect give @s minecraft:poison 10 0
 execute if score $in_1 cook_data matches ..-6 run effect give @s minecraft:wither 10 1
 

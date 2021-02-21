@@ -14,11 +14,11 @@
 			},
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [{"translate":"lore.cook.food_level","italic":false,"font":"cook:default","color":"white","with":[{"text":"1","color":"gray"}]}]
+			  "lore": [{"translate":"lore.cook.food_level","italic":false,"font":"cook:default","color":"white","with":[{"text":"2","color":"gray"}]}]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429613, cook:{type:6b,food:1, mixing:1b,redux:[1,0], color:{red:249,green:255,blue:83},base_name:'{\"translate\":\"item.cook.mustard\",\"italic\":false}'} }"
+              "tag":"{CustomModelData:6429613, cook:{type:6b,food:2, mixing:1b,redux:[1,0], color:{red:249,green:255,blue:83},base_name:'{\"translate\":\"item.cook.mustard\",\"italic\":false}'} }"
             }
           ]
         }

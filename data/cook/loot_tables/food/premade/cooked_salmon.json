@@ -14,11 +14,11 @@
 			},
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [{"translate":"lore.cook.food_level","italic":false,"font":"cook:default","color":"white","with":[{"text":"8","color":"gray"}]}]
+			  "lore": [{"translate":"lore.cook.food_level_quality","italic":false,"font":"cook:default","color":"white","with":[{"text":"8","color":"gray"},{"text":"10%","color":"gray"}]}]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429551, cook:{type:4b,food:8, mixing:1b,cutting:1b, boiling:1b,frying:1b, color:{red:186,green:79,blue:35},base_name:'{\"translate\":\"item.cook.salmon\",\"italic\":false}'} }"
+              "tag":"{CustomModelData:6429551, cook:{type:4b,food:8,quality:1, mixing:1b,cutting:1b, boiling:1b,frying:1b, color:{red:186,green:79,blue:35},base_name:'{\"translate\":\"item.cook.salmon\",\"italic\":false}'} }"
             }
           ]
         }

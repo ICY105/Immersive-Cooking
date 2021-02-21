@@ -14,7 +14,7 @@
 			},
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [{"translate":"lore.cook.food_level","italic":false,"font":"cook:default","color":"white","with":[{"text":"8","color":"gray"}]}]
+			  "lore": [{"translate":"lore.cook.food_level_quality","italic":false,"font":"cook:default","color":"white","with":[{"text":"8","color":"gray"},{"text":"10%","color":"gray"}]}]
 			},
 			{
               "function": "minecraft:set_nbt",

@@ -26,5 +26,8 @@ execute if score $base.timer_20 du_data matches 4 as @e[tag=cook_frying_pan,tag=
 #frying pan
 execute if score $base.timer_20 du_data matches 5 as @e[tag=cook_fermenter] at @s positioned ^ ^ ^-0.5 run function cook:block/fermenter/tick
 
+#smoker
+execute if score $base.timer_20 du_data matches 6 as @e[tag=du_furnace] at @s if block ~ ~ ~ minecraft:smoker run function cook:block/smoker/check_items
+
 #player
 execute as @a at @s run function cook:player/tick

@@ -10,7 +10,7 @@ execute if data block -29999999 0 1601 Items[0].tag.cook{smoking:1b} run scorebo
 #count existing items
 execute if score $temp_0 cook_data matches 0 if entity @s[tag=cook_rot_1] positioned ~-0.28 ~-2.1 ~ store result score $temp_0 cook_data if entity @e[tag=cook_smoking_item,distance=..0.2]
 execute if score $temp_0 cook_data matches 0 if entity @s[tag=cook_rot_2] positioned ~ ~-2.1 ~0.28 store result score $temp_0 cook_data if entity @e[tag=cook_smoking_item,distance=..0.2]
-execute if score $temp_0 cook_data matches 1..3 run tag @s add cook_has_item
+execute if score $temp_0 cook_data matches 0..3 run tag @s add cook_has_item
 
 #summon item holder
 execute if score $temp_0 cook_data matches 0 if entity @s[tag=cook_rot_1] run summon armor_stand ~-0.16 ~-2.1 ~ {Tags:["cook_smoking_item","cook_new"],NoGravity:1b,Invisible:1b,Marker:1b,Invulnerable:1b,DisabledSlots:4079166,Rotation:[90.0f,0.0f]}

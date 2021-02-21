@@ -14,11 +14,11 @@
 			},
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [{"translate":"lore.cook.food_level_quality","italic":false,"font":"cook:default","color":"white","with":[{"text":"4","color":"gray"},{"text":"20%","color":"gray"}]}]
+			  "lore": [{"translate":"lore.cook.food_level_quality","italic":false,"font":"cook:default","color":"white","with":[{"text":"6","color":"gray"},{"text":"20%","color":"gray"}]}]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429618, cook:{type:4b,food:4,quality:2,redux:[1,0], mashing:2b,roasting:1b,cutting:1b,frying:1b,boiling:1b,smoking:1b, color:{red:76,green:64,blue:99},base_name:'{\"translate\":\"item.cook.ender_dragon_steak\",\"italic\":false}'},   cooked:{tag:{CustomModelData:6429619,cook:{food:12,color:{red:136,green:97,blue:119}}}}    }"
+              "tag":"{CustomModelData:6429618, cook:{type:4b,food:6,quality:2,redux:[1,0], mashing:2b,roasting:1b,cutting:1b,frying:1b,boiling:1b,smoking:1b, color:{red:76,green:64,blue:99},base_name:'{\"translate\":\"item.cook.ender_dragon_steak\",\"italic\":false}'},   cooked:{tag:{CustomModelData:6429619,cook:{food:12,color:{red:136,green:97,blue:119}}}}    }"
             }
           ]
         }

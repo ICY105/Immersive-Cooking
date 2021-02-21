@@ -14,11 +14,11 @@
 			},
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [{"translate":"lore.cook.food_level","italic":false,"font":"cook:default","color":"white","with":[{"text":"7","color":"gray"}]}]
+			  "lore": [{"translate":"lore.cook.food_level_quality","italic":false,"font":"cook:default","color":"white","with":[{"text":"8","color":"gray"},{"text":"10%","color":"gray"}]}]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429539, cook:{type:4b,food:7, mixing:1b,cutting:1b, boiling:1b,frying:1b, color:{red:222,green:157,blue:123},base_name:'{\"translate\":\"item.cook.chicken\",\"italic\":false}'} }"
+              "tag":"{CustomModelData:6429539, cook:{type:4b,food:8,quality:1, mixing:1b,cutting:1b, boiling:1b,frying:1b, color:{red:222,green:157,blue:123},base_name:'{\"translate\":\"item.cook.chicken\",\"italic\":false}'} }"
             }
           ]
         }

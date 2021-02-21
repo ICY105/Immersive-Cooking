@@ -14,11 +14,11 @@
 			},
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [{"translate":"lore.cook.food_level","italic":false,"font":"cook:default","color":"white","with":[{"text":"1","color":"gray"}]}]
+			  "lore": [{"translate":"lore.cook.food_level_quality","italic":false,"font":"cook:default","color":"white","with":[{"text":"2","color":"gray"},{"text":"2","color":"gray"}]}]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429628, cook:{type:4b,food:1,redux:[1,0], mixing:1b,cutting:1b,frying:1b,boiling:1b, color:{red:114,green:72,blue:14},base_name:'{\"translate\":\"item.cook.almond\",\"italic\":false}'},   cooked:{tag:{cook:{food:3}}}    }"
+              "tag":"{CustomModelData:6429628, cook:{type:4b,food:2,quality:2,redux:[1,0], mixing:1b,cutting:1b,frying:1b,boiling:1b, color:{red:114,green:72,blue:14},base_name:'{\"translate\":\"item.cook.almond\",\"italic\":false}'},   cooked:{tag:{cook:{food:4}}}    }"
             }
           ]
         }

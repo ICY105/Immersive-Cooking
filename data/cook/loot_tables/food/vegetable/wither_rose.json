@@ -10,11 +10,11 @@
           "functions": [
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [{"translate":"lore.cook.food_level_quality","italic":false,"font":"cook:default","color":"white","with":[{"text":"-2","color":"gray"},{"text":"-50%","color":"gray"}]}]
+			  "lore": [{"translate":"lore.cook.food_level_quality","italic":false,"font":"cook:default","color":"white","with":[{"text":"-5","color":"gray"},{"text":"-50%","color":"gray"}]}]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{cook:{type:1b,food:-2,quality:-5, mixing:1b,washing:1b, boiling:1b,frying:1b, color:{red:42,green:31,blue:25},base_name:'{\"translate\":\"item.minecraft.wither_rose\",\"italic\":false}'}, cooked:{ id:\"minecraft:tropical_fish\",tag:{CustomModelData:6429537,cook:{food:-4,redux:[1,0]}} } }"
+              "tag":"{cook:{type:1b,food:-5,quality:-5, mixing:1b,washing:1b, boiling:1b,frying:1b, color:{red:42,green:31,blue:25},base_name:'{\"translate\":\"item.minecraft.wither_rose\",\"italic\":false}'}, cooked:{ id:\"minecraft:tropical_fish\",tag:{CustomModelData:6429537,cook:{food:-5,redux:[1,0]}} } }"
             }
           ]
         }

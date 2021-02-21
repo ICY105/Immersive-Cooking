@@ -14,11 +14,11 @@
 			},
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [{"translate":"lore.cook.food_level","italic":false,"font":"cook:default","color":"white","with":[{"text":"2","color":"gray"}]}]
+			  "lore": [{"translate":"lore.cook.food_level_quality","italic":false,"font":"cook:default","color":"white","with":[{"text":"4","color":"gray"},{"text":"-10%","color":"gray"}]}]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData:6429616, cook:{type:4b,food:2,quality:0,redux:[1,0], mashing:2b,roasting:1b,cutting:1b,frying:1b,boiling:1b,smoking:1b, color:{red:214,green:168,blue:170},base_name:'{\"translate\":\"item.cook.bird_carcass\",\"italic\":false}'},   cooked:{tag:{CustomModelData:6429617,cook:{food:6,color:{red:207,green:185,blue:149}}}}    }"
+              "tag":"{CustomModelData:6429616, cook:{type:4b,food:4,quality:-1,redux:[1,0], mashing:2b,roasting:1b,cutting:1b,frying:1b,boiling:1b,smoking:1b, color:{red:214,green:168,blue:170},base_name:'{\"translate\":\"item.cook.bird_carcass\",\"italic\":false}'},   cooked:{tag:{CustomModelData:6429617,cook:{food:6,quality:1,color:{red:207,green:185,blue:149}}}}    }"
             }
           ]
         }
