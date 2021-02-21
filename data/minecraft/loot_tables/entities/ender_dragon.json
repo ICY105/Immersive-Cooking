@@ -6,7 +6,17 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "cook:food/protein/ender_dragon_steak"
+          "name": "cook:food/protein/ender_dragon_steak",
+		  "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 6.0,
+                "max": 10.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ]
         }
       ]
     }
