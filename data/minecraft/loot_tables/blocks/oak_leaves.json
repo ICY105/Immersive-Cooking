@@ -136,7 +136,7 @@
             {
               "condition": "minecraft:table_bonus",
               "enchantment": "minecraft:fortune",
-              "chances": [ 0.01, 0.012, 0.0014, 0.016, 0.05 ]
+              "chances": [ 0.05, 0.06, 0.07, 0.08, 0.09 ]
             },
 			{
               "condition": "minecraft:reference",
@@ -154,7 +154,7 @@
             {
               "condition": "minecraft:table_bonus",
               "enchantment": "minecraft:fortune",
-              "chances": [ 0.01, 0.012, 0.0014, 0.016, 0.05 ]
+              "chances": [ 0.05, 0.06, 0.07, 0.08, 0.09 ]
             },
 			{
               "condition": "minecraft:reference",
@@ -172,7 +172,7 @@
             {
               "condition": "minecraft:table_bonus",
               "enchantment": "minecraft:fortune",
-              "chances": [ 0.01, 0.012, 0.0014, 0.016, 0.05 ]
+              "chances": [ 0.05, 0.06, 0.07, 0.08, 0.09 ]
             },
 			{
               "condition": "minecraft:reference",
@@ -190,7 +190,7 @@
             {
               "condition": "minecraft:table_bonus",
               "enchantment": "minecraft:fortune",
-              "chances": [ 0.01, 0.012, 0.0014, 0.016, 0.05 ]
+              "chances": [ 0.05, 0.06, 0.07, 0.08, 0.09 ]
             },
 			{
               "condition": "minecraft:reference",
