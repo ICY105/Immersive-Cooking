@@ -1,7 +1,8 @@
 
 # $in_0 cook_data: food level
 # $in_1 cook_data: quality
-# $in_2 cook_data: adjust for tropical fish restoration
+# $in_2 cook_data: base food (for redux)
+# $in_3 cook_data: base saturation (for redux)
 
 #normalize quality
 execute if score $in_1 cook_data matches ..-10 run scoreboard players set $in_1 cook_data -9
