@@ -1,5 +1,5 @@
 
-execute if entity @s[tag=cook_has_item] if score @s cook_data matches ..160 run scoreboard players add @s cook_data 1
+execute if entity @s[tag=cook_has_item] if score @s cook_data matches ..225 run scoreboard players add @s cook_data 1
 scoreboard players operation $in_0 cook_data = @s cook_data
 
 #change item
