@@ -15,7 +15,7 @@ execute if score $temp_0 cook_data matches 0 run playsound minecraft:entity.gene
 execute if score $temp_0 cook_data matches 0 run data modify block -29999999 0 1601 Items[0].tag.cook.washing set value 0b
 
 execute if score $temp_0 cook_data matches 0 store result score $temp_1 cook_data run data get block -29999999 0 1601 Items[0].tag.cook.quality
-scoreboard players add $temp_1 cook_data 2
+scoreboard players add $temp_1 cook_data 3
 execute if score $temp_0 cook_data matches 0 store result block -29999999 0 1601 Items[0].tag.cook.quality int 1 run scoreboard players get $temp_1 cook_data
 
 #modify food level
