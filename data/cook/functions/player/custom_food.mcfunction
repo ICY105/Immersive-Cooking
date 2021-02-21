@@ -34,6 +34,28 @@ execute store result score $temp_2 cook_data run data get entity @p foodSaturati
 scoreboard players set $out_0 cook_data 0
 scoreboard players set $out_1 cook_data 0
 
+### bonus regen
+scoreboard players operation $temp_3 cook_data = $in_0 cook_data
+scoreboard players remove $temp_3 cook_data 20
+scoreboard players operation $temp_3 cook_data += $temp_1 cook_data
+#1-3
+execute if score $temp_3 cook_data matches 1..2 run effect give @s minecraft:regeneration 3 0 true
+execute if score $temp_3 cook_data matches 3..5 run effect give @s minecraft:regeneration 5 0 true
+execute if score $temp_3 cook_data matches 6..8 run effect give @s minecraft:regeneration 8 0 true
+#4-6
+execute if score $temp_3 cook_data matches 9..11 run effect give @s minecraft:regeneration 6 1 true
+execute if score $temp_3 cook_data matches 12..14 run effect give @s minecraft:regeneration 7 1 true
+execute if score $temp_3 cook_data matches 15..17 run effect give @s minecraft:regeneration 8 1 true
+#7-10
+execute if score $temp_3 cook_data matches 18..20 run effect give @s minecraft:regeneration 4 2 true
+execute if score $temp_3 cook_data matches 18..20 run effect give @s minecraft:regeneration 6 1 true
+execute if score $temp_3 cook_data matches 21..26 run effect give @s minecraft:regeneration 5 2 true
+execute if score $temp_3 cook_data matches 27..32 run effect give @s minecraft:regeneration 6 2 true
+#12-20
+execute if score $temp_3 cook_data matches 33..38 run effect give @s minecraft:regeneration 4 3 true
+execute if score $temp_3 cook_data matches 39..50 run effect give @s minecraft:regeneration 5 3 true
+execute if score $temp_3 cook_data matches 51.. run effect give @s minecraft:regeneration 6 3 true
+
 #find hunger to add
 scoreboard players set $temp_3 cook_data 20
 scoreboard players operation $temp_3 cook_data -= $temp_1 cook_data
