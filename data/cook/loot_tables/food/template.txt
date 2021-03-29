@@ -21,19 +21,16 @@
               "tag":"{
 			    CustomModelData:6429000,
 				cook:{																//you will need to remove these comments- not valid json!
-				  type:1b,food:1,quality:1,redux:[1,0],								//food stats - redux is how much food the base item restores (for tropical fish, 1 food 0 saturation)
-				  mashing:1b,mixing:1b,cutting:1b,washing:1b,juicing:1b,			//allowed processing
-				  roasting:1b,smoking:1b,boiling:1b,baking:1b,frying:1b,			//allowed cooking
+				  type:1b,															//type: 1 = vegetable, 2 = fruit, 3 = grain, 4 = protein, 5 = dairy, 6 = seasoning, 7 = liquid, 8 = mixed
+				  food:1,quality:1,redux:[1,0],										//food stats - redux is how much food the base item restores (for tropical fish, 1 food 0 saturation)
+				  mashing:1b,														//mashing: 1 = mashed (generic), 2 = ground (use with meats), 4 = flour (use with grains),
+				  juicing:1b,														//juicing: 1 = juice (generic), 2 = broth (use with meats)
+				  mixing:1b,cutting:1b,washing:1b,									//allowed processing: typically, washing is for fruits/vegetables only
+				  roasting:1b,smoking:1b,boiling:1b,baking:1b,frying:1b,			//allowed cooking: typically, smoking is for meats only
 				  color:{red:255,green:255,blue:255},								//color used with grayscale textures (ie. chopped items)
 				  base_name:'{\"translate\":\"item.cook.food\",\"italic\":false}'	//base name used for transformations, ie. frying the item = "Fried <Base Name>"
 				},
-				cooked:{								//applies transformation when cooked - ussually increases food value, can also change model or even item ID
-				  tag:{
-				    cook:{
-					  food:2
-					}
-				  }
-				}
+				cooked:{id:"minecraft:example",tag:{CustomModelData:0,cook:{food:2}}}	//applies transformation when cooked - usually increases food value, can also change model or even item ID
 			  }"
             }
           ]
@@ -42,3 +39,5 @@
     }
   ]
 }
+
+"tag":"{CustomModelData:6429000,cook:{type:1b,food:1,quality:1,redux:[1,0],mashing:1b,juicing:1b,mixing:1b,cutting:1b,washing:1b,roasting:1b,smoking:1b,boiling:1b,baking:1b,frying:1b,color:{red:255,green:255,blue:255},base_name:'{\"translate\":\"item.cook.food\",\"italic\":false}'},cooked:{id:"minecraft:example",tag:{CustomModelData:0,cook:{food:2}}}}"
